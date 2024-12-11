@@ -1,0 +1,21 @@
+.card-slider-container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden; /* Ensure it doesn't cut off slides */
+  }
+  
+  .slick-slide {
+    padding: 10px;
+    box-sizing: border-box;
+    min-height: 300px; /* Make sure the slides have a height */
+  }
+  
+  .slick-track {
+    display: flex !important;
+  }
+  
+  .slick-slide img {
+    max-width: 100%;
+    display: block; /* Ensure images are visible */
+  }
+  

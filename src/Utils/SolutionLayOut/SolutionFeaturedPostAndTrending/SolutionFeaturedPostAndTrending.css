@@ -1,0 +1,68 @@
+.solution-font-weight-bold {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700px;
+    color: #000;
+    font-size: 32px;
+}
+
+.solution-h3 {
+  font-size: 1.5rem;
+}
+
+.solution-h4 {
+  font-size: 1.25rem;
+}
+
+.solution-hr {
+  border-top: 1px solid #000;
+}
+
+/* .align-items-stretch {
+    align-items: stretch;
+  } */
+
+.solution-row {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+
+.custom-trending-item h6,
+.custom-trending-item p {
+  margin: 0; /* Remove or reduce margin of text elements */
+  padding: 0; /* Remove or reduce padding of text elements */
+}
+
+.custom-trending-item hr {
+  margin-top: 0.5rem; /* Adjust the top margin of the horizontal rule */
+  margin-bottom: 0.8rem; /* Adjust the bottom margin of the horizontal rule */
+}
+
+/* Solution.css */
+.custom-hr {
+  width: 35%; /* Adjust the width as needed */
+  border-top: 2px solid #000000;
+}
+.solution-houston {
+  font-family: Fira Sans;
+  color: black;
+  font-weight: bold;
+}
+
+.solution-name {
+  font-family: Fira Sans;
+  font-weight: bold;
+}
+.mdsix {
+  padding-top: 50px;
+}
+
+.custom-trending-item {
+  min-height: 100px; /* Adjust the min-height as per your requirement */
+}
+
+.custom-numbering {
+  font-size: 24px; /* Adjust the font size as per your requirement */
+  font-weight: bold; /* Optional: Make the number bold */
+  color: #000; /* Optional: Change the color */
+}

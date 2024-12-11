@@ -1,0 +1,253 @@
+.client-logos {
+  text-align: center;
+  padding: 20px;
+  overflow: hidden; /* Hide any overflowed content */
+}
+.scroled {
+  margin-top: 30px;
+}
+.client-logos h2 {
+  margin-bottom: 20px;
+}
+
+.handshake-img {
+  padding-right: 20px;
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  max-height: 100%; /* Ensure it fits within the column */
+  border-right: 2px solid black; /* Border on the right side */
+}
+
+.full {
+  height: 200px;
+}
+
+.logo-scroll {
+  overflow: hidden; /* Hide the overflowing content */
+  position: relative;
+  height: 60px;
+  /* Space between rows */
+  /* Adjust height to fit logo items */
+}
+
+.logo-grid,
+.logo-grid2,
+.logo-grid3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center items vertically */
+  width: max-content; /* Ensure the width accommodates all logos */
+  animation-timing-function: linear;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.logo-grid {
+  animation: scroll-right-to-left 20s linear infinite;
+}
+
+.logo-grid2 {
+  animation: scroll-left-to-right 20s linear infinite;
+}
+
+.logo-grid3 {
+  animation: scroll-right-to-left 20s linear infinite;
+}
+
+.logo-item {
+  display: flex;
+  height: 50px;
+  margin-top: 12px;
+  align-items: center;
+  margin: 0 6px; /* Adjust horizontal spacing */
+  padding: 5px; /* Adjust padding */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.logo-item img {
+  height: 30px;
+  max-height: 50px;
+  margin-right: 10px; /* Adjust margin to logo text */
+}
+
+.cname {
+  font-weight: bold;
+  font-size: 16px; /* Adjust font size */
+  margin: 0;
+}
+/* Keyframes for scrolling animations */
+@keyframes scroll-right-to-left {
+  0% {
+    transform: translateX(0); /* Start from the right side */
+  }
+  100% {
+    transform: translateX(-50%); /* Move to the left side */
+  }
+}
+
+@keyframes scroll-left-to-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Responsive design adjustments */
+@media (max-width: 1200px) {
+  .full {
+    height: 400px;
+  }
+  .handshake-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .logo-scroll {
+    margin-top: 6px;
+    height: 40px; /* Adjust height for smaller screens */
+    margin-top: 12px;
+  }
+  .scroled {
+    margin-top: 25px;
+  }
+  .logo-item {
+    margin-top: 6px;
+    height: 40px;
+    margin: 0 8px; /* Adjust spacing for smaller screens */
+    padding: 4px; /* Adjust padding */
+  }
+
+  .logo-item img {
+    height: 25px; /* Adjust image height */
+  }
+
+  .cname {
+    font-size: 14px; /* Adjust font size */
+  }
+  @keyframes scroll-right-to-left {
+    0% {
+      transform: translateX(0); /* Start from the right side */
+    }
+    100% {
+      transform: translateX(-25%); /* Move to the left side */
+    }
+  }
+
+  @keyframes scroll-left-to-right {
+    0% {
+      transform: translateX(-25%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .client-logos {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 10px; /* Adjust padding */
+  }
+  .full {
+    height: 600px;
+  }
+
+  .handshake-img {
+    margin-bottom: 15px; /* Add margin for spacing below the image */
+    width: 50%; /* Ensure image takes full width */
+    /* Limit maximum height for better fit */
+    object-fit: cover; /* Maintain aspect ratio while covering area */
+  }
+
+  .logo-scroll {
+    margin-top: 6px;
+    height: 32px; /* Adjust height for mobile screens */
+    width: 100%; /* Ensure scroll takes full width */
+    overflow: hidden; /* Hide overflowing content */
+    position: relative;
+  }
+
+  .logo-grid,
+  .logo-grid2,
+  .logo-grid3 {
+    flex-direction: row; /* Keep logos scrolling horizontally */
+    width: max-content; /* Ensure scrolling items fit container width */
+  }
+
+  .logo-item {
+    margin: 0 5px; /* Adjust spacing for mobile screens */
+    padding: 3px; /* Adjust padding */
+  }
+
+  .logo-item img {
+    height: 20px; /* Adjust image height */
+  }
+
+  .cname {
+    font-size: 12px; /* Adjust font size */
+  }
+}
+
+/* Extra small mobile view adjustments */
+@media (max-width: 480px) {
+  .full {
+    height: 400px;
+  }
+  .handshake-img {
+    width: 35%;
+    margin-bottom: 10px; /* Add margin for spacing */
+  }
+
+  .logo-scroll {
+    margin-top: 5px;
+    height: 28px; /* Adjust height for smaller mobile screens */
+  }
+
+  .logo-item {
+    height: 25px;
+    margin: 0 3px; /* Adjust spacing for extra small screens */
+    padding: 2px; /* Adjust padding */
+  }
+
+  .logo-item img {
+    height: 15px; /* Adjust image height */
+  }
+
+  .cname {
+    font-size: 10px; /* Adjust font size */
+  }
+  .logo-grid,
+  .logo-grid2,
+  .logo-grid3 {
+    flex-direction: row; /* Keep logos scrolling horizontally */
+    width: max-content; /* Ensure scrolling items fit container width */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .our-client-left {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .logo-item {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .logo-wrapper {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .cname {
+    font-size: 12px;
+  }
+}

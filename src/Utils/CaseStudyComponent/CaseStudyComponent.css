@@ -1,0 +1,192 @@
+.case-study-component-card {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 1rem;
+    width: 100vw;
+    border-radius: 15px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .case-study-component-left {
+    background-color: #f6f6f6;
+    width: 24rem;
+    padding: 2rem 2rem 1rem 2rem;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
+  }
+  
+  .case-study-component-left h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  .case-study-component-left p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #6c757d;
+  }
+  
+  .case-study-component-card-input {
+    height: 70px;
+    width: 100%;
+    background-color: #f6f6f6;
+    box-shadow: inset -5px -5px 12px #ffffff,
+      inset 5px 5px 12px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 30px;
+    color: rgb(70, 70, 70);
+    font-size: 24px;
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .case-study-component-card-input::placeholder {
+    color: #32a5da;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  
+  .case-study-component-card-footer {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 2rem; */
+  }
+  
+  .case-study-component-card-footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .case-study-component-card-button {
+    height: 60px;
+    width: 60px;
+    background-color: #f6f6f6;
+    box-shadow: -5px -5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .case-study-component-card-button-middle {
+    height: 60px;
+    width: 107px;
+    background-color: #f6f6f6;
+    box-shadow: -5px -5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .case-study-component-card-button h3,
+  .case-study-component-card-button-middle h3 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+  }
+  
+  .case-study-component-card-footer-item p {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 16px;
+    color: #6c757d;
+    margin-top: 1rem;
+  }
+  
+  .case-study-component-right {
+    background-color: #f6f6f6;
+    width: calc(100% - 24rem);
+    max-width: 694px;
+    padding: 2rem;
+    border-radius: 37px;
+    box-shadow: inset 5px 5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
+    display: flex;
+    justify-content: center; /* Centering the content horizontally */
+    align-items: center; /* Centering the content vertically */
+  }
+  
+  .case-study-component-right img {
+    width: 100%;
+    border-radius: 20px;
+  }
+  
+  @media (max-width: 1024px) {
+    .case-study-component-card {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .case-study-component-left,
+    .case-study-component-right {
+      width: 100%;
+      max-width: none;
+      border-radius: 0;
+      margin-bottom: 2rem;
+      border-radius: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .case-study-component-left,
+    .case-study-component-right {
+      width: 100%;
+      max-width: none;
+      border-radius: 0;
+      margin-bottom: 2rem;
+      border-radius: 30px;
+    }
+  
+    .case-study-component-left {
+      padding: 1rem;
+    }
+  
+    .case-study-component-card-input {
+      height: 50px;
+      font-size: 18px;
+    }
+  
+    .case-study-component-card-input::placeholder {
+      font-size: 18px;
+    }
+  
+    .case-study-component-left h3 {
+      font-size: 18px;
+    }
+  
+    .case-study-component-left p {
+      font-size: 18px;
+    }
+  
+    .case-study-component-card-button,
+    .case-study-component-card-button-middle {
+      height: 50px;
+      width: 50px;
+    }
+  
+    .case-study-component-card-button h3,
+    .case-study-component-card-button-middle h3 {
+      font-size: 24px;
+    }
+  
+    .case-study-component-card-footer-item p {
+      font-size: 14px;
+    }
+  }
+  
+
+  .case-study-read-more-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 0.9rem;
+  }
+  

@@ -1,0 +1,77 @@
+.horizontal-line-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.horizontal-line {
+  width: 90%;
+  height: 2px;  
+  background-color: #000;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.point-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -16px; /* Adjust to align the center of icons with the horizontal line */
+}
+
+.point {
+  width: 30px;
+  height: 30px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  background-size: contain;
+  padding: 3px;
+  position: relative;
+}
+
+.point:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s ease;
+}
+
+.point.active {
+  transform: scale(1.2);
+  background-color: #32A5DA; /* Change color for active point */
+}
+
+.point-label {
+  margin-top: 10px; /* Space between icon and label */
+  font-size: 12px;
+  color: #000;
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+  bottom: -20px; /* Adjust the position of the tooltip */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.point:hover .point-label {
+  display: block;
+}
+
+.case-study-component {
+  margin-top: 20px;
+}
+
+.image {
+  width: 200px; /* Adjust image size as needed */
+  height: auto;
+  transition: opacity 0.5s ease; /* Smooth transition for image */
+}

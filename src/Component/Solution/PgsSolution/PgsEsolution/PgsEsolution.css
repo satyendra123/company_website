@@ -1,0 +1,39 @@
+  .button-container {
+    padding: 20px;
+    border-radius: 8px;
+    justify-content: center;
+    display: flex;
+    gap: 15px;
+
+  }
+
+  .button-custom {
+    background-color: white; /* Button white background */
+    color: black;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .button-custom:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image-circle {
+    background-color: white;
+    border-radius: 50%; 
+    padding: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; 
+    height: 60px;
+  }
+  
+  .image-circle img {
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
+  }

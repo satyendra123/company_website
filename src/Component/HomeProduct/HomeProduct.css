@@ -1,0 +1,187 @@
+
+.home-product {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.product-header-text {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: 700;
+  background-image: linear-gradient(#058AFB, #01106b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.product-subheader-text {
+  font-family: Arial, 'Fira Sans', sans-serif;
+  text-align: center;
+  font-weight: 600;
+  color: black;
+  font-size: 21px;
+}
+
+
+.home-product-left-section {
+  font-size: 13px;
+  width: 90%;
+}
+
+.product-section {
+  padding: 50px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-lg-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-sm-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.product-card-full {
+  height: 100%;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.product-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product-title {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 16px;
+  color: #666;
+}
+
+.read-more-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #0056b3;
+}
+
+.cardcontainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #F0F3F6;
+  position: relative;
+}
+.image-container {
+  position: relative;
+}
+.boom-barrier {
+  z-index: 2; /* Ensures the boom barrier image is on top */
+  position: absolute;
+  bottom: 10%; /* Adjust this value to position the boom barrier */
+}
+
+.eclipse {
+  z-index: 2; /* Places the eclipse image behind the boom barrier */
+  position: absolute;
+  bottom: 0; /* Position the eclipse at the bottom */
+
+  
+}
+.cardcontainer:hover {
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+  transform: scale(1.05);
+}
+@media (max-width: 992px) {
+  .cardcontainer {
+    height: 200px; /* Same height for mobile view */
+  }
+}
+
+@media (max-width: 776px) {
+  .prod-type {
+    margin-bottom: 2rem;
+    max-width: 100%;
+  }
+}
+
+.product-header-container {
+  display: flex;
+  padding-top: 10px;
+  align-items: center;
+  justify-content: center; /* Centers the header text between the images */
+}
+
+.product-header-text {
+ 
+  margin: 0 20px; /* Add some space between the images and the text */
+}
+
+.left-img,
+.right-img {
+  width: auto; /* Adjust the width as per your image size */
+  height: 60px; /* Example height, you can adjust */
+}
+
+.left-img {
+  margin-right: 20px;
+  margin-bottom: 21px;
+  padding-bottom: 20px;
+  height: 10%; /* Space between the left image and the heading */
+}
+
+.right-img {
+  margin-left: 20px;
+  margin-top: 8px;   
+
+  
+   /* Space between the right image and the heading */
+}
+

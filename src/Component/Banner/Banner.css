@@ -1,0 +1,18 @@
+.carousel-inner img {
+    max-height: 700px; /* Adjust based on your preference */
+    object-fit: cover; /* Ensures the image covers the carousel area */
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-inner img {
+      max-height: 400px; /* Adjust height for smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .carousel-inner img {
+      max-height: 300px; /* Adjust height for very small screens */
+    }
+  }
+
+  

@@ -1,0 +1,98 @@
+.video {
+  position: relative;
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  width: 80px;
+  opacity: 1;
+  border-radius: 5px;
+}
+
+.overlay-image1 {
+  position: absolute;
+  margin-top: -450px;
+  margin-left: 150px;
+  width: 450px;
+  height: 230px;
+  z-index: -1;
+}
+
+
+@media (max-width: 430px) {
+  .overlay-image1 {
+    margin-top: -280px; /* Adjust for smaller screens */
+    margin-left: 50px; /* Center the image more for smaller screens */
+    width: 220px; /* Resize for mobile view */
+    height: 160px; /* Resize for mobile view */
+  }
+}
+@media (max-width: 375px) {
+  .overlay-image1 {
+    margin-top: -250px; /* Adjust for smaller screens */
+    margin-left: 50px; /* Center the image more for smaller screens */
+    width: 200px; /* Resize for mobile view */
+    height: 130px; /* Resize for mobile view */
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .col-lg-5 {
+    width: 100%;
+    margin-right: 20px;
+  }
+  .overlay-image1{
+  
+    margin-left: 15px;
+    margin-top: -350px;
+  }
+}
+@media (min-width:768px) and (max-width:  992px) {
+
+  .overlay-image1{
+
+    margin-right: 5px;
+    margin-top: -500px;
+    width: 400px;
+    height: 300px;
+  }
+}
+@media (min-width:430px) and (max-width:  576px) {
+
+  .overlay-image1{
+    margin-left: 20px;
+    margin-top: -320px;
+    width: 400px;
+    height: 200px;
+  }
+}
+@media (min-width:430px) and (max-width:  576px) {
+
+  .overlay-image1{
+    margin-left: 20px;
+    margin-top: -320px;
+    width: 400px;
+    height: 200px;
+  }
+}
+@media (min-width:470px) and (max-width:  576px) {
+
+  .overlay-image1{
+    margin-right: 15px;
+    margin-top: -340px;
+    width: 400px;
+    height: 200px;
+  }
+}
+@media (min-width:500px) and (max-width:  576px) {
+
+  .overlay-image1{
+    margin-right: 15px;
+    margin-top: -380px;
+    width: 400px;
+    height: 200px;
+  }
+}

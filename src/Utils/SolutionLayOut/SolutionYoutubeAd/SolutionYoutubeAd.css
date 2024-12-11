@@ -1,0 +1,67 @@
+.youtube-ad-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+}
+
+.pms-youtube-ad-left {
+  font-family: Arial, "Fira Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  /* line-height: 28.8px; */
+  text-align: left;
+}
+
+.video-wrapper {
+  border-radius: 14px;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.dotted-background {
+  position: absolute;
+  width: 224px;
+  height: 242px;
+  top: -50px; /* Adjust to position relative to the video */
+  right: -50px; /* Adjust to position relative to the video */
+  opacity: 1; /* Change to 1 to make it fully visible */
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .youtube-ad-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .video-wrapper {
+    margin-top: 20px;
+  }
+
+  .pms-youtube-ad-right {
+    margin-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 3rem;
+  }
+
+  .dotted-background {
+    top: -30px;
+    right: 0px;
+    width: 150px;
+    height: 162px;
+  }
+}

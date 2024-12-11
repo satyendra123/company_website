@@ -1,0 +1,190 @@
+.contact-us-main {
+  align-items: center;
+}
+.contact-info {
+  background-color: #4e6b7c;
+  color: white;
+  border-radius: 15px;
+}
+
+.contact-info h3 {
+  font-weight: bold;
+}
+
+.contact-info p {
+  margin: 0;
+}
+
+.social-icons i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.contact-form {
+  background-color: #f8f9fa;
+  border-radius: 15px;
+}
+
+.contact-form h3 {
+  font-weight: bold;
+}
+
+.contact-form h3 span {
+  color: #000;
+}
+/* Example media query for mobile screens */
+@media (max-width: 768px) {
+  .col-lg-5 {
+    width: 100%;
+    margin-left: 0 !important; /* Adjusting margin for smaller screens */
+    left: auto !important;
+    top: auto !important;
+    opacity: 1 !important;
+    z-index: 1 !important;
+  }
+}
+@media (max-width: 992px) {
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-lg-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* ContactForm.css */
+@media (max-width: 991px) {
+  /* Bootstrap's breakpoint for medium devices and smaller */
+  .col-lg-4,
+  .col-lg-5 {
+    position: static !important;
+    min-height: auto !important;
+    top: auto !important;
+    left: auto !important;
+  }
+
+  .card-body {
+    padding: 20px !important; /* Adjust padding for smaller screens */
+  }
+
+  .text-center p {
+    margin-right: 0 !important; /* Adjust margin to align text properly */
+    text-align: center !important; /* Center align text on smaller screens */
+  }
+
+  .address img {
+    margin-bottom: 0 !important; /* Adjust margin for smaller screens */
+  }
+
+  .address p {
+    margin-bottom: 10px !important; /* Adjust margin for smaller screens */
+  }
+
+  .social-icons {
+    display: flex !important;
+    justify-content: center !important; /* Center align social icons */
+  }
+
+  .social-icons div {
+    margin: 0 5px !important; /* Adjust margin between icons */
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1304px) {
+  .contact-form-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (min-width: 380px) and (max-width: 992px) {
+    .address {
+      text-align: center;
+    }
+  }
+
+  .contact-details,
+  .form-card {
+    flex: 1;
+    margin: 10px;
+  }
+
+  .contact-details {
+    max-width: 45%;
+  }
+
+  .form-card {
+    max-width: 45%;
+  }
+}
+/* ContactForm.css */
+@media (max-width: 991px) {
+  .contact-details {
+    text-align: center !important;
+  }
+  .contact-text,
+  .location-text {
+    margin-right: 0 !important;
+    text-align: center !important;
+  }
+  .location-wrapper {
+    justify-content: center !important;
+    flex-direction: column !important;
+    padding-left: 0 !important;
+  }
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.contact-text {
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-right: 180px;
+}
+
+.location-text {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 0;
+  padding-left: 8px;
+}
+
+.location-wrapper {
+  padding-left: 65px;
+  display: flex;
+}
+
+.social-icons {
+  display: flex;
+  margin-left: 65px;
+  margin-top: 30px;
+  padding-bottom: 12px;
+}
+
+.social-icon {
+  margin: 0 10px;
+}
+
+.rounded-icon {
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+.location-text {
+  padding-right: 200px;
+}
+
+.input-placeholder::placeholder {
+  font-family: 'Helvetica', sans-serif;
+}

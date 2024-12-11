@@ -1,0 +1,82 @@
+.card-body, .card-title, .card-text {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.solution-pms-card {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
+  }
+  
+  .custom-circle-btn {
+    border: none;
+    background: none;
+    padding: 0;
+    position: relative;
+  }
+  
+  .custom-circle {
+    color: black;
+  }
+  
+  .plus-icon {
+    transition: opacity 0.3s;
+  }
+  
+  .no-more-btn {
+    display: none;
+    transition: opacity 0.3s;
+  }
+  
+  .button-container {
+    position: relative;
+  }
+  
+  .product-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .product-card:hover {
+  
+    transform: translateY(10px) scale(1.1); /* Move the card downwards and scale down */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-card:hover .plus-icon{
+    display: none;
+   
+   /* Hide the + icon on hover */
+  }
+  .product-card:hover .custom-circle{
+    display: none;
+    
+     /* Hide the + icon on hover */
+  }
+  .product-card:hover .no-more-btn {
+    display: inline-block;
+    color: white;
+    border-radius: 20px;
+    background-color: black; /* Show the No more button on hover */
+  }
+  .no-more-btn {
+    display: none;
+    color: white;
+    background-color: black; /* Show the No more button on hover */
+    border-radius: 20px;
+    position: relative;
+    padding: 10px 20px; /* Add padding to make space for the arrow icon */
+  }
+  
+  .no-more-btn .arrow-icon {
+    margin-left: 10px; /* Space between text and arrow */
+    transition: opacity 0.3s;
+    opacity: 0; /* Hide the arrow icon by default */
+  }
+  
+  .product-card:hover .no-more-btn {
+    display: inline-block;
+  }
+  
+  .product-card:hover .no-more-btn .arrow-icon {
+    opacity: 1; /* Show the arrow icon on hover */
+  }
