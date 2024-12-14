@@ -14,16 +14,16 @@ const Bollard2 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">SHIELD PLUS</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Unmatched Security for High-Risk Areas
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Offers robust security solution for high-risk areas and provide
-              effective traffic control in busy zones, ensuring both safety and
-              peace of mind.
+            Take security to the next level with SHIELD PLUS. Engineered for high-traffic zones, it delivers robust protection and effective traffic management, making it ideal for safeguarding busy areas. Enjoy peace of mind with unparalleled safety and efficiency.
+
               </p>
             </Col>
             <Col md={1}>

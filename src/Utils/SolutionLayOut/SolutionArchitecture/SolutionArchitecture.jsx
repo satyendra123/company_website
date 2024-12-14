@@ -2,21 +2,19 @@ import React from "react";
 import "./SolutionArchitecture.css";
 
 const SolutionArchitecture = ({
-  title,
   description,
   imageSrc,
   imageAlt = "",
 }) => {
   return (
-    <div className='container-fluid custom-container'>
+    <div className='container custom-container'>
       <div className='row solution-pms-row custom-row justify-content-center'>
-        <div className='col-md-6 solution-pms-first_column custom-column'>
-          <h3 className='solution-pms-header custom-header'>{title}</h3>
+        <div className='col-md-5 solution-pms-first_column custom-column'>
           <div className='solution-pms-description custom-description'>
-            <h3 className="solution-pms-description-content">{description}</h3>
+            <p className="solution-pms-description-content">{description}</p>
           </div>
         </div>
-        <div className="col-md-6 solutioncar">
+        <div className="col-md-7 solutioncar">
           <img
             src={imageSrc}
             alt={imageAlt}

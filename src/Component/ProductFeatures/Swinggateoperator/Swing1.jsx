@@ -14,14 +14,16 @@ const Swing1 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">FLY</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Compact Innovation for Residential Swing Gates
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
              <p className="text-justify">
-              FLY series offers compact, reliable electro-mechanical actuators
+             Experience the perfect blend of reliability and precision with the FLY series. Designed for residential swing gates up to 3 meters in length, these electro-mechanical actuators deliver smooth and stable movement. Built for durability, the FLY series ensures hassle-free operation while adding convenience to your home.
+             FLY series offers compact, reliable electro-mechanical actuators
               for residential swing gates with leaves up to 3 meters, ensuring
               smooth and stable movement.
               </p>

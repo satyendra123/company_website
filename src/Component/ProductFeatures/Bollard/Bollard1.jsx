@@ -14,15 +14,16 @@ const Bollard1 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">SHIELD</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways of Convenience
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Merging electric, hydraulic,and mechanical functions for seamless
-              operation. Your go-to choice for security and access needs.
+            Experience cutting-edge innovation with SHIELD. By seamlessly integrating electric, hydraulic, and mechanical technologies, it ensures effortless operation and dependable security for all your access control needs. Designed for durability and precision, SHIELD is the ultimate choice for enhanced safety.
+
               </p>
             </Col>
             <Col md={1}>

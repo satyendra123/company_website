@@ -14,15 +14,16 @@ const Dfmd3 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">DF3350M</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Next-Level Security with Multi-Zone Precision
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Designed to detect metal objects across multiple zones on a
-              person's body, offering better accuracy and rapid identification.
+            The DF3350M Walkthrough Metal Detector is specifically designed to identify metallic threats across multiple zones on a person’s body. With its multi-zone detection capabilities, it delivers superior accuracy and faster threat identification, making it the perfect solution for high-traffic environments.
+
               </p>
             </Col>
             <Col md={1}>

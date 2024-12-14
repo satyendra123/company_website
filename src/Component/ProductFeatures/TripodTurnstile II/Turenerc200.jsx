@@ -14,16 +14,16 @@ const Turenerc200 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold text-uppercase">Turner c200</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Compact Design with Superior Control Capabilities
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              A sleek, space-saving checkpoint with built-in multi-format
-              readers for seamless communication and integrated card capture
-              enhancing access control systems.
+            The Turner c200 is a space-efficient solution equipped with multi-format card readers and an integrated card-capture system. 
+            Its modern design enhances communication and access control, making it a preferred choice for sleek, high-tech environments.
               </p>
             </Col>
 

@@ -5,6 +5,7 @@ import Architecture from "../../../Component/Solution/IotSolution/Architecture/A
 import SolutionProduct from "../../../Component/Solution/IotSolution/SolutionProduct/SolutionProduct";
 import YoutubeAd from "../../../Component/Solution/IotSolution/YoutubeAd/YoutubeAd";
 import SolutionType from "../../../Component/Solution/IotSolution/SolutionType/SolutionType";
+import IotEsolution from "../../../Component/Solution/IotSolution/IotEsolution/IotEsolution";
 import SolutionContactUs from "../../../Component/Solution/IotSolution/SolutionContactUs/SolutionContactUs";
 import FeaturedPostAndTrending from "../../../Component/Solution/IotSolution/FeaturedPostAndTrending/FeaturedPostAndTrending";
 
@@ -14,7 +15,7 @@ const IotSolutionPageLayOut = () => {
       <Banner />
       <YoutubeAd />
       <SolutionType />
-
+      <IotEsolution/>
       <Architecture />
       <SolutionProduct />
       <CaseStudies />

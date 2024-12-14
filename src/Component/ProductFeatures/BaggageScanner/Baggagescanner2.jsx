@@ -14,16 +14,16 @@ const Baggagescanner2 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">HS6550</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Redefining Security Scanning Standards
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Solid construction and generous scanning tunnel accommodate
-              various baggage sizes, while state-of-the-art X-ray imaging
-              technology ensures high-resolution visuals.
+            The HS6550 is engineered to deliver exceptional results with its solid build and expansive scanning tunnel, seamlessly accommodating diverse baggage sizes. Its advanced X-ray imaging technology guarantees crystal-clear, high-resolution visuals for accurate threat detection in critical scenarios.
+
               </p>
             </Col>
             <Col md={1}>

@@ -13,16 +13,16 @@ const Drop4 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">DROPARM D80</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>A Fusion of Design and Security.
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
               <p className="text-justify">
-              Drop Arm Barrier blends design and durability, ensuring efficient,
-              secure access control in diverse environments, safeguarding
-              entrances and exits.
+              The Drop Arm Barrier blends sleek design with unparalleled durability. It ensures secure, efficient access control in diverse environments, safeguarding entrances and exits with ease.
+
               </p>
             </Col>
             <Col md={1}>

@@ -14,15 +14,16 @@ const Baggagescanner1 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold text-uppercase">HS100</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Elevate Efficiency with Unmatched Versatility
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Ultimate solution for versatile screening, from mid-size packages
-              to unconventional shapes and palletized loads
+            The HS100100 revolutionizes screening with its exceptional adaptability, handling everything from mid-size packages to irregularly shaped items and palletized loads. Designed for precision and speed, this state-of-the-art system streamlines operations, ensuring flawless results every time.
+
               </p>
             </Col>
             <Col md={1}>

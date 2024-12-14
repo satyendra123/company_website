@@ -14,15 +14,17 @@ const Anpr3 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">EE2070S</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Revolutionizing Tolling with Precision and Durability
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Engineered for high-performance ANPR in free-flow tolling, this
-              robust camera is ideal for both pole and gantry
+            The EE2070S is your ultimate solution for high-performance ANPR in free-flow tolling systems.
+             Built for durability and precision, 
+             this robust camera seamlessly adapts to pole and gantry installations, delivering exceptional accuracy and reliability to streamline toll operations.
               </p>
             </Col>
             <Col md={1}>

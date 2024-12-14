@@ -14,16 +14,17 @@ const Dfmd1 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">DF2030S</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Your Gateway to Uncompromised Security
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Detects concealed metal objects on individuals, ensuring thorough
-              security by sounding alarms upon detection, facilitating swift
-              response.
+            The DF2030S Walkthrough Metal Detector is engineered to detect concealed metal objects with exceptional accuracy.
+             Designed for high-security applications, it promptly alerts upon detection, ensuring swift and efficient threat management. Its advanced features make it ideal for facilities requiring robust safety measures.
+
               </p>
             </Col>
             <Col md={1}>

@@ -14,15 +14,15 @@ const Baggagescanner4 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">HS5030</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Streamlined Security for Mid-Size Packages and Parcels
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
-              <p className="">
-              The HS5030 is purpose-built to deliver precise and efficient screening for mid-size packages and parcels. Combining advanced technology with energy-efficient performance, it ensures thorough security checks while offering a user-friendly experience. Ideal for facilities seeking cost-effective and reliable scanning solutions.
-              </p>
+              <p className="text-justify">
+              The HS5030 is purpose-built to deliver precise and efficient screening for mid-size packages and parcels. Combining advanced technology with energy-efficient performance, it ensures thorough security checks while offering a user-friendly experience. Ideal for facilities seeking cost-effective and reliable scanning solutions.              </p>
             </Col>
             <Col md={1}>
             </Col>

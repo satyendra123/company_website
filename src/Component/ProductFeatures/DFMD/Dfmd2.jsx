@@ -14,15 +14,15 @@ const Dfmd2 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">DF2010S</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Precision Detection, Redefined</h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Utilizing magnetic fields and high-frequency signals, efficiently
-              detects conceale dmetallic items such as phones and watches.
+            The DF2010S Walkthrough Metal Detector uses cutting-edge magnetic fields and high-frequency signals to identify concealed metallic items, such as phones and watches, with unmatched efficiency. Perfect for environments demanding heightened security and advanced screening solutions.
+
               </p>
             </Col>
             <Col md={1}>

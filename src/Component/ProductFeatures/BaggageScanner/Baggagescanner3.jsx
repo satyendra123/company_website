@@ -14,15 +14,16 @@ const Baggagescanner3 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">HS6040</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Your Frontline Defense Against Modern Threats
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Offers automatic detection of solid and liquid explosives,
-              ensuring top-tier security for airports and critical facilities.
+            Specially crafted for airports and high-security facilities, the HS6040 offers unparalleled automatic detection of both solid and liquid explosives. With its advanced imaging capabilities, it ensures top-tier security while optimizing operational efficiency.
+
               </p>
             </Col>
             <Col md={1}>

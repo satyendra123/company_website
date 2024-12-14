@@ -14,16 +14,16 @@ const Turnerc150 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">TURNER C150</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Innovative Design Meets Advanced Accessibility
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Designed for spacious accessibility, modern aesthetics,and
-              durability, with features like a wide passage width, stylish
-              design, and advanced sensor technology.
+            Designed for spaces that demand style and functionality, the Turner c150 stands out with its wide passage width, contemporary aesthetics, and state-of-the-art sensor technology. Perfect for accommodating a diverse range of users while maintaining optimal security.
+
               </p>
             </Col>
             <Col md={1}>

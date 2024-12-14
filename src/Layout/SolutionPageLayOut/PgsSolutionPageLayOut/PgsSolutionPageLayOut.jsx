@@ -5,7 +5,6 @@ import Architecture from "../../../Component/Solution/PgsSolution/Architecture/A
 import SolutionProduct from "../../../Component/Solution/SolutionProduct/SolutionProduct";
 import YoutubeAd from "../../../Component/Solution/PgsSolution/YoutubeAd/YoutubeAd";
 import SolutionType from "../../../Component/Solution/PgsSolution/SolutionType/SolutionType2";
-import PgsEsolution from "../../../Component/Solution/PgsSolution/PgsEsolution/PgsEsolution";
 import SolutionContactUs from "../../../Component/Solution/PgsSolution/SolutionContactUs/SolutionContactUs";
 import FeaturedPostAndTrending from "../../../Component/Solution/PgsSolution/FeaturedPostAndTrending/FeaturedPostAndTrending";
 
@@ -14,10 +13,7 @@ const SolutionPageLayOut = () => {
     <>
       <Banner />
       <YoutubeAd />
-      <SolutionType />
-
-      <PgsEsolution/>
-      
+      <SolutionType />     
       <Architecture />
       <SolutionProduct />
       <CaseStudies />

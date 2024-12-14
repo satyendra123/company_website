@@ -14,7 +14,10 @@ const FlaptileR100 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">FLAPTILE R100</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>
+              Advanced Security and Swift Pedestrian Flow
+
+</h6>
             </Col>
           </Row>
 

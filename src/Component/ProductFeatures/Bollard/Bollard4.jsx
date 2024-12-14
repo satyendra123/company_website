@@ -14,16 +14,18 @@ const Bollard4 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">SHIELD ANTI-TERROR</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Unyielding Defense for High-Security Environments
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Precision-engineered to deliver unrivaled anti-terrorist defense,
-              ensuring the utmost security and peace or mind for your valuable
-              assets and surroundings.
+            Engineered with precision, SHIELD ANTI-TERROR is your ultimate solution for anti-terrorist protection.
+             Designed to safeguard valuable assets and surroundings,
+              it offers unmatched reliability,
+             ensuring maximum security and peace of mind in even the most sensitive areas.
               </p>
             </Col>
             <Col md={1}>

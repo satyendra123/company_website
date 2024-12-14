@@ -14,16 +14,17 @@ const Full2 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">FULL HEIGHT 2200</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Redefining Secure Passage Solutions
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Designed for various security and control needs, these units come
-              in stainless steel, powder coat, or hot-dipped galvanized
-              finishes.
+            Redefining Secure Passage Solutions
+Tailored for diverse security and operational requirements, the Full Height 2200 boasts premium-grade finishes, including stainless steel, powder coating, and hot-dipped galvanization. Designed for durability and high-traffic environments, it guarantees long-term performance.
+
               </p>
             </Col>
             <Col md={1}>

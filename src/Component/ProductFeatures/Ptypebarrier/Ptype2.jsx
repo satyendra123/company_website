@@ -13,16 +13,18 @@ const Ptype2 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold"> P-TYPE P100</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Built to Endure, Designed to Perform.
+
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
               <p className="text-justify">
-              Crafted with uncompromising quality,it stands as a testament to
-              durability, ensuring it remains steadfast in serving those with
-              special needs.
+              Engineered with premium-grade materials, the Swing Tile P100 guarantees exceptional longevity, ensuring uninterrupted performance during the busiest hours. Its superior build quality delivers reliability and peace of mind for high-traffic applications.
+
+
               </p>
             </Col>
             <Col md={1}>

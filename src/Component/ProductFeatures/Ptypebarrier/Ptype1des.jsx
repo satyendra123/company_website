@@ -8,6 +8,9 @@ import Embasies from "./PTYPEIMG/Embasies.png";
 import Toll from "./PTYPEIMG/Toll.png";
 import Factory from "./PTYPEIMG/Factory.png";
 import qr from "./PTYPEIMG/qr.png";
+import ptype1 from "./PTYPEIMG/Midea/p1.png";
+import ptype2 from "./PTYPEIMG/Midea/p2.png";
+import ptype3 from "./PTYPEIMG/Midea/p3.png";
 
 import p200 from "./PTYPEIMG/Ptypeintegration/P200.png";
 
@@ -49,17 +52,15 @@ const testimonials = [
 ];
 const mediaimg = [
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: ptype1,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3994.png",
+    img: ptype2,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: ptype3,
   },
-  {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
-  },
+ 
 ];
 
 const Ptype1des = () => {

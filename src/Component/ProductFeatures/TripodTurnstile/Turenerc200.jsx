@@ -14,15 +14,14 @@ const Turenerc200 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">TURNER C200</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Compact and Intelligent Access Management Solution
+              </h6>
             </Col>
           </Row>
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              A sleek, space-saving checkpoint with built-in multi-format
-              readers for seamless communication and integrated card capture
-              enhancing access control systems.
+            Optimize your security checkpoints with the Turner c200, a space-efficient turnstile offering built-in multi-format readers and integrated card capture capabilities. This innovative system streamlines communication and enhances security, making it a perfect choice for businesses and public spaces.
               </p>
             </Col>
             <Col md={1}>

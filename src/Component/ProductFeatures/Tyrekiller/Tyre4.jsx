@@ -13,17 +13,16 @@ const Tyre4 = ({ isMobileView }) => {
         <Card.Body>
           <Row className="text-center">
             <Col>
-              <h4 className="fw-bold">CRB350</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h4 className="fw-bold">CERA350</h4>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Reliable Strength, Unmatched Security—Your First Line of Defense
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
               <p className="text-justify">
-              Crafted from robust, heavy-duty blades to swiftly immobilize
-              intruding vehicles by targeting their suspension, axle, and wheels
-              on the spot.
+              Precision-crafted to provide unmatched anti-terrorist protection, the CRB350 delivers robust defense, ensuring the highest level of security for critical assets and environments. Its advanced design offers peace of mind and dependable performance in high-risk zones.
               </p>
             </Col>
             <Col md={1}>

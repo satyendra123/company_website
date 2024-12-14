@@ -14,16 +14,19 @@ const Full3 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">FULL HEIGHT 1000</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>A Blend of Elegance and Functionality in Access Control
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Dressed in custom stainless steel for elegance, durability, and
-              rust resistance, accepts multiple cards via a standard electrical
-              interface, streamlining passage management.
+            Crafted from custom stainless steel, this model offers superior rust resistance,
+            
+             unmatched durability, and a sleek finish. Featuring a versatile electrical interface,
+              it supports multiple card types for efficient passage management, perfect for modern facilities.
+
               </p>
             </Col>
             <Col md={1}>

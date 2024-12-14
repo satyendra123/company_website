@@ -14,16 +14,16 @@ const Sliding1 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">EVA</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>The Perfect Fit for Everyday Residential Gates
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Designed to meet most common operational applications of
-              residential sliding gates. suitable for a maximum weight up to 500
-              KG.
+            The Eva Series is expertly designed to cater to the most common operational needs of residential sliding gates. It supports a maximum gate weight of up to 500 kg, making it a reliable and efficient solution for everyday residential applications.
+
               </p>
             </Col>
             <Col md={1}>

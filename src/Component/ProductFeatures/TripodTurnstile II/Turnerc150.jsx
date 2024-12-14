@@ -5,7 +5,7 @@ import { Container, Row, Col, Card, Image } from "react-bootstrap";
 import icon1 from "./TRIPODEIMG/Tripodtwoicons/2ywarranty.png";
 import icon2 from "./TRIPODEIMG/Tripodtwoicons/7ywarranty.png";
 import icon3 from "./TRIPODEIMG/Tripodtwoicons/Automatic.png";
-
+    
 const Turnerc150 = ({ isMobileView }) => {
   return (
     <Container className="py-4">
@@ -14,15 +14,15 @@ const Turnerc150 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold text-uppercase">Turner C150</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>The Perfect Balance of Style and Accessibility
+              </h6>
             </Col>
           </Row>
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Designed for spacious accessibility, modern aesthetics,and
-              durability, with features like a wide passage width, stylish
-              design, and advanced sensor technology.
+            Engineered for modern accessibility, the Turner c150 blends stylish aesthetics with high functionality. Its wide passage width, durable design, and cutting-edge sensor technology make it an ideal solution for contemporary access needs.
+
               </p>
             </Col>
             <Col md={1}>

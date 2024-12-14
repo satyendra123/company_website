@@ -14,16 +14,15 @@ const Bollard3 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">SUPER SHIELD</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>The Pinnacle of Advanced Security
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Introducing Houston’s Innovation Hub’s time-tested marvel:
-              Designed for maximum safety with customizable reflective strip
-              height and robust break-in resistance.
+            Meet SUPER SHIELD, the innovation redefining security standards. With its superior break-in resistance and customizable reflective strip design, it offers unmatched safety and reliability. Perfect for high-stakes environments, SUPER SHIELD is built to stand the test of time.
               </p>
             </Col>
             <Col md={1}>

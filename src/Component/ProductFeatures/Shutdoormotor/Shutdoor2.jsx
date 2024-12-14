@@ -14,16 +14,16 @@ const Shutdoor2 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">SHUTTER H180</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Versatile Automation for Shutter Systems
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Meticulously designed to cater to a wide range of shutter
-              automation needs, spanning from light-duty to heavy-duty
-              industrial applications
+            The SHUTTER H180 is meticulously crafted to meet diverse shutter automation needs, from light-duty residential requirements to heavy-duty industrial applications. With its robust design and advanced functionality, this system ensures smooth and reliable operation across various settings.
+
               </p>
             </Col>
             <Col md={1}>

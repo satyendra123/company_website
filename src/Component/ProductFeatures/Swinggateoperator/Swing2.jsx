@@ -14,16 +14,15 @@ const Swing2 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">SWINGO</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Industrial Power Meets Compact Design
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Electro-mechanical actuators for industrial swing gates up to 5m
-              long, ensuring smooth and stable movement with their compact and
-              reliable design.
+            Empower your industrial swing gates with SWINGO, the ultimate electro-mechanical solution for gates up to 5 meters. Boasting a compact yet robust design, SWINGO guarantees seamless, stable movement while meeting the demands of industrial settings
               </p>
             </Col>
             <Col md={1}>

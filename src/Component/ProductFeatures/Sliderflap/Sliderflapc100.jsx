@@ -3,7 +3,7 @@ import turnerc100 from "./SliderflapIMG/ROLORH200.png";
 import "./Sliderflapc100.css";
 import { Container, Row, Col, Card, Image } from "react-bootstrap";
 import icon1 from "./SliderflapIMG/Sliderflapicons/2ywarranty.png";
-import icon2 from "./SliderflapIMG/Sliderflapicons/Esunkitwarranty.png";
+import icon2 from "./SliderflapIMG/Sliderflapicons/6ywarranty.png";
 import icon3 from "./SliderflapIMG/Sliderflapicons/85percentage.png";
 
 const Sliderflapc100 = ({ isMobileView }) => {

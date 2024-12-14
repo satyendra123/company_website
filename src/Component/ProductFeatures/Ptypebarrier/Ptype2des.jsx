@@ -10,7 +10,9 @@ import Factory from "./PTYPEIMG/Factory.png";
 import qr from "./PTYPEIMG/qr.png";
 import p100 from "./PTYPEIMG/Ptypeintegration/P100.png";
 import p100dimension from "./PTYPEIMG/Ptypedimension/p100dimension.png";
-
+import ptype1 from "./PTYPEIMG/Midea/p1.png";
+import ptype2 from "./PTYPEIMG/Midea/p2.png";
+import ptype3 from "./PTYPEIMG/Midea/p3.png";
 import keyspecies1 from './PTYPEIMG/key_species/Keyspecies_1.png'
 import keyspecies2 from './PTYPEIMG/key_species/Keyspecies_2.png'
 import keyspecies3 from './PTYPEIMG/key_species/Keyspecies_3.png'
@@ -47,17 +49,15 @@ const testimonials = [
 ];
 const mediaimg = [
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: ptype1,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3994.png",
+    img: ptype2,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: ptype3,
   },
-  {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
-  },
+ 
 ];
 
 const Ptype2des = () => {

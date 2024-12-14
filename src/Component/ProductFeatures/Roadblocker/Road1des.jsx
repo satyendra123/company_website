@@ -7,6 +7,14 @@ import Parkinglots from "./ROADIMG/Parkinglots.png";
 import Embasies from "./ROADIMG/Embasies.png";
 import Toll from "./ROADIMG/Toll.png";
 import Factory from "./ROADIMG/Factory.png";
+import roadblocker1 from "./ROADIMG/Midea/b1.png"
+import roadblocker2 from "./ROADIMG/Midea/b2.png"
+
+import roadblocker3 from "./ROADIMG/Midea/b3.png"
+
+import roadblocker4 from "./ROADIMG/Midea/road blocker.png"
+
+
 
 import RockerB380dimention from "./ROADIMG/Roadblockdimension/RockerB380.jpg";
 
@@ -39,16 +47,16 @@ const testimonials = [
 ];
 const mediaimg = [
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: roadblocker1 ,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3994.png",
+    img: roadblocker2,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: roadblocker3,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: roadblocker4,
   },
 ];
 
@@ -77,7 +85,7 @@ const Road1des = () => {
       <div className="card2 ">
         <div className="card-body text-center">
           <div className="p-3">
-            <h4 className="card-title mb-4 custom-left fw-semibold">Rocker B380</h4>
+            <h4 className="card-title mb-4 custom-left fw-semibold">RADO B380</h4>
             <div className="row  mb-5">
               <div className="col-md-4 col-12 ">
                 <p className="leftside_top_text">Power Consumption</p>

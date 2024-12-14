@@ -76,7 +76,7 @@ const Crash4des = () => {
       <div className="card2 ">
         <div className="card-body text-center">
           <div className="p-3">
-            <h4 className="card-title mb-4 custom-left fw-semibold"> CRB350</h4>
+            <h4 className="card-title mb-4 custom-left fw-semibold"> CERA 350</h4>
             <div className="row  mb-5">
               <div className="col-md-4 col-12 ">
                 <p className="leftside_top_text">Power Supply</p>
@@ -252,8 +252,7 @@ The height of the gate is 1020 mm (40.15 inches),
               <div className="row ">
                 <div className="Integrationcardimg">
                   <img
-                    src="/image/Product_images/Integrationoptions_img/bollard_integration.png"
-                    className="img-fluid main-image" style={{width:"70%", marginLeft:"80px"}}
+src="/image/Product_images/Integrationoptions_img/Roadbreaker_integration.png"                    className="img-fluid main-image" style={{width:"70%", marginLeft:"80px"}}
                     alt="Measurement Icon"
                   />
                 </div>

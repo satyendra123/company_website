@@ -14,7 +14,8 @@ const Anpr1 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">EE2010M</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Redefine Surveillance with Precision and Mobility
+              </h6>
             </Col>
           </Row>
 
@@ -26,7 +27,8 @@ const Anpr1 = ({ isMobileView }) => {
               comprehensive surveillance.
               </p>
             </Col>
-
+ <Col md={1}>
+            </Col>
             {/* Image */}
             <Col md={3} className="text-center">
               <Image

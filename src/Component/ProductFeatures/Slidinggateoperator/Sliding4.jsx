@@ -14,16 +14,15 @@ const Sliding4 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">TURBO</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>The Ultimate Choice for Industrial Gate Automation
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              TURBO is a heavy-duty Electro-Mechanical Sliding Gate Operator
-              designed for large industrial gates, capable of handling up to
-              4000 Kg.
+            The Turbo Series sets a new benchmark for industrial-grade sliding gate operators. Designed for large industrial gates, it features an electro-mechanical system capable of handling gate weights of up to 4,000 kg, ensuring smooth and dependable operation even in the most demanding environments.
               </p>
             </Col>
             <Col md={1}>

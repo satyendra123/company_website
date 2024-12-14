@@ -9,7 +9,10 @@ import Toll from "./TYREIMG/Toll.png";
 import tyredimesnions from './TYREIMG/tyredimesnions.png'
 import Factory from "./TYREIMG/Factory.png";
 import qr from "./TYREIMG/qr.png";
-
+import tyrekiller1 from "./TYREIMG/Midea/TK1.png";
+import tyrekiller2 from "./TYREIMG/Midea/TK2.png";
+import tyrekiller3 from "./TYREIMG/Midea/TK3.png";
+import tyrekiller4 from "./TYREIMG/Midea/tyre killer.png";
 import keyspecies from "./TYREIMG/key_species_1/key_species_1.png";
 import keyspecies2 from "./TYREIMG/key_species_1/Keyspecies_2.png";
 import keyspecies3 from "./TYREIMG/key_species_1/keyspecies3.png";
@@ -37,16 +40,16 @@ const testimonials = [
 ];
 const mediaimg = [
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: tyrekiller1 ,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3994.png",
+    img: tyrekiller2,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img:tyrekiller3,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: tyrekiller4,
   },
 ];
 const Bollard4des = () => {
@@ -76,7 +79,7 @@ const Bollard4des = () => {
       <div className="card2 ">
         <div className="card-body text-center">
           <div className="p-3">
-            <h4 className="card-title mb-4 custom-left fw-semibold">CRB350</h4>
+            <h4 className="card-title mb-4 custom-left fw-semibold">CERA350</h4>
             <div className="row  mb-5">
             <div className="col-md-4 col-12 ">
                 <p className="leftside_top_text">Power Consumption</p>
@@ -94,6 +97,8 @@ const Bollard4des = () => {
                 <p className="rightside_second_text">25-50 Ton</p>
                 <p className="rightside_top_text">Opening Speed</p>
                 <p className="rightside_second_text">5-10 sec Customizable</p>
+                <p className="rightside_top_text">Dimension</p>
+                <p className="rightside_second_text">3000 * 290 * 430</p>
               </div>
             </div>
 {/*start specs */}

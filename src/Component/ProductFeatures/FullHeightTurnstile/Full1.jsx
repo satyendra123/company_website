@@ -14,15 +14,16 @@ const Full1 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">FULL HEIGHT 1100</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>The Gateway to Seamless Entry and Exit
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Features electromechanical safeguards to prevent dual access and a
-              quiet hydraulic shock absorber for seamless, hushed operation.
+            Engineered with advanced electromechanical safeguards, this model ensures controlled access with precision. Its integrated hydraulic shock absorber delivers quiet, smooth operation, enhancing user experience while maintaining robust security.
+
               </p>
             </Col>
             <Col md={1}>

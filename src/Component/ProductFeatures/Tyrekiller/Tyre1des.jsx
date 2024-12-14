@@ -4,6 +4,11 @@ import road1des from "./TYREIMG/ROCKER B380.png";
 import React, { useRef, useEffect } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import Parkinglots from "./TYREIMG/Parkinglots.png";
+import tyrekiller1 from "./TYREIMG/Midea/TK1.png";
+import tyrekiller2 from "./TYREIMG/Midea/TK2.png";
+import tyrekiller3 from "./TYREIMG/Midea/TK3.png";
+import tyrekiller4 from "./TYREIMG/Midea/tyre killer.png";
+
 
 import Embasies from "./TYREIMG/Embasies.png";
 import Toll from "./TYREIMG/Toll.png";
@@ -38,16 +43,16 @@ const testimonials = [
 ];
 const mediaimg = [
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: tyrekiller1 ,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3994.png",
+    img: tyrekiller2,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img:tyrekiller3,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: tyrekiller4,
   },
 ];
 
@@ -76,7 +81,7 @@ const Road1des = () => {
       <div className="card2 ">
         <div className="card-body text-center">
           <div className="p-3">
-            <h4 className="card-title mb-4 custom-left fw-semibold">Rocker B380</h4>
+            <h4 className="card-title mb-4 custom-left fw-semibold">RADO B380</h4>
             <div className="row  mb-5">
               <div className="col-md-4 col-12 ">
                 <p className="leftside_top_text">Power Consumption</p>
@@ -94,6 +99,8 @@ const Road1des = () => {
                 <p className="rightside_second_text">25-50 Ton</p>
                 <p className="rightside_top_text">Opening Time</p>
                 <p className="rightside_second_text">3-6 sec Customizable</p>
+                <p className="rightside_top_text">Dimension</p>
+                <p className="rightside_second_text">3000 * 290 * 430</p>
               </div>
             </div>
 

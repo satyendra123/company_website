@@ -14,16 +14,18 @@ const FlaptileR180 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">FLAPTILE R180</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Advanced Security and Swift Pedestrian Flow
+
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Fitted with five pairs of infrared sensors, this access control
-              barrier manages high traffic effortlessly, allowing versatile lane
-              setups.
+            Optimize your security and pedestrian management with the FlapTile R100. Equipped with advanced optical sensors to prevent unauthorized access, its retractable triangular wing ensures rapid, unhindered movement for high-traffic areas.
+
+
               </p>
             </Col>
 

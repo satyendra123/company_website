@@ -13,14 +13,16 @@ const Swingbarrierc150 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">FLAPTILE SW1180</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Elegance Meets Efficiency for Prestigious Spaces
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Introducing Houston’s Innovation Hub’s time-tested marvel: Automatic Vehicle Barrier Gates, trusted worldwide. Merging artisanal craftsmanship with state-of-the-art tech,management. Explore our world of innovation and delve into the purpose-built VEGA.
+            A true blend of refinement and functionality, the SwingTile SW 1180 is crafted for luxury entrances such as banks, corporate offices, and high-end establishments. Its seamless integration with access systems and premium design make it a statement of sophistication and reliability.
+
               </p>
             </Col>
             <Col md={1}>

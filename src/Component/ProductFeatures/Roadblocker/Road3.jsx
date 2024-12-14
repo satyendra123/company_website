@@ -13,17 +13,17 @@ const Road3 = ({ isMobileView }) => {
         <Card.Body>
           <Row className="text-center">
             <Col>
-              <h4 className="fw-bold">AXER B200</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h4 className="fw-bold">TITAN B200</h4>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Heavy-Duty Protection, Instant Immobilization—Safety at Every Entrance.
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
               <p className="text-justify">
-              Crafted from robust, heavy-duty blades to swiftly immobilize
-              intruding vehicles by targeting their suspension, axle, and wheels
-              on the spot.
+              The Axer B200 combines heavy-duty steel construction with a streamlined design to swiftly immobilize intruding vehicles by disabling their axles, suspension, and wheels. An ideal solution for advanced security needs.
+
               </p>
             </Col>
 

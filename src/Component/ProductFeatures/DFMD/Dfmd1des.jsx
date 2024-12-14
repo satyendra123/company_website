@@ -10,6 +10,12 @@ import gov_buldings from "./DFMDIMG/gov_buldings.png";
 import qr from "./DFMDIMG/qr.png";
 import dfmd2030dimension from "./DFMDIMG/Dfmddimension/dfmd2030dimension.png";
 
+// import dfmd_1 from './DFMDIMG/Midea/DFMD1.png'
+import dfmd2 from './DFMDIMG/Midea/DFMD2.png'
+import dfmd3 from './DFMDIMG/Midea/DFMD3.png'
+import dfmd4 from './DFMDIMG/Midea/DFMD4.png'
+
+
 import keyspecies from "./DFMDIMG/key_species/Keyspecies_1.png";
 import keyspecies2 from "./DFMDIMG/key_species/Keyspecies_2.png";
 import keyspecies3 from "./DFMDIMG/key_species/Keyspecies_3.png";
@@ -36,18 +42,19 @@ const testimonials = [
   },
 ];
 const mediaimg = [
+  // {
+  //   img: dfmd_1,
+  // },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: dfmd2,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3994.png",
+    img: dfmd3,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: dfmd4,
   },
-  {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
-  },
+
 ];
 
 const Dfmd1des = () => {

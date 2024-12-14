@@ -14,18 +14,16 @@ const Turnerc250 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">TURNER C250</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Enhanced Accessibility for Modern Environments
+
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Experience enhanced user-friendliness with transparent tempered
-              glass and color-changing indicator.Complements swing gates for
-              accommodating larger items like wheelchairs, bicycles, and
-              strollers
-              </p>
+            Discover unparalleled user convenience with the Turner c250, featuring transparent tempered glass panels and an intuitive color-changing indicator for clear visual guidance. Designed to work seamlessly alongside swing gates, it ensures smooth access for larger items, including wheelchairs, bicycles, and strollers, while maintaining top-tier security.</p>
             </Col>
             <Col md={1}>
             </Col>

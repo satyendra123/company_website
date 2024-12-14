@@ -14,16 +14,15 @@ const Full4 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">FULL HEIGHT 2000</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Optimized for Security and Space Efficiency
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Combines dual rotors for space efficiency without sacrificing
-              security. Its stainless steel construction guarantees durability
-              for indoor and outdoor use.
+            The Full Height 2000 integrates dual rotors for enhanced space management without compromising on safety. Designed with durable stainless steel, it ensures reliable performance in both indoor and outdoor environments, making it a versatile solution for modern access control needs.
               </p>
             </Col>
             <Col md={1}>

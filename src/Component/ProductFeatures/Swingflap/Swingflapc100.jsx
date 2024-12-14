@@ -13,14 +13,15 @@ const Swingbarrierc100 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">FLAPTILE SW1080</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Sleek Performance for High-Traffic Excellence
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              The streamlined design seamlessly integrates into various settings while offering advanced functionalities. Furthermore, it includes close-protection safety measures necessary for handling mixed traffic. These barriers are engineered with precise speed control and optimization for barrier gate operation.
+            The SwingTile SW 1080 offers a perfect synergy of modern design and high-speed operation, making it an excellent choice for bustling areas. Its streamlined appearance and advanced security features ensure effortless access and a polished user experience.
               </p>
             </Col>
             <Col md={1}>

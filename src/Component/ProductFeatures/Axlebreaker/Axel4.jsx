@@ -13,17 +13,15 @@ const Axel4 = ({ isMobileView }) => {
         <Card.Body>
           <Row className="text-center">
             <Col>
-              <h4 className="fw-bold">CRB350</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h4 className="fw-bold">CRB 350</h4>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Reliable Strength, Unmatched Security—Your First Line of Defense</h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
               <p className="text-justify">
-              Precision-engineered to deliver unrivaled anti-terrorist defense,
-              ensuring the utmost security and peace of mind for your valuable
-              assets and surroundings.
+              Precision-crafted to provide unmatched anti-terrorist protection, the CRB350 delivers robust defense, ensuring the highest level of security for critical assets and environments. Its advanced design offers peace of mind and dependable performance in high-risk zones.
               </p>
             </Col>
             <Col md={1}>

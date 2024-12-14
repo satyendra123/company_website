@@ -13,19 +13,15 @@ const Axel2 = ({ isMobileView }) => {
         <Card.Body>
           <Row className="text-center">
             <Col>
-              <h4 className="fw-bold">TYRE K1100</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h4 className="fw-bold">KETO K1100</h4>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Unstoppable Security, Seamless Control—The Power to Halt with Precision</h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
               <p className="text-justify">
-              Introducing Houston’s Innovation Hub’s time-tested marvel:
-              Automatic Vehicle Barrier Gates, trusted worldwide. Merging
-              artisanal craftsmanship with state-of-the-art tech,management.
-              Explore our world of innovation and delve into the purpose-built
-              VEGA.
+              Experience superior perimeter security with the Tyre Killer K1100, designed to stop unauthorized vehicles in their tracks with precision. Its high-durability structure ensures efficient wheel and rim immobilization, even during power outages.
               </p>
             </Col>
             <Col md={1}>
@@ -39,7 +35,7 @@ const Axel2 = ({ isMobileView }) => {
               />
             </Col>
 
-            <Col md={1} className="d-flex flex-column align-items-center">
+            <Col md={2} className="d-flex flex-column align-items-center">
   <div className="d-flex flex-column align-items-center">
     <Image src={icon1} alt="Warranty" className="mb-1" />
     <span className="text-center" style={{ fontSize: "8.5px" }}>Year Warranty</span>

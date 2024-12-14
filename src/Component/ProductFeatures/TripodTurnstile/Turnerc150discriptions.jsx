@@ -3,6 +3,10 @@ import { Autoplay, Navigation } from "swiper/modules";
 import Turnerdf150 from "./Tripodimg/turnerc150.png";
 import React, { useRef, useEffect } from "react";
 
+import Tipode1 from "./Tripodimg/Midea/g1.png";
+import Tipode2 from "./Tripodimg/Midea/g2.png";
+import Tipode3 from "./Tripodimg/Midea/g3.png";
+import Tipode4 from "./Tripodimg/Midea/g4.png";
 
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 
@@ -52,16 +56,16 @@ const testimonials = [
 ];
 const mediaimg = [
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: Tipode1,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3994.png",
+    img: Tipode2,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: Tipode3,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: Tipode4,
   },
 ];
 

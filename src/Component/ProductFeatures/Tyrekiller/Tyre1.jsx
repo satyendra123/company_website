@@ -13,17 +13,16 @@ const Tyre1 = ({ isMobileView }) => {
         <Card.Body>
           <Row className="text-center">
             <Col>
-              <h4 className="fw-bold">ROCKER B380</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h4 className="fw-bold">RADO B380</h4>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Fortify Access, Neutralize Threats—Unyielding Defense for High-Security Zones</h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
               <p className="text-justify">
-              Stands resolute against extreme Vehicle-Borne Improvised Explosive
-              Device (VBIED) attacks. Engineered to fortify critical sites and
-              infrastructure.
+              Engineered to withstand extreme Vehicle-Borne Improvised Explosive Device (VBIED) threats, the K-10 Wedge Barrier provides unparalleled protection for critical infrastructure and high-security facilities. Its robust design ensures ultimate reliability for safeguarding entry points.
+
               </p>
             </Col>
             <Col md={1}>

@@ -14,16 +14,16 @@ const Sliding3 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">SOLARI</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Powering High-Traffic Commercial Gates with Ease
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
              <p className="text-justify">
-              Engineered for high-traffic commercial settings, SOLARI sliding
-              gate operator boasts heavy-duty capabilities, accommodating
-              weights of up to 2500 Kg.
+             The Solari Series is engineered specifically for high-traffic commercial settings, offering heavy-duty performance and exceptional reliability. This robust sliding gate operator is capable of accommodating gates with a maximum weight of 2,500 kg, making it an ideal choice for busy commercial properties.
+
               </p>
             </Col>
             <Col md={1}>

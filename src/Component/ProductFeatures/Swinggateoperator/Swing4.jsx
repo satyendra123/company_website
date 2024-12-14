@@ -14,15 +14,15 @@ const Swing4 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">OLEO</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Versatile Gate Automation for Every Requirement
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Choose between single or dual-wing operation modes with these
-              versatile gate actuators, customising as per requirements.
+            Unlock seamless gate control with OLEO, the ultimate solution for modern automation. Whether you need single-wing or dual-wing operation, OLEO adapts effortlessly to meet your specific requirements. Engineered for precision and reliability, this versatile gate actuator ensures smooth and secure functionality, making it the ideal choice for residential
               </p>
             </Col>
             <Col md={1}>

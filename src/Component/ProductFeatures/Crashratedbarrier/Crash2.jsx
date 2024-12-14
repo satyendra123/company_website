@@ -13,17 +13,16 @@ const Crash2 = ({ isMobileView }) => {
         <Card.Body>
           <Row className="text-center">
             <Col>
-              <h4 className="fw-bold">TYRE K1100</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h4 className="fw-bold">KETO K1100</h4>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Unstoppable Security, Seamless Control—The Power to Halt with Precision.</h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
               <p className="text-justify">
-              Designed for high-security entrances, stopping vehicles swiftly
-              with wheel and rim damage. It's manually operable in power
-              outages.
+              Experience superior perimeter security with the Tyre Killer K1100, designed to stop unauthorized vehicles in their tracks with precision. Its high-durability structure ensures efficient wheel and rim immobilization, even during power outages.
+
               </p>
             </Col>
             <Col md={1}>

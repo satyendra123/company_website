@@ -11,7 +11,10 @@ import ee3070sdimention from "./AnprcameraIMG/anprdimension/ee3070s.jpeg";
 import anprintegration from "./AnprcameraIMG/anprintegration/anprintegration.png";
 import Factory from "./AnprcameraIMG/Factory.png";
 import qr from "./AnprcameraIMG/qr.png";
-
+import anpr_1 from './AnprcameraIMG/Midea/anpr1.png'
+import anpr_2 from './AnprcameraIMG/Midea/anpr2.png'
+import anpr3 from './AnprcameraIMG/Midea/anpr3.png'
+import anpr4 from './AnprcameraIMG/Midea/anpr4.png'
 import keyspecies1 from './AnprcameraIMG/key_species/Keyspecies_1.png'
 import keyspecies2 from './AnprcameraIMG/key_species/Keyspecies_2.png'
 import keyspecies3 from './AnprcameraIMG/key_species/Keyspecies_3.png'
@@ -36,17 +39,18 @@ const testimonials = [
 ];
 const mediaimg = [
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: anpr_1,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3994.png",
+    img: anpr_2,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: anpr3,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: anpr4,
   },
+
 ];
 
 const Anpr2des = () => {

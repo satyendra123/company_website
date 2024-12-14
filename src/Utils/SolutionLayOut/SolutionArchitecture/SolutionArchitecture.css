@@ -1,26 +1,27 @@
+.custom-container{
+  margin-top: 90px;
+}
+
 .solution-pms-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-end; /* Align items to the bottom */
   }
   
   .solution-pms-first_column {
     text-align: center;
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Push content to the bottom */
   }
   
   .solution-pms-description {
-    margin-top: 30px;
+    margin-top: 0px;
   }
   
   .solution-pms-img-fluid {
     width: 100%;
-    max-width: 692px;
     display: block;
+    height:100%;
   }
   
   .solution-pms-description-content {
@@ -34,7 +35,7 @@
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2); /* Increased blur radius */
     padding: 40px;
     border-radius: 40px;
-    margin: 20px auto; /* Center the box */
+    margin: 10px auto; /* Center the box */
     box-sizing: border-box;
     height: auto; /* Adjust the height */
   }

@@ -11,7 +11,12 @@ import Crb350dimention from "./ROADIMG/Roadblockdimension/Crb350.jpg";
 import Toll from "./ROADIMG/Toll.png";
 import Factory from "./ROADIMG/Factory.png";
 import qr from "./ROADIMG/qr.png";
+import roadblocker1 from "./ROADIMG/Midea/b1.png"
+import roadblocker2 from "./ROADIMG/Midea/b2.png"
 
+import roadblocker3 from "./ROADIMG/Midea/b3.png"
+
+import roadblocker4 from "./ROADIMG/Midea/road blocker.png"
 import keyspecies from "./ROADIMG/key_species_1/key_species_1.png";
 import keyspecies2 from "./ROADIMG/key_species_1/Keyspecies_2.png";
 import keyspecies3 from "./ROADIMG/key_species_1/keyspecies3.png";
@@ -39,16 +44,16 @@ const testimonials = [
 ];
 const mediaimg = [
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: roadblocker1 ,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3994.png",
+    img: roadblocker2,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: roadblocker3,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: roadblocker4,
   },
 ];
 
@@ -77,7 +82,7 @@ const Road4des = () => {
       <div className="card2 ">
         <div className="card-body text-center">
           <div className="p-3">
-            <h1 className="card-title mb-4 custom-left text-uppercase">CRB350</h1>
+            <h1 className="card-title mb-4 custom-left text-uppercase">CERA 350</h1>
             <div className="row  mb-5">
               <div className="col-md-4 col-12 ">
                 <p className="leftside_top_text">Power Supply</p>

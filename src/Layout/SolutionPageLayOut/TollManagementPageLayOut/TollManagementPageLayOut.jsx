@@ -5,6 +5,7 @@ import Architecture from "../../../Component/Solution/TollManagement/Architectur
 import SolutionProduct from "../../../Component/Solution/TollManagement/SolutionProduct/SolutionProduct";
 import YoutubeAd from "../../../Component/Solution/TollManagement/YoutubeAd/YoutubeAd";
 import SolutionType from "../../../Component/Solution/TollManagement/SolutionType/SolutionType";
+import TollEsolution from "../../../Component/Solution/TollManagement/TollEsolution/TollEsolution";
 import SolutionContactUs from "../../../Component/Solution/TollManagement/SolutionContactUs/SolutionContactUs";
 import FeaturedPostAndTrending from "../../../Component/Solution/TollManagement/FeaturedPostAndTrending/FeaturedPostAndTrending";
 const TollManagementPageLayOut = () => {
@@ -13,6 +14,7 @@ const TollManagementPageLayOut = () => {
       <Banner />
       <YoutubeAd />
       <SolutionType />
+      <TollEsolution/>
       <Architecture />
       <SolutionProduct />
       <CaseStudies />

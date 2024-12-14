@@ -10,7 +10,7 @@ const SolutionLayOutProduct = ({ products }) => {
           <div className="col-md-4 mb-4" key={index}>
             <div className="solution-pms-card shadow-sm h-100 product-card">
               <img
-                src={product.image} // Use image path from props
+                src={product.image}
                 className="card-img-top"
                 alt={product.title}
               />

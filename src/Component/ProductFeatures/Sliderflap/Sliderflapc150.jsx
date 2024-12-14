@@ -3,7 +3,7 @@ import Turner150 from "./SliderflapIMG/SUTORH180.png";
 import "./Sliderflapc100.css";
 import { Container, Row, Col, Card, Image } from "react-bootstrap";
 import icon1 from "./SliderflapIMG/Sliderflapicons/2ywarranty.png";
-import icon2 from "./SliderflapIMG/Sliderflapicons/Esunkitwarranty.png";
+import icon2 from "./SliderflapIMG/Sliderflapicons/6ywarranty.png";
 import icon3 from "./SliderflapIMG/Sliderflapicons/85percentage.png";
 
 const Sliderflapc150 = ({ isMobileView }) => {
@@ -14,14 +14,18 @@ const Sliderflapc150 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold text-uppercase">flaptile sl1280</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Sophistication in Security and Seamless Integration
+
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Introducing Houston’s Innovation Hub’s time-tested marvel: Automatic Vehicle Barrier Gates, trusted worldwide. Merging artisanal craftsmanship with state-of-the-art tech,management. Explore our world of innovation and delve into the purpose-built VEGA.
+            Engineered for superior pedestrian control, the SlideTile SL 1310 offers versatile access management with multiple control options. This high-security barrier guarantees a smooth, secure, and stylish passage, tailored to meet the demands of modern environments.
+
+
               </p>
             </Col>
             <Col md={1}>

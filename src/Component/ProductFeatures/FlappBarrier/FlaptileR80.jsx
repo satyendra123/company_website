@@ -15,16 +15,15 @@ const FlaptileR80 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">FLAPTILE R80</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>High-Traffic Efficiency with Precision Control
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Fitted with five pairs of infrared sensors, this access control
-              barrier manages high traffic effortlessly, allowing versatile lane
-              setups.
+            Designed for heavy footfall, the FlapTile R80 is equipped with five pairs of infrared sensors for precise detection, enabling efficient management of busy access points. Its versatile lane configuration makes it suitable for diverse applications.
               </p>
             </Col>
             <Col md={1}>

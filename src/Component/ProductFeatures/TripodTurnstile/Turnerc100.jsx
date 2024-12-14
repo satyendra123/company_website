@@ -13,16 +13,16 @@ const Turnerc100 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">TURNER C100</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Your Gateway to Efficient Access Control
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
               <p className="text-justify">
-              A seamless stainless steel bridge design with robust mechanics and
-              intelligent controls. Ideal for heavy use,it effortlessly
-              integrates into any access control system.
+              Experience a stainless-steel bridge turnstile engineered for durability, reliability, and seamless integration with modern access control systems. Ideal for high-traffic environments, the Turner c100 combines robust mechanics with intelligent controls for a user-friendly and secure entry solution.
+
               </p>
             </Col>
             <Col md={1}>

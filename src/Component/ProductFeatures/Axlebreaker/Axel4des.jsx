@@ -74,7 +74,7 @@ const Axel4des = () => {
       <div className="card2 ">
         <div className="card-body text-center">
           <div className="p-3">
-            <h1 className="card-title mb-4 custom-left">CRB350</h1>
+            <h1 className="card-title mb-4 custom-left">CRB 350</h1>
             <div className="row  mb-5">
             <div className="col-md-4 col-12 ">
                 <p className="leftside_top_text">Power Consumption</p>

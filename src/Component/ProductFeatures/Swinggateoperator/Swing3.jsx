@@ -14,16 +14,20 @@ const Swing3 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">VIPER</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Undeniable Strength for Underground Gate Systems
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Residential swing gate motor with underground installation,
-              standard 110° opening. Compact design, robust mechanism for
-              smooth, stable operation.
+            Take your gate automation to the next level with VIPER's cutting-edge technology. 
+            Tailored for residential swing gates,
+             this motor features an underground installation and a standard 110° opening angle.
+             
+              VIPER’s robust mechanism ensures stable and secure operation, blending sophistication with functionality.
+
               </p>
             </Col>
             <Col md={1}>

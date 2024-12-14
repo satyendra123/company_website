@@ -14,16 +14,14 @@ const Dfmd4 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">DF3310M</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Precision Security for High-Stakes Environments</h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Achieve maximum pinpoint accuracy as it triggers simultaneous
-              alarms from multiple zones, making it the ultimate choice for
-              high-security environments where precision matters.
+            The DF3310M Walkthrough Metal Detector delivers unmatched accuracy with its advanced multi-zone detection technology. By triggering simultaneous alarms across multiple zones, it ensures pinpoint precision, making it the ultimate choice for high-security environments where reliability and accuracy are paramount.
               </p>
             </Col>
             <Col md={1}>

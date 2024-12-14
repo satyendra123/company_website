@@ -6,9 +6,11 @@ import React, { useRef, useEffect } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 
 import c250dimension from "./Tripodimg/tripodonedimension/turnerc250dimension.png";
-import Tipode1 from "./Tripodimg/Midea/tripod 1 1.png";
-import Tipode2 from "./Tripodimg/Midea/tripod 2 1.png";
-import Tipode3 from "./Tripodimg/Midea/tripod 3 1.png";
+import Tipode1 from "./Tripodimg/Midea/g1.png";
+import Tipode2 from "./Tripodimg/Midea/g2.png";
+import Tipode3 from "./Tripodimg/Midea/g3.png";
+import Tipode4 from "./Tripodimg/Midea/g4.png";
+
 import Turnerc250 from "./Tripodimg/Tripodintegration/TurnerC250.png";
 
 import a_park from "./Tripodimg/a_park.png";
@@ -60,6 +62,9 @@ const mediaimg = [
   },
   {
     img: Tipode3,
+  },
+  {
+    img: Tipode4,
   },
 ];
 

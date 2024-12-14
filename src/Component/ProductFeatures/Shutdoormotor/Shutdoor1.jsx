@@ -14,15 +14,16 @@ const Shutdoor1 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">ROLOR H200</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Precision and Power in Gate Automation
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Compact, powerful drives featuring integrated safety brakes for
-              seamless functionality and peace of mind
+            Optimize your automation experience with the ROLOR H200, a compact and powerful drive system engineered for seamless functionality. With integrated safety brakes, this innovative solution prioritizes reliability and peace of mind, making it ideal for residential and commercial applications.
+
               </p>
             </Col>
             <Col md={1}>

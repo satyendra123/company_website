@@ -18,6 +18,17 @@ import keyspecies2 from './AnprcameraIMG/key_species/Keyspecies_2.png'
 import keyspecies3 from './AnprcameraIMG/key_species/Keyspecies_3.png'
 import keyspecies4 from './AnprcameraIMG/key_species/Keyspecies_4.png'
 
+import anpr_1 from './AnprcameraIMG/Midea/anpr1.png'
+import anpr2 from './AnprcameraIMG/Midea/anpr2.png'
+import anpr3 from './AnprcameraIMG/Midea/anpr3.png'
+import anpr4 from './AnprcameraIMG/Midea/anpr4.png'
+
+
+
+
+
+
+
 const testimonials = [
   {
     name: "/image/Product_images/Accessories_img/anpracc1.png",
@@ -37,17 +48,18 @@ const testimonials = [
 ];
 const mediaimg = [
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: anpr_1,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3994.png",
+    img: anpr2,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: anpr3,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: anpr4,
   },
+
 ];
 
 const Anpr1des = () => {

@@ -14,15 +14,15 @@ const Shutdoor3 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">ROLLER H350</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Power and Precision for Industrial Access Control
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
             <p className="text-justify">
-              Engineered for seamless operation, it combines power and precision
-              to elevate access control in industrial settings.
+            Elevate your industrial access control with the ROLLER H350, a cutting-edge solution engineered for seamless and reliable operation. Designed to combine robust power with unmatched precision, the ROLLER H350 ensures optimal performance in even the most demanding industrial settings.
               </p>
             </Col>
             <Col md={1}>

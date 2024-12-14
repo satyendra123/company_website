@@ -13,16 +13,16 @@ const Ptype3 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">DROPARM D50</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Where Strength Meets Convenience.
+
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
               <p className="text-justify">
-              Built for high-traffic areas, its single-arm design ensures
-              durability and safety, allowing seamless access for authorized
-              individuals.
+              Perfect for high-traffic areas, the Drop Tile's robust single-arm design ensures unmatched durability and safety. It facilitates seamless access for authorized personnel while standing the test of time.
               </p>
             </Col>
             <Col md={1}>

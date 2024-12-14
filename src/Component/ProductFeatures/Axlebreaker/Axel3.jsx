@@ -13,19 +13,16 @@ const Axel3 = ({ isMobileView }) => {
         <Card.Body>
           <Row className="text-center">
             <Col>
-              <h4 className="fw-bold">AXER B200</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Welcome to the Doorways to the Convenience</h6>
+              <h4 className="fw-bold">TITAN B200</h4>
+              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Heavy-Duty Protection, Instant Immobilization—Safety at Every Entrance.
+              </h6>
             </Col>
           </Row>
 
           <Row className="align-items-center">
             <Col md={6}>
               <p className="text-justify">
-              Introducing Houston’s Innovation Hub’s time-tested marvel:
-              Automatic Vehicle Barrier Gates, trusted worldwide. Merging
-              artisanal craftsmanship with state-of-the-art tech,management.
-              Explore our world of innovation and delve into the purpose-built
-              VEGA.
+              The Axer B200 combines heavy-duty steel construction with a streamlined design to swiftly immobilize intruding vehicles by disabling their axles, suspension, and wheels. An ideal solution for advanced security needs.
               </p>
             </Col>
             <Col md={1}>

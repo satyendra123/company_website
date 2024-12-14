@@ -1,36 +1,54 @@
-import React from "react";
-import SolutionLayOutType from '../../../../Utils/SolutionLayOut/SolutionLayOutType/SolutionLayOutType';
+import React from 'react';
+import { Container, Row, Col, Card } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const SolutionType = () => {
-  const solutionTypes = [
-    {
-      className: "On-Street",
-      title: "Electronic Toll Collection System",
-      description: "Electronic Toll Collection (ETC) is a system that allows toll payments to be made electronically, enabling smooth and almost nonstop toll collection while monitoring traffic. It works through vehicles with transponders (electronic tags) and uses wireless communication, sensors on the road or roadside, and a computerized system to identify each vehicle, collect tolls, and monitor traffic.",
-      dots: [1, 2, 3]
-    },
-    {
-      className: "Access-Readers",
-      title: "Weigh in Motion",
-      description: "Weigh in Motion (WIM) is a fixed-scale system that weighs vehicles in motion. It is unmanned, non-intrusive, and automatically collects and sends real-time data to a central system.",
-      dots: [1, 2, 3]
-    },
-    {
-      className: "Off-Street",
-      title: "Automatic Vehicle Classification",
-      description: "Housys' AVC uses infrared sensor technology for high accuracy, low maintenance, and cost efficiency. It's designed to handle increasing traffic flow without extra costs.",
-      dots: [1, 2, 3]
-    },
-    {
-      className: "ParkSIM",
-      title: "ANPR based toll management system",
-      description: "Houston Systems Pvt. Ltd. presents a machine learning-based Automatic Number Plate Recognition (ANPR) system designed for efficient toll tax collection.",
-      dots: [1, 2, 3]
-    }
-  ];
+function SolutionType() {
   return (
-    <SolutionLayOutType solutionTypes={solutionTypes} />
+    <Container className="my-4">
+      <Row className="gx-4 mb-4">
+        <Col md={5} className="d-flex align-items-stretch">
+          <Card className="shadow" style={{ height: '324px' }}>
+            <Card.Body>
+              <Card.Title className="fw-bold text-center mt-5">A-Park</Card.Title>
+              <Card.Text className="m-auto p-5">
+              A-Park is an integrated system ideal for large parking areas, featuring entry and exit terminals with Manned and Automated Pay Stations for a seamless and convenient user experience.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+
+        <Col md={7}>
+          <Row className="gx-4 mb-4">
+            <Col md={12}>
+              <Card className="border shadow" style={{ height: '150px' }}>
+                <Card.Body>
+                  <Card.Title className="fw-bold text-center p-3">M-Park</Card.Title>
+                  <Card.Text className="m-auto pl-5 pr-5">
+                  M-Park is a versatile parking system tailored to custom needs, offering flexible solutions for both revenue-based and free parking with manned or unmanned options.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+
+          {/* Second Nested Row */}
+          <Row className="gx-4 gy-4">
+            {/* Off-Street PMS */}
+            <Col md={12}>
+              <Card className="shadow" style={{ height: '150px' }}>
+                <Card.Body>
+                  <Card.Title className="fw-bold text-center p-3">F-Park</Card.Title>
+                  <Card.Text className="m-auto pl-5 pr-5">
+                  F-Park is designed for on-street parking in urban areas, featuring flap lock models for improved management, secure revenue, and energy efficiency.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+    </Container>
   );
-};
+}
 
 export default SolutionType;

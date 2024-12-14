@@ -5,6 +5,7 @@ import Architecture from "../../../Component/Solution/MassTransitSolution/Archit
 import SolutionProduct from "../../../Component/Solution/MassTransitSolution/SolutionProduct/SolutionProduct";
 import YoutubeAd from "../../../Component/Solution/MassTransitSolution/YoutubeAd/YoutubeAd";
 import SolutionType from "../../../Component/Solution/MassTransitSolution/SolutionType/SolutionType";
+import MasstransitEsolution from "../../../Component/Solution/MassTransitSolution/MasstransitEsolution/MasstransitEsolution";
 import SolutionContactUs from "../../../Component/Solution/MassTransitSolution/SolutionContactUs/SolutionContactUs";
 import FeaturedPostAndTrending from "../../../Component/Solution/MassTransitSolution/FeaturedPostAndTrending/FeaturedPostAndTrending";
 
@@ -14,7 +15,7 @@ const MassTransitSolutionPageLayOut = () => {
       <Banner />
       <YoutubeAd />
       <SolutionType />
-
+      <MasstransitEsolution/>
       <Architecture />
       <SolutionProduct />
       <CaseStudies />
