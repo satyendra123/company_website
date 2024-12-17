@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -11,6 +11,14 @@ import identification from './../../PGSSOLUTIONIMG/identification.png';
 import tariff from './../../PGSSOLUTIONIMG/tariff.png';
 
 const Sensors = () => {
+  const [isMobileScreen, setIsMobileScreen] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobileScreen(window.innerWidth < 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const sliderSettings = {
     dots: false,
     infinite: true,
@@ -22,110 +30,87 @@ const Sensors = () => {
     arrows: false,
   };
 
+  const slidesData = [
+    {
+      title: 'Combi Sensors',
+      description:
+        'Ultrasonic sensor, mounted above each parking space, integrates with the indicator light to provide real-time parking space status',
+      image: Combisensor,
+      features: [
+        {
+          icon: identification,
+          text: 'Precisely detects vehicle presence and occupancy in parking spaces.',
+        },
+        {
+          icon: tariff,
+          text: 'Provides instant status updates to parking systems.',
+        },
+      ],
+    },
+    {
+      title: 'Split Sensor',
+      description:
+        'Ultrasonic sensor, mounted above each parking space, integrates with the indicator light to provide real-time parking space status',
+      image: Splitsensor,
+      features: [
+        {
+          icon: identification,
+          text: 'Precisely detects vehicle presence and occupancy in parking spaces.',
+        },
+        {
+          icon: tariff,
+          text: 'Provides instant status updates to parking systems.',
+        },
+      ],
+    },
+    {
+      title: 'Slot Indicator',
+      description:
+        'Ultrasonic sensor, mounted above each parking space, integrates with the indicator light to provide real-time parking space status',
+      image: Slotsensor,
+      features: [
+        {
+          icon: identification,
+          text: 'Precisely detects vehicle presence and occupancy in parking spaces.',
+        },
+        {
+          icon: tariff,
+          text: 'Provides instant status updates to parking systems.',
+        },
+      ],
+    },
+  ];
+
   return (
-    <>
-
-      <Container className="container">
-        <Slider {...sliderSettings}>
-          {/* Slide 1 */}
-          <div className="d-flex">
-            <div className="col-6 d-flex align-items-center">
+    <Container className="container">
+      <Slider {...sliderSettings}>
+        {slidesData.map((slide, index) => (
+          <div className="d-flex" key={index}>
+            <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex align-items-center`}>
               <div>
-                <h3 className="ml-4">Combi Sensors</h3>
-                <p>
-                Ultrasonic sensor, mounted above each parking space, integrates with the indicator light to provide real-time parking spacae status
-                </p>
+                <h3 className="ml-4">{slide.title}</h3>
+                <p>{slide.description}</p>
                 <div className="d-flex flex-column gap-3">
-                  <div className="d-flex align-items-center">
-                    <div className="image-circle">
-                      <img src={identification} alt="Identification" className="img-fluid" />
+                  {slide.features.map((feature, i) => (
+                    <div className="d-flex align-items-center" key={i}>
+                      <div className="image-circle">
+                        <img src={feature.icon} alt="feature-icon" className="img-fluid" />
+                      </div>
+                      <p className="ml-3">{feature.text}</p>
                     </div>
-                    <p className="ml-3">
-                    Precisely detects vehicle presence and occupancy in parking spaces.
-                    </p>
-                  </div>
-
-                  <div className="d-flex align-items-center">
-                    <div className="image-circle">
-                      <img src={tariff} alt="Tariff" className="img-fluid" />
-                    </div>
-                    <p className="ml-3">
-                    Provides instant status updates to parking  systems.
-                    </p>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>
-            <div className="col-6 d-flex justify-content-end align-items-center">
-              <img src={Combisensor} alt="Validator" className="img-fluid" style={{width:"50%"}} />
+            <div
+              className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-end align-items-center`}
+            >
+              <img src={slide.image} alt={slide.title} className="img-fluid" style={{ width: '50%' }} />
             </div>
           </div>
-
-          {/* Slide 2 (can be customized with different content) */}
-          <div className="d-flex">
-            <div className="col-6 d-flex align-items-center">
-              <div>
-                <h3 className="ml-4">Split Sensor</h3>
-                <p>
-                Ultrasonic sensor, mounted above each parking space, integrates with the indicator light to provide real-time parking spacae status
-                </p>
-                <div className="d-flex flex-column gap-3">
-                  <div className="d-flex align-items-center">
-                    <div className="image-circle">
-                      <img src={identification} alt="Identification" className="img-fluid" />
-                    </div>
-                    <p className="ml-3">Precisely detects vehicle presence and occupancy in parking spaces.</p>
-                  </div>
-
-                  <div className="d-flex align-items-center">
-                    <div className="image-circle">
-                      <img src={tariff} alt="Tariff" className="img-fluid" />
-                    </div>
-                    <p className="ml-3">Provides instant status updates to parking  systems.</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div className="col-6 d-flex justify-content-end align-items-center">
-              <img src={Splitsensor} alt="Validator" className="img-fluid" />
-            </div>
-          </div>
-
-           {/* Slide 3 (can be customized with different content) */}
-           <div className="d-flex">
-            <div className="col-6 d-flex align-items-center">
-              <div>
-                <h3 className="ml-4">Slot Indicator</h3>
-                <p>
-                Ultrasonic sensor, mounted above each parking space, integrates with the indicator light to provide real-time parking spacae status
-                </p>
-                <div className="d-flex flex-column gap-3">
-                  <div className="d-flex align-items-center">
-                    <div className="image-circle">
-                      <img src={identification} alt="Identification" className="img-fluid" />
-                    </div>
-                    <p className="ml-3">Precisely detects vehicle presence and occupancy in parking spaces.</p>
-                  </div>
-
-                  <div className="d-flex align-items-center">
-                    <div className="image-circle">
-                      <img src={tariff} alt="Tariff" className="img-fluid" />
-                    </div>
-                    <p className="ml-3">Provides instant status updates to parking  systems.</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div className="col-6 d-flex justify-content-end align-items-center">
-              <img src={Slotsensor} alt="Validator" className="img-fluid" />
-            </div>
-          </div>
-
-        </Slider>
-      </Container>
-    </>
+        ))}
+      </Slider>
+    </Container>
   );
 };
 

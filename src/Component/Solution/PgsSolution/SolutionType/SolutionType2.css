@@ -1,139 +1,18 @@
-.solution-pms-card-title {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    color: #000;
-    text-align: center;
-    margin-bottom: 20px;
+@media (max-width: 768px) {
+  /* Apply flex-direction column and gap to the main flex container */
+  .gx-4.mb-4.d-flex {
+    flex-direction: column !important;
+    gap: 50px !important;
   }
-  
-  .solution-pms-card-text,
-  .solution-pms-card-text1,
-  .solution-pms-card-text2,
-  .solution-pms-card-text3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 22px;
-    text-align: left;
-    padding-left: 30px;
-    margin-top: 20px;
-  }
-  
-  .solution-pms-card-text1 {
-    padding-left: 150px;
-    margin-top: 40px;
-  }
-  
-  .solution-pms-d-flex {
-    display: flex;
-    gap: 35px;
-    justify-content: space-between;
-  }
-  
-  .solution-pms-circle {
-    width: 70px;
-    height: 70px;
-    background-color: #fff;
-    border-radius: 50%;
-    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
-  }
-  
-  .solution-pms-card {
-    border-radius: 8px;
-    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
-    transition: all 0.3s ease-in-out;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .solution-pms-first-column {
-    min-height: 71.8vh;
-    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
-  }
-  
-  .On-Street {
-    margin-top: 50px;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 991.98px) {
-    .solution-pms-first-column {
-      height: auto;
-    }
-  
-    .solution-pms-second-column {
-      margin-top: 20px;
-    }
-  
-    .solution-pms-card-text,
-    .solution-pms-card-text1,
-    .solution-pms-card-text2,
-    .solution-pms-card-text3 {
-      padding-left: 15px;
-    }
-  
-    .solution-pms-d-flex {
-      gap: 15px;
-    }
-  
-    .solution-pms-circle {
-      width: 50px;
-      height: 50px;
-    }
-  }
-  
-  @media (max-width: 767.98px) {
-    .solution-pms-card-title {
-      font-size: 1.25rem;
-    }
-  
-    .solution-pms-card-text,
-    .solution-pms-card-text1,
-    .solution-pms-card-text2,
-    .solution-pms-card-text3 {
-      padding-left: 0;
-      text-align: center;
-    }
-  
-    .solution-pms-first-column,
-    .solution-pms-second-column,
-    .third-box,
-    .fourth-box {
-      padding: 10px;
-    }
-  
-    .solution-pms-d-flex {
-      gap: 10px;
-    }
-  
-    .solution-pms-circle {
-      width: 40px;
-      height: 40px;
-    }
-  }
-  
 
-  .solution-page-pms-main {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  /* Apply flex-direction column and gap to the nested flex containers */
+  .d-flex.align-items-stretch {
+    flex-direction: column !important;
+    gap: 40px !important;
   }
 
 
-  @media (max-width: 768px) {
-    .solution-page-pms-main {
-      display: block; /* Disable flex for mobile */
-    }
-  
-    .solution-pms-card {
-      width: 100%; /* Full width for mobile */
-      margin-bottom: 1.5rem; /* Spacing between cards */
-    }
+  .row {
+    gap: 30px !important;
   }
-
-
-  .w-park {
-    width: 40rem !important;
-  }
+}
