@@ -39,7 +39,7 @@ const Controller = () => {
             className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex align-items-center`}
           >
             <div>
-              <h3 className="ml-4">Parking Guidance Controllers</h3>
+              <h3 className="">Parking Guidance Controller</h3>
               <p>
                 The controller is the acquisition and control centre of the entire intelligent
                 Parking Guidance System. It updates real-time data on the parking guidance display,
@@ -47,7 +47,7 @@ const Controller = () => {
               </p>
               <div className="d-flex flex-column gap-3">
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img
                       src={identification}
                       alt="Identification"
@@ -58,7 +58,51 @@ const Controller = () => {
                 </div>
 
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
+                    <img src={tariff} alt="Tariff" className="img-fluid" />
+                  </div>
+                  <p className="ml-3">Ensures seamless real-time data processing.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-end align-items-center`}
+          >
+            <img
+              src={Wparkzonecontroller}
+              alt="Parking Guidance Controller"
+              className="img-fluid"
+              style={{ height:"200px" }}
+            />
+          </div>
+        </div>
+
+        <div className="d-flex">
+          <div
+            className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex align-items-center`}
+          >
+            <div>
+              <h3 className="">Parking Guidance Controller</h3>
+              <p>
+                The controller is the acquisition and control centre of the entire intelligent
+                Parking Guidance System. It updates real-time data on the parking guidance display,
+                enabling vehicle guidance functionality.
+              </p>
+              <div className="d-flex flex-column gap-3">
+                <div className="d-flex align-items-center">
+                  <div className="">
+                    <img
+                      src={identification}
+                      alt="Identification"
+                      className="img-fluid"
+                    />
+                  </div>
+                  <p className="ml-3">Manages and coordinates all system components.</p>
+                </div>
+
+                <div className="d-flex align-items-center">
+                  <div className="">
                     <img src={tariff} alt="Tariff" className="img-fluid" />
                   </div>
                   <p className="ml-3">Ensures seamless real-time data processing.</p>
@@ -78,85 +122,55 @@ const Controller = () => {
           </div>
         </div>
 
+        <div className="d-flex">
+          <div
+            className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex align-items-center`}
+          >
+            <div>
+              <h3 className="">Parking Guidance Controller</h3>
+              <p>
+                The controller is the acquisition and control centre of the entire intelligent
+                Parking Guidance System. It updates real-time data on the parking guidance display,
+                enabling vehicle guidance functionality.
+              </p>
+              <div className="d-flex flex-column gap-3">
+                <div className="d-flex align-items-center">
+                  <div className="">
+                    <img
+                      src={identification}
+                      alt="Identification"
+                      className="img-fluid"
+                    />
+                  </div>
+                  <p className="ml-3">Manages and coordinates all system components.</p>
+                </div>
+
+                <div className="d-flex align-items-center">
+                  <div className="">
+                    <img src={tariff} alt="Tariff" className="img-fluid" />
+                  </div>
+                  <p className="ml-3">Ensures seamless real-time data processing.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-end align-items-center`}
+          >
+            <img
+              src={Wparkzonecontroller}
+              alt="Parking Guidance Controller"
+              className="img-fluid"
+              style={{ width: '50%' }}
+            />
+          </div>
+        </div>
+
+
+
+
+
         {/* Slide 2 */}
-        <div className="d-flex">
-          <div
-            className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex align-items-center`}
-          >
-            <div>
-              <h3 className="ml-4">Automatic Barriers</h3>
-              <p>
-                Barriers with intelligent control ensure fast and secure parking access management
-                for vehicles.
-              </p>
-              <div className="d-flex flex-column gap-3">
-                <div className="d-flex align-items-center">
-                  <div className="image-circle">
-                    <img src={identification} alt="Identification" className="img-fluid" />
-                  </div>
-                  <p className="ml-3">Provides secure and efficient vehicle access control.</p>
-                </div>
-
-                <div className="d-flex align-items-center">
-                  <div className="image-circle">
-                    <img src={tariff} alt="Tariff" className="img-fluid" />
-                  </div>
-                  <p className="ml-3">Operates seamlessly with parking systems.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-end align-items-center`}
-          >
-            <img
-              src={barrier}
-              alt="Automatic Barriers"
-              className="img-fluid"
-              style={{ width: '50%' }}
-            />
-          </div>
-        </div>
-
-        {/* Slide 3 */}
-        <div className="d-flex">
-          <div
-            className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex align-items-center`}
-          >
-            <div>
-              <h3 className="ml-4">Pay Stations</h3>
-              <p>
-                Automated pay stations streamline payment processes with user-friendly interfaces and
-                reliable transaction management.
-              </p>
-              <div className="d-flex flex-column gap-3">
-                <div className="d-flex align-items-center">
-                  <div className="image-circle">
-                    <img src={identification} alt="Identification" className="img-fluid" />
-                  </div>
-                  <p className="ml-3">Supports multiple payment methods for convenience.</p>
-                </div>
-
-                <div className="d-flex align-items-center">
-                  <div className="image-circle">
-                    <img src={tariff} alt="Tariff" className="img-fluid" />
-                  </div>
-                  <p className="ml-3">Integrates seamlessly with parking management systems.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-end align-items-center`}
-          >
-            <img
-              src={Paystation}
-              alt="Pay Stations"
-              className="img-fluid"
-              style={{ width: '50%' }}
-            />
-          </div>
-        </div>
       </Slider>
     </Container>
   );

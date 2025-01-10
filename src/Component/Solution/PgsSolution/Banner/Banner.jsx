@@ -1,48 +1,29 @@
-import React from "react";
-import Banner from "../../../../Utils/Banner/Banner";
-import BannerImg1 from '../SolutionImages/Loop_Sensor.png';
-import BannerImg2 from '../SolutionImages/Loop_Sensor.png';
-import BannerImg3 from '../SolutionImages/PGSS2.png';
+import React, { useContext } from "react";
+import { SolutionContext } from '../../../../Context/PGSContext/Context'
+import "./SolutionBanner.css";
 
 const SolutionBanner = () => {
-  const bannerData = [
-    {
-      image: BannerImg1,
-      // subheading: "Subheading 1",
-      // heading: "Heading 1",
-      // description: "Description for banner 1",
-      // primaryLink: "#",
-      // primaryButton: "Learn More",
-      // secondaryLink: "#",
-      // secondaryButton: "Contact Us",
-    },
-    {
-      image: BannerImg2,
-      // subheading: "Subheading 2",
-      // heading: "Heading 2",
-      // description: "Description for banner 2",
-      // primaryLink: "#",
-      // primaryButton: "Learn More",
-      // secondaryLink: "#",
-      // secondaryButton: "Contact Us",
-    },
-    {
-      image: BannerImg3,
-      // subheading: "Subheading 3",
-      // heading: "Heading 3",
-      // description: "Description for banner 3",
-      // primaryLink: "#",
-      // primaryButton: "Learn More",
-      // secondaryLink: "#",
-      // secondaryButton: "Contact Us",
-    },
-  ];
+  const { bannerImageUrl } = useContext(SolutionContext); // Get the banner image URL from context
 
   return (
-    <div>
-      <Banner banners={bannerData} />
+    <div className="container-fluid carousel-header px-0">
+      <div id="carouselId" className="carousel slide" data-bs-ride="carousel">
+        <div className="carousel-inner" role="listbox">
+          <div className="carousel-item active">
+            <img
+              src={bannerImageUrl}
+              className="img-fluid d-block w-100"
+              alt="Banner"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default SolutionBanner;
+
+
+
+

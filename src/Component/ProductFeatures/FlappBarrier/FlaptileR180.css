@@ -1,0 +1,41 @@
+.description-col {
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 1rem; /* Add spacing below the description */
+  }
+  
+  .icons-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; /* Add spacing between icons */
+  }
+  
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px; /* Adjust the text size if needed */
+  }
+  
+  @media (max-width: 768px) {
+    .description-col {
+      text-align: justify;
+      margin-bottom: 1rem;
+    }
+  
+    .icons-col {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 1rem;
+    }
+  
+    .icon-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 8px;
+    }
+  }
+  

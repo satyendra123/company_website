@@ -1,6 +1,4 @@
-.custom-container{
-  margin-top: 90px;
-}
+
 
 .solution-pms-row {
     display: flex;
@@ -19,6 +17,7 @@
   }
   
   .solution-pms-img-fluid {
+    /* margin-top: -35px; */
     width: 100%;
     display: block;
     height:100%;

@@ -9,6 +9,14 @@ import Toll from "./ShutdoormotorIMG/shut3.png";
 import Factory from "./ShutdoormotorIMG/shut4.png";
 import qr from "./ShutdoormotorIMG/qr.png";
 
+import shut_1 from "../Shutdoormotor/ShutdoormotorIMG/media/d1 1.png";
+import shut_2 from "../Shutdoormotor/ShutdoormotorIMG/media/d2 1.png";
+import shut_3 from "../Shutdoormotor/ShutdoormotorIMG/media/d3 1.png";
+import shut_4 from "../Shutdoormotor/ShutdoormotorIMG/media/d4 1.png";
+
+
+
+
 import keyspecies1 from './ShutdoormotorIMG/key_species/Keyspecies_1.png'
 import keyspecies2 from './ShutdoormotorIMG/key_species/Keyspecies_2.png'
 import keyspecies3 from './ShutdoormotorIMG/key_species/Keyspecies_3.png'
@@ -30,18 +38,19 @@ const testimonials = [
 ];
 const mediaimg = [
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: shut_1,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3994.png",
+    img: shut_2,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img:shut_3,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: shut_4,
   },
 ];
+
 
 const Shutdoor3des = () => {
   useEffect(() => {

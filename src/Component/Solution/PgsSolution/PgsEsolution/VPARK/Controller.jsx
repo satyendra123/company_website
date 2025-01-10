@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './PgsEsolution.css';
 import Vparkcontroller from './../../PGSSOLUTIONIMG/Vparkcontroller.png';
+import Vparksoftware from './../../PGSSOLUTIONIMG/Vparksoftware.png';
 import barrier from './../../PGSSOLUTIONIMG/barrier.png';
 import Paystation from './../../PGSSOLUTIONIMG/Paystation.png';
 import identification from './../../PGSSOLUTIONIMG/identification.png';
@@ -37,13 +38,13 @@ const Controller = () => {
         <div className="d-flex">
           <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex align-items-center`}>
             <div>
-              <h3 className="ml-4">Parking Guidance Controllers</h3>
+              <h3 className="">Parking Guidance Controllers</h3>
               <p>
                 The controller is the acquisition and control centre of the entire intelligent Parking Guidance System. It updates real-time data on the parking guidance display, enabling vehicle guidance functionality.
               </p>
               <div className="d-flex flex-column gap-3">
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={identification} alt="Identification" className="img-fluid" />
                   </div>
                   <p className="ml-3">
@@ -52,7 +53,7 @@ const Controller = () => {
                 </div>
 
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={tariff} alt="Tariff" className="img-fluid" />
                   </div>
                   <p className="ml-3">
@@ -62,7 +63,7 @@ const Controller = () => {
               </div>
             </div>
           </div>
-          <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-end align-items-center`}>
+          <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-center align-items-center`}>
             <img src={Vparkcontroller} alt="Controller" className="img-fluid" />
           </div>
         </div>
@@ -71,13 +72,13 @@ const Controller = () => {
         <div className="d-flex">
           <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex align-items-center`}>
             <div>
-              <h3 className="ml-4">Parking Guidance Controllers</h3>
+              <h3 className="">Parking Guidance Controllers</h3>
               <p>
                 The controller is the acquisition and control centre of the entire intelligent Parking Guidance System. It updates real-time data on the parking guidance display, enabling vehicle guidance functionality.
               </p>
               <div className="d-flex flex-column gap-3">
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={identification} alt="Identification" className="img-fluid" />
                   </div>
                   <p className="ml-3">
@@ -86,7 +87,7 @@ const Controller = () => {
                 </div>
 
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={tariff} alt="Tariff" className="img-fluid" />
                   </div>
                   <p className="ml-3">
@@ -96,7 +97,7 @@ const Controller = () => {
               </div>
             </div>
           </div>
-          <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-end align-items-center`}>
+          <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-center align-items-center`}>
             <img src={Vparkcontroller} alt="Controller" className="img-fluid" />
           </div>
         </div>

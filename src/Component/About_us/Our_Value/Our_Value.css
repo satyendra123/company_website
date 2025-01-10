@@ -1,0 +1,150 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600&display=swap');
+
+/* Universal box-sizing for consistent dimensions */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Our Value Container */
+.our-value-container {
+  background-color: rgba(5, 138, 251, 0.1);
+  padding: 20px 50px;
+  border-radius: 10px;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  max-width: 100%; /* Ensure container doesn't overflow */
+}
+
+/* Our Value Section */
+.our-value-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Wrap items to prevent overflow */
+}
+
+/* Left Section */
+.our-value-left {
+  flex: 1;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.our-value-title.blue {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #058AFB;
+}
+
+.our-value-left-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 72px;
+  color: #000;
+}
+
+/* Right Section */
+.our-value-right {
+  flex: 2;
+  width: 60%;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Our Value Rows */
+.our-value-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* Wrap items within rows */
+  width: 100%; /* Ensure rows fit the container */
+}
+
+/* Individual Value Item */
+.our-value-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 1 calc(50% - 20px); /* Two columns with gaps */
+  max-width: calc(50% - 20px);
+  box-sizing: border-box;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.our-value-image img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Ensure image stays within its container */
+}
+
+.our-value-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  text-align: left;
+}
+
+.our-value-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+}
+
+/* Prevent horizontal scrolling */
+body {
+  overflow-x: hidden;
+}
+
+/* Responsive Adjustments */
+/* Responsive Adjustments for Mobile */
+@media (max-width: 768px) {
+  .our-value-container {
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+  }
+
+  .our-value-left {
+    width: 100%;
+    text-align: center; /* Center-align text for better mobile aesthetics */
+    margin-bottom: 20px; /* Add spacing between sections */
+  }
+
+  .our-value-right {
+    width: 100%;
+    margin-top: 0; /* Remove top margin for mobile view */
+  }
+
+  .our-value-row {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Add spacing between items */
+  }
+
+  .our-value-item {
+    max-width: 100%; /* Full width for mobile */
+    flex: none; /* Remove flex grow/shrink for uniform size */
+    text-align: center; /* Center-align text for better presentation */
+  }
+
+  .our-value-title {
+    text-align: center; /* Center the title */
+  }
+
+  .our-value-description {
+    text-align: center; /* Center the description text */
+  }
+}

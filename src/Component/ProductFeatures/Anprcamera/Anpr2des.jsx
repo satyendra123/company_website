@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import anpr2 from "./AnprcameraIMG/EE3070S.png";
-import React, { useRef, useEffect } from "react";
+import React, { useState,useRef, useEffect } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import Parkinglots from "./AnprcameraIMG/Parkinglots.png";
 import Embasies from "./AnprcameraIMG/Embasies.png";
@@ -54,6 +54,18 @@ const mediaimg = [
 ];
 
 const Anpr2des = () => {
+
+  const [isMobile, setIsMobile] = useState(false);
+            
+        useEffect(() => {
+          const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+          };
+          window.addEventListener("resize", handleResize);
+          handleResize();
+          return () => window.removeEventListener("resize", handleResize);
+        }, []);
+
   useEffect(() => {
     handleSlideChange();
   }, []);
@@ -101,59 +113,144 @@ const Anpr2des = () => {
               </div>
             </div>
 
-{/*start specs */}
-<div className="row align-items-center">
-  <div className="col-2">
-    <p className="key-specs-text">KEY SPECS.</p>
-  </div>
-  <div className="col-1">
-    <div className="vertical-border"></div>
-  </div>
-  <div className="col">
-    <div className="row justify-content-start g-3">
-      <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
-        <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
-          <img
-            src={keyspecies1}
-            className="img-fluid"
-            alt="Oil Icon"
-            style={{ maxWidth: "60px", maxHeight: "60px" }} // Adjust the max size of the image
-          />
+            <div className="row align-items-center">
+  {isMobile ? (
+    // Mobile Layout
+    <div className="row mb-3">
+      <h3 className="text-center font-bold" style={{ fontWeight: 550 }}>KEY SPECS</h3>
+      <div className="col-2">
+        <div
+          className="d-flex flex-column align-items-center"
+          style={{ width: "100%", height: "80px" }}
+        >
+          <div
+            className="cardimg d-flex justify-content-center align-items-center"
+            style={{ height: "100%" }}
+          >
+            <img
+              src={keyspecies1}
+              className="img-fluid"
+              alt="Oil Icon"
+              style={{ maxWidth: "40px", maxHeight: "40px" }}
+            />
+          </div>
         </div>
       </div>
-      <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
-        <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
-          <img
-            src={keyspecies2}
-            className="img-fluid"
-            alt="Gate Icon"
-            style={{ maxWidth: "60px", maxHeight: "60px" }}
-          />
+      <div className="col-1"></div> {/* Gap */}
+      <div className="col-2">
+        <div
+          className="d-flex flex-column align-items-center"
+          style={{ width: "100%", height: "80px" }}
+        >
+          <div
+            className="cardimg d-flex justify-content-center align-items-center"
+            style={{ height: "100%" }}
+          >
+            <img
+              src={keyspecies2}
+              className="img-fluid"
+              alt="Gate Icon"
+              style={{ maxWidth: "40px", maxHeight: "40px" }}
+            />
+          </div>
         </div>
       </div>
-      <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
-        <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
-          <img
-            src={keyspecies3}
-            className="img-fluid"
-            alt="Mechanism Icon"
-            style={{ maxWidth: "60px", maxHeight: "60px" }}
-          />
+      <div className="col-1"></div> {/* Gap */}
+      <div className="col-2">
+        <div
+          className="d-flex flex-column align-items-center"
+          style={{ width: "100%", height: "80px" }}
+        >
+          <div
+            className="cardimg d-flex justify-content-center align-items-center"
+            style={{ height: "100%" }}
+          >
+            <img
+              src={keyspecies3}
+              className="img-fluid"
+              alt="Mechanism Icon"
+              style={{ maxWidth: "40px", maxHeight: "40px" }}
+            />
+          </div>
         </div>
       </div>
-      <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
-        <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
-          <img
-            src={keyspecies4}
-            className="img-fluid"
-            alt="Measurement Icon"
-            style={{ maxWidth: "60px", maxHeight: "60px" }}
-          />
+      <div className="col-1"></div> {/* Gap */}
+      <div className="col-2">
+        <div
+          className="d-flex flex-column align-items-center"
+          style={{ width: "100%", height: "80px" }}
+        >
+          <div
+            className="cardimg d-flex justify-content-center align-items-center"
+            style={{ height: "100%" }}
+          >
+            <img
+              src={keyspecies4}
+              className="img-fluid"
+              alt="Measurement Icon"
+              style={{ maxWidth: "40px", maxHeight: "40px" }}
+            />
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  ) : (
+    // Desktop Layout
+    <>
+      <div className="col-2">
+        <p className="key-specs-text">KEY SPECS.</p>
+      </div>
+      <div className="col-1">
+        <div className="vertical-border"></div>
+      </div>
+      <div className="col">
+        <div className="row justify-content-start g-3">
+          <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
+            <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
+              <img
+                src={keyspecies1}
+                className="img-fluid"
+                alt="Oil Icon"
+                style={{ maxWidth: "60px", maxHeight: "60px" }}
+              />
+            </div>
+          </div>
+          <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
+            <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
+              <img
+                src={keyspecies2}
+                className="img-fluid"
+                alt="Gate Icon"
+                style={{ maxWidth: "60px", maxHeight: "60px" }}
+              />
+            </div>
+          </div>
+          <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
+            <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
+              <img
+                src={keyspecies3}
+                className="img-fluid"
+                alt="Mechanism Icon"
+                style={{ maxWidth: "60px", maxHeight: "60px" }}
+              />
+            </div>
+          </div>
+          <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
+            <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
+              <img
+                src={keyspecies4}
+                className="img-fluid"
+                alt="Measurement Icon"
+                style={{ maxWidth: "60px", maxHeight: "60px" }}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  )}
 </div>
+
 
 {/* start application  */}
 
@@ -205,51 +302,86 @@ const Anpr2des = () => {
   </div>
 {/* end application  */}
 
+
 <Container fluid className="py-4">
-              {/* Title */}
-              <Row className="justify-content-center">
-                <Col xs={12} className="text-center mb-4">
-                  <h4 className="fw-semibold">Dimension and Layout</h4>
-                </Col>
-              </Row>
+  {/* Title */}
+  <Row className="justify-content-center">
+    <Col xs={12} className="text-center mb-4">
+      <h4 className="fw-semibold">Dimension and Layout</h4>
+    </Col>
+  </Row>
 
-              {/* Main Content */}
-              <Row className="align-items-center">
-                {/* Left Column (Text Content) */}
-                <Col
-                  xs={12}
-                  md={6}
-                  className="text-center text-md-start mb-4 mb-md-0"
-                >
-                  <div
-                    className="p-4 shadow-sm"
-                    style={{ backgroundColor: "#f9f9f9" }}
-                  >
-                   <p style={{maxWidth: "300px"}}>
-        The Anpr camera showcases a Hikvision DS-2CD7A26G0P-IZHS8 2MP Ultra-Low Light Outdoor LPR Network Bullet Camera. The dimensions are provided in millimeters and inches. The camera features a cylindrical design with a mounting bracket. It has a lens with a diameter of 140 mm and a height of 236 mm. The overall dimensions of the camera are 351 mm in length and 151 mm in width.
-        </p>
-                  </div>
-                </Col>
+  {/* Main Content */}
+  <Row className="align-items-center">
+    {isMobile ? (
+      <>
+        {/* Image First */}
+        <div className="text-center mb-3">
+          <img
+            src={ee3070sdimention}
+            alt="Boom Barrier Diagram"
+            className="img-fluid"
+          />
+        </div>
+        {/* Text Content */}
+        <div className="text-center">
+          <div
+            className="p-4 shadow-sm"
+            style={{
+              backgroundColor: "#f9f9f9",
+              maxWidth: "300px",
+              margin: "0 auto",
+            }}
+          >
+            <p>
+            Houston's ANPR systems deliver precise vehicle access control, addressing challenges like varying lane configurations, high traffic density, lighting conditions, and plate diversity. Engineered for accuracy and adaptability, they ensure reliable performance even in demanding environments.
+            </p>
+          </div>
+        </div>
+      </>
+    ) : (
+      <>
+        {/* Left Column (Text Content) */}
+        <Col
+          xs={12}
+          md={6}
+          className="text-center text-md-start mb-4 mb-md-0"
+        >
+          <div
+            className="p-4 shadow-sm"
+            style={{
+              backgroundColor: "#f9f9f9",
+              maxWidth: "300px",
+            }}
+          >
+            <p>
+            Houston's ANPR systems deliver precise vehicle access control, addressing challenges like varying lane configurations, high traffic density, lighting conditions, and plate diversity. Engineered for accuracy and adaptability, they ensure reliable performance even in demanding environments.
+            </p>
+          </div>
+        </Col>
 
-                {/* Right Column (Image) */}
-                <Col xs={12} md={6} className="text-center">
-                  <img
-                    src={ee3070sdimention}
-                    alt="Boom Barrier Diagram"
-                    className="img-fluid"
-                  />
-                </Col>
-              </Row>
-            </Container>
+        {/* Right Column (Image) */}
+        <Col xs={12} md={6} className="text-center">
+          <img
+            src={ee3070sdimention}
+            alt="Boom Barrier Diagram"
+            className="img-fluid"
+          />
+        </Col>
+      </>
+    )}
+  </Row>
+</Container>
 
 {/* start Integration option */}
 <div className="Application">
               <h4 className="card-title mb-4 fw-semibold">Integration options</h4>
-              <div className="row ">
+              <div className={`row ${isMobile ? "justify-content-center" : ""}`}>
                 <div className="Integrationcardimg">
                   <img
                     src={anprintegration}
-                    className="img-fluid main-image" style={{width:"70%", marginLeft:"80px"}}
+                    className={`img-fluid main-image ${isMobile ? "mobile-image" : ""}`}
+                    style={isMobile ? { width: "80%", margin: "0 auto" } : { width: "70%", marginLeft: "80px" }}
                     alt="Measurement Icon"
                   />
                 </div>
@@ -468,28 +600,30 @@ const Anpr2des = () => {
             </Container>
           </div>
           <div className="contact-form-footer">
-            <div className="row">
-              <div className="col-md-2 col-12 contact-form-qr-code-col">
-                <img
-                  src={qr}
-                  alt="QR Code"
-                  className="contact-form-img-fluid contact-form-qr-code"
-                />
-              </div>
-              <div className="col-md-10 col-12 contact-form-text-col">
-                <div className="contact-form-footer-text">
-                  <div className="row">
-                  <div className="col-12 qrcode mt-2">
-                            <p className="text-center">
-                              Discover our extensive range of innovative products
-                            </p>
-                            <p className="text-center" style={{ marginTop: '-35px' }}>
-                              simply scan to explore more
-                            </p>
-                          </div>
-                  </div>
-                </div>
-              </div>
+  <div className="row align-items-center">
+    {/* QR Code Column */}
+    <div className="col-md-2 col-12 text-center mb-3 mb-md-0 contact-form-qr-code-col">
+      <img
+        src={qr}
+        alt="QR Code"
+        className="img-fluid contact-form-qr-code"
+        style={{ maxWidth: '150px' }}
+      />
+    </div>
+
+    {/* Text Column */}
+    <div className="col-md-10 col-12 text-center contact-form-text-col">
+      <div className="contact-form-footer-text">
+        <div className="qrcode">
+          <p className="mb-1">
+            Discover our extensive range of innovative products
+          </p>
+          <p className="mb-0" style={{ marginTop: isMobile ? '-10px':'-30px'}}>
+            simply scan to explore more
+          </p>
+        </div>
+      </div>
+    </div>
             </div>
           </div>
         </div>

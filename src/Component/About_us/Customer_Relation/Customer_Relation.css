@@ -1,0 +1,67 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Wrapper to center the container */
+.Customer-relation-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #058AFB;
+}
+
+/* Main container */
+.Customer-relation-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px; /* Restrict maximum width */
+  width: 100%; /* Full width of the parent */
+}
+
+/* Individual items */
+.Customer-relation-item {
+  flex: 1; /* Make all items take equal space */
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Image styling */
+.Customer-relation-item img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Heading styling */
+.Customer-relation-item h1 {
+  font-size: 1.5em;
+  color: whitesmoke;
+  margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+.Customer-relation-item p {
+  font-size: 1em;
+  color: whitesmoke;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .Customer-relation-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Customer-relation-item {
+    margin: 0 auto;
+  }
+}

@@ -37,13 +37,13 @@ const Display = () => {
         <div className="d-flex">
           <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex align-items-center`}>
             <div>
-              <h3 className="ml-4">Zone Display</h3>
+              <h3 className="">Zone Display</h3>
               <p>
                 The LED display in Parking Guidance System shows real-time parking space availability, helping users to find open spots quickly.
               </p>
               <div className="d-flex flex-column gap-3">
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={identification} alt="Identification" className="img-fluid" />
                   </div>
                   <p className="ml-3">
@@ -52,7 +52,7 @@ const Display = () => {
                 </div>
 
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={tariff} alt="Tariff" className="img-fluid" />
                   </div>
                   <p className="ml-3">
@@ -62,7 +62,7 @@ const Display = () => {
               </div>
             </div>
           </div>
-          <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-end align-items-center`}>
+          <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-center align-items-center`}>
             <img src={Vparkzonedisplay} alt="Zone Display" className="img-fluid" style={{ width: '50%' }} />
           </div>
         </div>
@@ -71,20 +71,20 @@ const Display = () => {
         <div className="d-flex">
           <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex align-items-center`}>
             <div>
-              <h3 className="ml-4">Floor Display</h3>
+              <h3 className="">Floor Display</h3>
               <p>
                 The LED display in Parking Guidance System shows real-time parking space availability, helping users to find open spots quickly.
               </p>
               <div className="d-flex flex-column gap-3">
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={identification} alt="Identification" className="img-fluid" />
                   </div>
                   <p className="ml-3">Works seamlessly with parking sensors and controllers</p>
                 </div>
 
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={tariff} alt="Tariff" className="img-fluid" />
                   </div>
                   <p className="ml-3">Displays instant updates based on sensor data</p>
@@ -92,7 +92,7 @@ const Display = () => {
               </div>
             </div>
           </div>
-          <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-end align-items-center`}>
+          <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-center align-items-center`}>
             <img src={Vparkfloordisplay} alt="Floor Display" className="img-fluid" style={{ width: '50%' }} />
           </div>
         </div>
@@ -101,20 +101,20 @@ const Display = () => {
         <div className="d-flex">
           <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex align-items-center`}>
             <div>
-              <h3 className="ml-4">Main Display</h3>
+              <h3 className="">Main Display</h3>
               <p>
                 The LED display in Parking Guidance System shows real-time parking space availability, helping users to find open spots quickly.
               </p>
               <div className="d-flex flex-column gap-3">
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={identification} alt="Identification" className="img-fluid" />
                   </div>
                   <p className="ml-3">Works seamlessly with parking sensors and controllers</p>
                 </div>
 
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={tariff} alt="Tariff" className="img-fluid" />
                   </div>
                   <p className="ml-3">Displays instant updates based on sensor data</p>
@@ -122,7 +122,7 @@ const Display = () => {
               </div>
             </div>
           </div>
-          <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-end align-items-center`}>
+          <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-center align-items-center`}>
             <img src={Vparkmaindisplay} alt="Main Display" className="img-fluid w-50%" />
           </div>
         </div>

@@ -8,7 +8,7 @@ const YoutubeAd = () => {
     "Housys provides an advanced tolling system that combines various technologies and methods to help you efficiently manage toll operations from a single platform, while also improving road safety for a smoother expressway experience.",
     "Technological advancements have transformed toll management. In India, the introduction of the Electronic Toll Collection (ETC) system  revolutionized operations, reducing long queues and saving time for users."
   ];
-  const videoUrl = "https://www.youtube.com/embed/5jL0aM7lrHY?autoplay=1&mute=1&controls=1&loop=1&playlist=5jL0aM7lrHY";
+  const videoUrl = "https://1&mute=1&controls=1&loop=1&playlist=5jL0aM7lrHY";
 
   return (
     <div>

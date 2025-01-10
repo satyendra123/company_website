@@ -35,13 +35,13 @@ const SoftwarePackages = () => {
         <div className="d-flex">
           <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex align-items-center`}>
             <div>
-              <h3 className="ml-4">Software</h3>
+              <h3 className="">Software</h3>
               <p>
                 ParkSure enhances parking convenience with a user-friendly interface, helping users locate available slots easily. Parking owners can monitor insights like vehicle count, occupied and vacant slots.
               </p>
               <div className="d-flex flex-column gap-3">
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={identification} alt="Identification" className="img-fluid" />
                   </div>
                   <p className="ml-3">
@@ -50,7 +50,7 @@ const SoftwarePackages = () => {
                 </div>
                 
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={tariff} alt="Tariff" className="img-fluid" />
                   </div>
                   <p className="ml-3">
@@ -60,7 +60,7 @@ const SoftwarePackages = () => {
               </div>
             </div>
           </div>
-          <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-end align-items-center`}>
+          <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-center align-items-center`}>
             <img src={Vparksoftware} alt="Validator" className="img-fluid" style={{ width: '50%' }} />
           </div>
         </div>
@@ -69,13 +69,13 @@ const SoftwarePackages = () => {
         <div className="d-flex">
           <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex align-items-center`}>
             <div>
-              <h3 className="ml-4">Software</h3>
+              <h3 className="">Software</h3>
               <p>
                 ParkSure enhances parking convenience with a user-friendly interface, helping users locate available slots easily. Parking owners can monitor insights like vehicle count, occupied and vacant slots.
               </p>
               <div className="d-flex flex-column gap-3">
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={identification} alt="Identification" className="img-fluid" />
                   </div>
                   <p className="ml-3">
@@ -84,7 +84,7 @@ const SoftwarePackages = () => {
                 </div>
                 
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={tariff} alt="Tariff" className="img-fluid" />
                   </div>
                   <p className="ml-3">
@@ -94,7 +94,7 @@ const SoftwarePackages = () => {
               </div>
             </div>
           </div>
-          <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-end align-items-center`}>
+          <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-center align-items-center`}>
             <img src={Vparksoftware} alt="Validator" className="img-fluid" style={{ width: '50%' }} />
           </div>
         </div>

@@ -36,16 +36,16 @@ const Axel = () => {
             className={`subfeature ${activeDescription ? "col-md-5" : "col-12"}`}
           >
             <div onClick={() => handleTileClick("Axel1")}>
-              <Axel1 />
+              {/* <Axel1 /> */}
             </div>
             <div onClick={() => handleTileClick("Axel2")}>
-              <Axel2 />
+              {/* <Axel2 /> */}
             </div>
             <div onClick={() => handleTileClick("Axel3")}>
               <Axel3 />
             </div>
             <div onClick={() => handleTileClick("Axel4")}>
-              <Axel4 />
+              {/* <Axel4 /> */}
             </div>
           </div>
         )}
@@ -64,10 +64,10 @@ const Axel = () => {
               </div>
             )}
             <div className="description-content">
-              {activeDescription === "Axel1" && <Axel1des />}
-              {activeDescription === "Axel2" && <Axel2des />}
+              {/* {activeDescription === "Axel1" && <Axel1des />} */}
+              {/* {activeDescription === "Axel2" && <Axel2des />} */}
               {activeDescription === "Axel3" && <Axel3des />}
-              {activeDescription === "Axel4" && <Axel4des />}
+              {/* {activeDescription === "Axel4" && <Axel4des />} */}
             </div>
           </div>
         )}

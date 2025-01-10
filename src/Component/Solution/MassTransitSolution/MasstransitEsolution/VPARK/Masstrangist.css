@@ -1,0 +1,45 @@
+.button-wrapper {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap:30px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color:white;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 40px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.content-container {
+  padding: 20px;
+}
+
+.image-circle {
+  width: 80px;
+  height: 80px;
+  background-color: #f9f9f9;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image-circle img {
+  height:100%;
+  width:100%;
+}

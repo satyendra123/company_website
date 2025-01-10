@@ -1,0 +1,50 @@
+.product-container-wrapper {
+  padding: 10px 40px;
+  overflow: hidden; /* Prevents overflow and horizontal scrollbar */
+}
+.productstitleinpgs{
+  color: linear-gradient(45deg, #1372C2, #09365C);
+}
+.product-card {
+  margin: 0 25px;
+  height: 350px; /* Set a fixed height for all cards */
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.slick-slide {
+  padding: 20px 50px;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.product-card p {
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  flex-grow: 1;
+}
+
+.slick-prev, .slick-next {
+  z-index: 1;
+}
+
+.slick-slide .slick-arrow {
+  display: none;
+}
+
+.slick-prev {
+  left: -50px;
+}
+
+.slick-next {
+  right: -50px;
+}

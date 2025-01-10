@@ -8,7 +8,17 @@ import Embasies from "./CRASHIMG/Embasies.png";
 import Toll from "./CRASHIMG/Toll.png";
 import Factory from "./CRASHIMG/Factory.png";
 import qr from "./CRASHIMG/qr.png";
-import RockerB380dimention from "./CRASHIMG/Crashrateddimension/RockerB380.jpg";
+import crash1 from "./CRASHIMG/midea/B1.png";
+import crash2 from "./CRASHIMG/midea/B2.png";
+import crash3 from "./CRASHIMG/midea/b4.png";
+import crash4 from "./CRASHIMG/midea/crash rated.png";
+
+
+
+
+
+
+// import RockerB380dimention from "./CRASHIMG/Crashrateddimension/RockerB380.jpg";
 import keyspecies from "./CRASHIMG/key_species_1/key_species_1.png";
 import keyspecies2 from "./CRASHIMG/key_species_1/Keyspecies_2.png";
 import keyspecies3 from "./CRASHIMG/key_species_1/keyspecies3.png";
@@ -36,16 +46,16 @@ const testimonials = [
 ];
 const mediaimg = [
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: crash1,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3994.png",
+    img: crash2,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: crash3,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: crash4,
   },
 ];
 

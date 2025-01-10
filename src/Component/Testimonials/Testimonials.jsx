@@ -156,7 +156,7 @@ const Testimonials = () => {
                     </div>
                   </div>
                   <div className="container-custom">
-                    <div className="testimoniadescription">
+                    <div className="testimoniadescription text-justify">
                       <ReadMoreText text={testimonial.description} />
                     </div>
                     <div className="testimoniarating">
@@ -164,7 +164,7 @@ const Testimonials = () => {
                         .fill()
                         .map((_, i) => (
                           <span key={i} className="star">
-                            <img src={Star} alt="star"></img>
+                            <img className="starlogo" src={Star} alt="star"></img>
                           </span>
                         ))}
                     </div>

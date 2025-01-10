@@ -1,27 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import { SolutionContext } from '../../../../Context/PGSContext/Context';
+import { ProductContext } from '../../../../Context/PGSContext/ProContext';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Upark from '../PgsEsolution/UPARK/PgsEsolution';
 import Vpark from '../PgsEsolution/VPARK/PgsEsolution';
 import Wpark from '../PgsEsolution/WPARK/PgsEsolution';
 
 function SolutionType2() {
-  const [activeComponent, setActiveComponent] = useState("A-Park"); // Default is "A-Park"
+  const [isClicked, setIsClicked] = useState(false);
+  const [activeComponent, setActiveComponent] = useState("U-Park");
+  const { updateBannerImage } = useContext(SolutionContext);
+  const { updateSelectedCategory } = useContext(ProductContext);
 
-  // Function to render the content based on the activeComponent state
+  const handleComponentChange = (type) => {
+    setIsClicked(true); // Set the clicked state
+    setActiveComponent(type);
+    updateBannerImage(type);
+    updateSelectedCategory(type);
+  };
+
   const renderActiveComponent = () => {
     switch (activeComponent) {
       case "U-Park":
-        console.log("U-Park is clicked");
         return <Upark />;
       case "V-Park":
-        console.log("V-Park is clicked");
         return <Vpark />;
       case "W-Park":
-        console.log("W-Park is clicked");
         return <Wpark />;
       default:
-        return <Upark />; // In case of unexpected state
+        return <Upark />;
     }
   };
 
@@ -31,8 +39,12 @@ function SolutionType2() {
         <Col xs={12} md={5} className="d-flex align-items-stretch mb-4 mb-md-0">
           <Card
             className="shadow"
-            style={{ minHeight: '324px', cursor: 'pointer' }}
-            onClick={() => setActiveComponent("U-Park")}
+            style={{
+              minHeight: '324px',
+              cursor: 'pointer',
+              backgroundColor: isClicked && activeComponent === "U-Park" ? "#f0f8ff" : "white"
+            }}
+            onClick={() => handleComponentChange("U-Park")}
           >
             <Card.Body>
               <Card.Title className="fw-bold text-center mt-5">U-Park</Card.Title>
@@ -48,8 +60,12 @@ function SolutionType2() {
             <Col xs={12}>
               <Card
                 className="border shadow"
-                style={{ minHeight: '150px', cursor: 'pointer' }}
-                onClick={() => setActiveComponent("V-Park")}
+                style={{
+                  minHeight: '150px',
+                  cursor: 'pointer',
+                  backgroundColor: isClicked && activeComponent === "V-Park" ? "#f0f8ff" : "white"
+                }}
+                onClick={() => handleComponentChange("V-Park")}
               >
                 <Card.Body>
                   <Card.Title className="fw-bold text-center p-3">V-Park</Card.Title>
@@ -61,18 +77,21 @@ function SolutionType2() {
             </Col>
           </Row>
 
-          {/* Second Nested Row */}
           <Row className="gx-4 gy-4">
             <Col xs={12}>
               <Card
                 className="shadow"
-                style={{ minHeight: '150px', cursor: 'pointer' }}
-                onClick={() => setActiveComponent("W-Park")}
+                style={{
+                  minHeight: '150px',
+                  cursor: 'pointer',
+                  backgroundColor: isClicked && activeComponent === "W-Park" ? "#f0f8ff" : "white"
+                }}
+                onClick={() => handleComponentChange("W-Park")}
               >
                 <Card.Body>
                   <Card.Title className="fw-bold text-center p-3">W-Park</Card.Title>
                   <Card.Text className="m-auto pl-5 pr-5">
-                    W-Park is ground sensor-based system ensures a seamless parking experience by displaying real-time slot availability on digital displays, saving time and reducing stress.
+                    W-Park is a ground sensor-based system ensuring a seamless parking experience by displaying real-time slot availability on digital displays, saving time and reducing stress.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -81,11 +100,8 @@ function SolutionType2() {
         </Col>
       </Row>
 
-      {/* Render the active component here */}
       <Row className="mt-4">
-        <Col xs={12}>
-          {renderActiveComponent()}
-        </Col>
+        <Col xs={12}>{renderActiveComponent()}</Col>
       </Row>
     </Container>
   );

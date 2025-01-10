@@ -10,7 +10,6 @@ import tariff from './../../PGSSOLUTIONIMG/tariff.png';
 
 const Sensors = () => {
   const [isMobileScreen, setIsMobileScreen] = useState(window.innerWidth < 768);
-
   useEffect(() => {
     const handleResize = () => setIsMobileScreen(window.innerWidth < 768);
     window.addEventListener('resize', handleResize);
@@ -35,13 +34,13 @@ const Sensors = () => {
         <div className="d-flex">
           <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex align-items-center`}>
             <div>
-              <h3 className="ml-4">Combi Camera Sensor</h3>
+              <h3 className="">Combi Camera Sensor</h3>
               <p>
                 Ultrasonic sensor, mounted above each parking space, integrates with the indicator light to provide real-time parking space status.
               </p>
               <div className="d-flex flex-column gap-3">
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={identification} alt="Identification" className="img-fluid" />
                   </div>
                   <p className="ml-3">
@@ -50,7 +49,7 @@ const Sensors = () => {
                 </div>
 
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={tariff} alt="Tariff" className="img-fluid" />
                   </div>
                   <p className="ml-3">
@@ -60,7 +59,7 @@ const Sensors = () => {
               </div>
             </div>
           </div>
-          <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-end align-items-center`}>
+          <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-center align-items-center`}>
             <img src={Vparkcombisensor} alt="Sensor" className="img-fluid" />
           </div>
         </div>
@@ -69,13 +68,13 @@ const Sensors = () => {
         <div className="d-flex">
           <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex align-items-center`}>
             <div>
-              <h3 className="ml-4">Combi Camera Sensor</h3>
+              <h3 className="">Combi Camera Sensor</h3>
               <p>
                 Ultrasonic sensor, mounted above each parking space, integrates with the indicator light to provide real-time parking space status.
               </p>
               <div className="d-flex flex-column gap-3">
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={identification} alt="Identification" className="img-fluid" />
                   </div>
                   <p className="ml-3">
@@ -84,7 +83,7 @@ const Sensors = () => {
                 </div>
 
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={tariff} alt="Tariff" className="img-fluid" />
                   </div>
                   <p className="ml-3">
@@ -94,7 +93,7 @@ const Sensors = () => {
               </div>
             </div>
           </div>
-          <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-end align-items-center`}>
+          <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-center align-items-center`}>
             <img src={Vparkcombisensor} alt="Sensor" className="img-fluid" />
           </div>
         </div>

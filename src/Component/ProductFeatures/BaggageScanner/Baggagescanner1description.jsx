@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import Baggagescannes from "./BaggageScannerIMG/Baggage1.png";
-import React, { useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 import bs100100dimention from "./BaggageScannerIMG/baggagescannerdimension/bs100100dimension.png";
 import bsintegration from "./BaggageScannerIMG/baggagescannerintegration/bsintegration.png";
@@ -55,6 +55,18 @@ const mediaimg = [
 ];
 
 const Baggagescanner1description = () => {
+
+  const [isMobile, setIsMobile] = useState(false);
+        
+    useEffect(() => {
+      const handleResize = () => {
+        setIsMobile(window.innerWidth <= 768);
+      };
+      window.addEventListener("resize", handleResize);
+      handleResize();
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
   useEffect(() => {
     handleSlideChange();
   }, []);
@@ -79,7 +91,7 @@ const Baggagescanner1description = () => {
       <div className="card2 ">
         <div className="card-body text-center">
           <div className="p-3">
-            <h4 className="card-title mb-4 custom-left fw-semibold">HS100100</h4>
+            <h4 className="card-title mb-4 custom-left fw-semibold">HS100100D</h4>
             <div className="row  mb-5">
               <div className="col-md-4 col-12 ">
                 <p className="leftside_top_text">Power Supply</p>
@@ -90,7 +102,7 @@ const Baggagescanner1description = () => {
                 <p className="leftside_second_text">300KG</p>
               </div>
               <div className="col-md-4 col-12  custom-image">
-                <img src={Baggagescannes} className="img-fluid" alt="VEGA" />
+                <img src={Baggagescannes} className="img-fluid mt-5" alt="VEGA" />
               </div>
               <div className="col-md-4 col-12 custom-right">
                 <p className="rightside_top_text">Duty Cycle</p>
@@ -98,63 +110,149 @@ const Baggagescanner1description = () => {
                 <p className="rightside_top_text">Conveyor Speed</p>
                 <p className="rightside_second_text">0.22m/sec</p>
                 <p className="rightside_top_text">Penetration</p>
-                <p className="rightside_second_text">36mm</p>
+                <p className="rightside_second_text">38mm</p>
               </div>
             </div>
 {/*start specs */}
 <div className="row align-items-center">
-  <div className="col-2">
-    <p className="key-specs-text">KEY SPECS.</p>
-  </div>
-  <div className="col-1">
-    <div className="vertical-border"></div>
-  </div>
-  <div className="col">
-    <div className="row justify-content-start g-3">
-      <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
-        <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
-          <img
-            src={keyspecies}
-            className="img-fluid"
-            alt="Oil Icon"
-            style={{ maxWidth: "60px", maxHeight: "60px" }}
-          />
+  {isMobile ? (
+    // Mobile Layout
+    <div className="row mb-3">
+      <h3 className="text-center font-bold" style={{ fontWeight: 550 }}>KEY SPECS</h3>
+      <div className="col-2">
+        <div
+          className="d-flex flex-column align-items-center"
+          style={{ width: "100%", height: "80px" }}
+        >
+          <div
+            className="cardimg d-flex justify-content-center align-items-center"
+            style={{ height: "100%" }}
+          >
+            <img
+              src={keyspecies}
+              className="img-fluid"
+              alt="Oil Icon"
+              style={{ maxWidth: "40px", maxHeight: "40px" }}
+            />
+          </div>
         </div>
       </div>
-      <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
-        <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
-          <img
-            src={keyspecies2}
-            className="img-fluid"
-            alt="Gate Icon"
-            style={{ maxWidth: "60px", maxHeight: "60px" }}
-          />
+      <div className="col-1"></div> {/* Gap */}
+      <div className="col-2">
+        <div
+          className="d-flex flex-column align-items-center"
+          style={{ width: "100%", height: "80px" }}
+        >
+          <div
+            className="cardimg d-flex justify-content-center align-items-center"
+            style={{ height: "100%" }}
+          >
+            <img
+              src={keyspecies2}
+              className="img-fluid"
+              alt="Gate Icon"
+              style={{ maxWidth: "40px", maxHeight: "40px" }}
+            />
+          </div>
         </div>
       </div>
-      <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
-        <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
-          <img
-            src={keyspecies3}
-            className="img-fluid"
-            alt="Mechanism Icon"
-            style={{ maxWidth: "60px", maxHeight: "60px" }}
-          />
+      <div className="col-1"></div> {/* Gap */}
+      <div className="col-2">
+        <div
+          className="d-flex flex-column align-items-center"
+          style={{ width: "100%", height: "80px" }}
+        >
+          <div
+            className="cardimg d-flex justify-content-center align-items-center"
+            style={{ height: "100%" }}
+          >
+            <img
+              src={keyspecies3}
+              className="img-fluid"
+              alt="Mechanism Icon"
+              style={{ maxWidth: "40px", maxHeight: "40px" }}
+            />
+          </div>
         </div>
       </div>
-      <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
-        <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
-          <img
-            src={keyspecies4}
-            className="img-fluid"
-            alt="Measurement Icon"
-            style={{ maxWidth: "60px", maxHeight: "60px" }}
-          />
+      <div className="col-1"></div> {/* Gap */}
+      <div className="col-2">
+        <div
+          className="d-flex flex-column align-items-center"
+          style={{ width: "100%", height: "80px" }}
+        >
+          <div
+            className="cardimg d-flex justify-content-center align-items-center"
+            style={{ height: "100%" }}
+          >
+            <img
+              src={keyspecies4}
+              className="img-fluid"
+              alt="Measurement Icon"
+              style={{ maxWidth: "40px", maxHeight: "40px" }}
+            />
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  ) : (
+    // Desktop Layout
+    <>
+      <div className="col-2">
+        <p className="key-specs-text">KEY SPECS.</p>
+      </div>
+      <div className="col-1">
+        <div className="vertical-border"></div>
+      </div>
+      <div className="col">
+        <div className="row justify-content-start g-3">
+          <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
+            <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
+              <img
+                src={keyspecies}
+                className="img-fluid"
+                alt="Oil Icon"
+                style={{ maxWidth: "60px", maxHeight: "60px" }}
+              />
+            </div>
+          </div>
+          <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
+            <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
+              <img
+                src={keyspecies2}
+                className="img-fluid"
+                alt="Gate Icon"
+                style={{ maxWidth: "60px", maxHeight: "60px" }}
+              />
+            </div>
+          </div>
+          <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
+            <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
+              <img
+                src={keyspecies3}
+                className="img-fluid"
+                alt="Mechanism Icon"
+                style={{ maxWidth: "60px", maxHeight: "60px" }}
+              />
+            </div>
+          </div>
+          <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
+            <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
+              <img
+                src={keyspecies4}
+                className="img-fluid"
+                alt="Measurement Icon"
+                style={{ maxWidth: "60px", maxHeight: "60px" }}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  )}
 </div>
 {/*end specs */}
+
 {/* start application  */}
 <div className="Application mb-4">
               <h4 className="card-title mb-4 fw-semibold">Application Area</h4>
@@ -205,49 +303,93 @@ const Baggagescanner1description = () => {
   </div>
 {/* end application  */}
 
-            <Container fluid className="py-4">
-              {/* Title */}
-              <Row className="justify-content-center">
-                <Col xs={12} className="text-center mb-4">
-                  <h4 className="fw-semibold">Dimension and Layout</h4>
-                </Col>
-              </Row>
+<Container fluid className="py-4">
+  {/* Title */}
+  <Row className="justify-content-center">
+    <Col xs={12} className="text-center mb-4">
+      <h4 className="fw-semibold">Dimension and Layout</h4>
+    </Col>
+  </Row>
 
-              {/* Main Content */}
-              <Row className="align-items-center">
-                {/* Left Column (Text Content) */}
-                <Col
-                  xs={12}
-                  md={6}
-                  className="text-center text-md-start mb-4 mb-md-0"
-                >
-                  <div
-                    className="p-4 shadow-sm"
-                    style={{ backgroundColor: "#f9f9f9", maxWidth:"330px" }}
-                  >
-                    <p>
-                    Houston's baggage scanners are designed with tunnel sizes ranging from 5030 to 100100, catering to diverse application requirements. Engineered for superior image clarity and reliability, they provide precise threat detection, ensuring seamless operation across various security environments.
-                    </p>
-                  </div>
-                </Col>
-                {/* Right Column (Image) */}
-                <Col xs={12} md={6} className="text-center">
-                  <img
-                    src={bs100100dimention}
-                    alt="Boom Barrier Diagram"
-                    className="img-fluid"
-                  />
-                </Col>
-              </Row>
-            </Container>
+  {/* Main Content */}
+  <Row className="align-items-center">
+    {isMobile ? (
+      <>
+        {/* Image First */}
+        <div className="text-center mb-3">
+          <img
+            src={bs100100dimention}
+            alt="Boom Barrier Diagram"
+            className="img-fluid"
+          />
+        </div>
+        {/* Text Content */}
+        <div className="text-center">
+          <div
+            className="p-4 shadow-sm"
+            style={{
+              backgroundColor: "#f9f9f9",
+              maxWidth: "330px",
+              margin: "0 auto",
+            }}
+          >
+            <p>
+              This system ensures seamless LAN connectivity for synchronized baggage checks,
+              advanced safety ray technology for error-free operation, and a quick one-key shutdown
+              for ease and safety. With Eagle Eye precision for detailed observation and intelligent
+              self-diagnosis for prompt maintenance alerts, it delivers efficiency and reliability in
+              every operation.
+            </p>
+          </div>
+        </div>
+      </>
+    ) : (
+      <>
+        {/* Left Column (Text Content) */}
+        <Col
+          xs={12}
+          md={6}
+          className="text-center text-md-start mb-4 mb-md-0"
+        >
+          <div
+            className="p-4 shadow-sm"
+            style={{
+              backgroundColor: "#f9f9f9",
+              maxWidth: "330px",
+            }}
+          >
+            <p>
+              This system ensures seamless LAN connectivity for synchronized baggage checks,
+              advanced safety ray technology for error-free operation, and a quick one-key shutdown
+              for ease and safety. With Eagle Eye precision for detailed observation and intelligent
+              self-diagnosis for prompt maintenance alerts, it delivers efficiency and reliability in
+              every operation.
+            </p>
+          </div>
+        </Col>
+
+        {/* Right Column (Image) */}
+        <Col xs={12} md={6} className="text-center">
+          <img
+            src={bs100100dimention}
+            alt="Boom Barrier Diagram"
+            className="img-fluid"
+          />
+        </Col>
+      </>
+    )}
+  </Row>
+</Container>
+
 {/* start Integration option */}
 <div className="Application">
               <h4 className="card-title mb-4 fw-semibold">Integration options</h4>
-              <div className="row ">
+              <div className={`row ${isMobile ? "justify-content-center" : ""}`}>
                 <div className="Integrationcardimg">
                   <img
                     src={bsintegration}
-                    className="img-fluid main-image" style={{width:"70%", marginLeft:"80px"}}
+                    className={`img-fluid main-image ${isMobile ? "mobile-image" : ""}`}
+                    style={isMobile ? { width: "80%", margin: "0 auto" } : { width: "70%", marginLeft: "80px" }}
                     alt="Measurement Icon"
                   />
                 </div>
@@ -465,28 +607,30 @@ const Baggagescanner1description = () => {
             </Container>
           </div>
           <div className="contact-form-footer">
-            <div className="row">
-              <div className="col-md-2 col-12 contact-form-qr-code-col">
-                <img
-                  src={qr}
-                  alt="QR Code"
-                  className="contact-form-img-fluid contact-form-qr-code"
-                />
-              </div>
-              <div className="col-md-10 col-12 contact-form-text-col">
-                <div className="contact-form-footer-text">
-                  <div className="row">
-                  <div className="col-12 qrcode mt-2">
-                            <p className="text-center">
-                              Discover our extensive range of innovative products
-                            </p>
-                            <p className="text-center" style={{ marginTop: '-35px' }}>
-                              simply scan to explore more
-                            </p>
-                          </div>
-                  </div>
-                </div>
-              </div>
+  <div className="row align-items-center">
+    {/* QR Code Column */}
+    <div className="col-md-2 col-12 text-center mb-3 mb-md-0 contact-form-qr-code-col">
+      <img
+        src={qr}
+        alt="QR Code"
+        className="img-fluid contact-form-qr-code"
+        style={{ maxWidth: '150px' }}
+      />
+    </div>
+
+    {/* Text Column */}
+    <div className="col-md-10 col-12 text-center contact-form-text-col">
+      <div className="contact-form-footer-text">
+        <div className="qrcode">
+          <p className="mb-1">
+            Discover our extensive range of innovative products
+          </p>
+          <p className="mb-0" style={{ marginTop: isMobile ? '-10px':'-30px'}}>
+            simply scan to explore more
+          </p>
+        </div>
+      </div>
+    </div>
             </div>
           </div>
         </div>

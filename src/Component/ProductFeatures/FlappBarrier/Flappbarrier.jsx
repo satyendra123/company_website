@@ -8,6 +8,7 @@ import FlaptileR180 from "./FlaptileR180";
 import FlaptileR80 from "./FlaptileR80";
 import FlaptileR80discriptions from "./FlaptileR80discriptions";
 import Fllapdiscriptions from "./Fllapdiscriptions";
+import './Flappbarrier.css'
 
 const Flappbarrier = () => {
   const [activeDescription, setActiveDescription] = useState(null);

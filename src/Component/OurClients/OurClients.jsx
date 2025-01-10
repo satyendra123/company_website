@@ -52,7 +52,7 @@ const logos = [
   { src: DensoImg, name: "Denso" },
   { src: HyundaiImg, name: "Hyundai" },
   { src: SuzukiImg, name: "Suzuki Motor" },
-  { src: OmexeImg, name: "Omexe Group" },
+  { src: OmexeImg, name: "Omaxe Group" },
 ];
 
 const logos2 = [

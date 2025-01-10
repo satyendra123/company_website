@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "../productcss/Productfeatures.css";
-import Crash1 from "./Crash1";
-import Crash1des from "./Crash1des";
-import Crash2 from "./Crash2";
-import Crash2des from "./Crash2des";
-import Crash3 from "./Crash3";
-import Crash3des from "./Crash3des";
+// import Crash1 from "./Crash1";
+// import Crash1des from "./Crash1des";
+// import Crash2 from "./Crash2";
+// import Crash2des from "./Crash2des";
+// import Crash3 from "./Crash3";
+// import Crash3des from "./Crash3des";
 import Crash4 from "./Crash4";
 import Crash4des from "./Crash4des";
 
@@ -36,13 +36,13 @@ const Crash = () => {
             className={`subfeature ${activeDescription ? "col-md-5" : "col-12"}`}
           >
             <div onClick={() => handleTileClick("Crash1")}>
-              <Crash1 />
+              {/* <Crash1 /> */}
             </div>
             <div onClick={() => handleTileClick("Crash2")}>
-              <Crash2 />
+              {/* <Crash2 /> */}
             </div>
             <div onClick={() => handleTileClick("Crash3")}>
-              <Crash3 />
+              {/* <Crash3 /> */}
             </div>
             <div onClick={() => handleTileClick("Crash4")}>
               <Crash4 />
@@ -64,9 +64,9 @@ const Crash = () => {
               </div>
             )}
             <div className="description-content">
-              {activeDescription === "Crash1" && <Crash1des />}
-              {activeDescription === "Crash2" && <Crash2des />}
-              {activeDescription === "Crash3" && <Crash3des />}
+              {/* {activeDescription === "Crash1" && <Crash1des />} */}
+              {/* {activeDescription === "Crash2" && <Crash2des />} */}
+              {/* {activeDescription === "Crash3" && <Crash3des />} */}
               {activeDescription === "Crash4" && <Crash4des />}
             </div>
           </div>

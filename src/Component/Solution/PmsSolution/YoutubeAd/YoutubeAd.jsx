@@ -5,10 +5,9 @@ import SolutionYoutubeAd from '../../../../Utils/SolutionLayOut/SolutionYoutubeA
 const YoutubeAd = () => {
   const headerText = "Parking Management System";
   const descriptions = [
-    "The PARK SIM series is a cutting-edge parking management solution developed by our expert R&D and IT teams. Designed for optimal performance, it enhances the parking experience in metro cities.",
-    "Parking Management System ensures secure, efficient, and revenue-driven operations. PARK SIM is a flexible, cost-effective solution that reduces operational costs, increases profitability, and enhances security, all while providing superior user comfort.",
+    "PMS delivers exceptional performance using latest technology. Designed for metro cities, it offers a secure, revenue-oriented, and cost-effective solution to enhance parking efficiency, reduce costs, boost profitability, and improve security and user comfort"
   ];
-  const videoUrl = "https://www.youtube.com/embed/5jL0aM7lrHY?autoplay=1&mute=1&controls=1&loop=1&playlist=5jL0aM7lrHY";
+  const videoUrl = "https://1&mute=1&controls=1&loop=1&playlist=5jL0aM7lrHY";
 
   return (
     <div>

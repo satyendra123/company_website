@@ -1,13 +1,21 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import roaddes3 from "./AXELIMG/AXER B200.png";
-import React, { useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import Parkinglots from "./AXELIMG/Parkinglots.png";
 import Embasies from "./AXELIMG/Embasies.png";
 import Toll from "./AXELIMG/Toll.png";
 import Factory from "./AXELIMG/Factory.png";
 import qr from "./AXELIMG/qr.png";
+
+import Axel1 from "./AXELIMG/midea/b1 1.png";
+import Axel2 from "./AXELIMG/midea/b2 1.png";
+import Axel3 from "./AXELIMG/midea/b3 2.png";
+import Axel4 from "./AXELIMG/midea/b4 1.png";
+
+
+
 import Axerb200dimension from "./AXELIMG/Axlebreakerdimension/Axerb200.jpg";
 import keyspecies from "./AXELIMG/key_species_1/key_species_1.png";
 import keyspecies2 from "./AXELIMG/key_species_1/Keyspecies_2.png";
@@ -34,22 +42,35 @@ const testimonials = [
     name: "/image/Product_images/Accessories_img/Accessories 7.png",
   },
 ];
+
 const mediaimg = [
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: Axel1,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3994.png",
+    img: Axel2,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: Axel3,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: Axel4,
   },
 ];
 
 const Axel3des = () => {
+
+  const [isMobile, setIsMobile] = useState(false);
+              
+          useEffect(() => {
+            const handleResize = () => {
+              setIsMobile(window.innerWidth <= 768);
+            };
+            window.addEventListener("resize", handleResize);
+            handleResize();
+            return () => window.removeEventListener("resize", handleResize);
+          }, []);
+
   useEffect(() => {
     handleSlideChange();
   }, []);
@@ -97,56 +118,141 @@ const Axel3des = () => {
 
 {/*start specs */}
 <div className="row align-items-center">
-  <div className="col-2">
-    <p className="key-specs-text">KEY SPECS.</p>
-  </div>
-  <div className="col-1">
-    <div className="vertical-border"></div>
-  </div>
-  <div className="col">
-    <div className="row justify-content-start g-3">
-      <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
-        <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
-          <img
-            src={keyspecies}
-            className="img-fluid"
-            alt="Oil Icon"
-            style={{ maxWidth: "60px", maxHeight: "60px" }}
-          />
+  {isMobile ? (
+    // Mobile Layout
+    <div className="row mb-3">
+      <h3 className="text-center font-bold" style={{ fontWeight: 550 }}>KEY SPECS</h3>
+      <div className="col-2">
+        <div
+          className="d-flex flex-column align-items-center"
+          style={{ width: "100%", height: "80px" }}
+        >
+          <div
+            className="cardimg d-flex justify-content-center align-items-center"
+            style={{ height: "100%" }}
+          >
+            <img
+              src={keyspecies}
+              className="img-fluid"
+              alt="Oil Icon"
+              style={{ maxWidth: "40px", maxHeight: "40px" }}
+            />
+          </div>
         </div>
       </div>
-      <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
-        <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
-          <img
-            src={keyspecies2}
-            className="img-fluid"
-            alt="Gate Icon"
-            style={{ maxWidth: "60px", maxHeight: "60px" }}
-          />
+      <div className="col-1"></div> {/* Gap */}
+      <div className="col-2">
+        <div
+          className="d-flex flex-column align-items-center"
+          style={{ width: "100%", height: "80px" }}
+        >
+          <div
+            className="cardimg d-flex justify-content-center align-items-center"
+            style={{ height: "100%" }}
+          >
+            <img
+              src={keyspecies2}
+              className="img-fluid"
+              alt="Gate Icon"
+              style={{ maxWidth: "40px", maxHeight: "40px" }}
+            />
+          </div>
         </div>
       </div>
-      <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
-        <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
-          <img
-            src={keyspecies3}
-            className="img-fluid"
-            alt="Mechanism Icon"
-            style={{ maxWidth: "60px", maxHeight: "60px" }}
-          />
+      <div className="col-1"></div> {/* Gap */}
+      <div className="col-2">
+        <div
+          className="d-flex flex-column align-items-center"
+          style={{ width: "100%", height: "80px" }}
+        >
+          <div
+            className="cardimg d-flex justify-content-center align-items-center"
+            style={{ height: "100%" }}
+          >
+            <img
+              src={keyspecies3}
+              className="img-fluid"
+              alt="Mechanism Icon"
+              style={{ maxWidth: "40px", maxHeight: "40px" }}
+            />
+          </div>
         </div>
       </div>
-      <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
-        <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
-          <img
-            src={keyspecies4}
-            className="img-fluid"
-            alt="Measurement Icon"
-            style={{ maxWidth: "60px", maxHeight: "60px" }}
-          />
+      <div className="col-1"></div> {/* Gap */}
+      <div className="col-2">
+        <div
+          className="d-flex flex-column align-items-center"
+          style={{ width: "100%", height: "80px" }}
+        >
+          <div
+            className="cardimg d-flex justify-content-center align-items-center"
+            style={{ height: "100%" }}
+          >
+            <img
+              src={keyspecies4}
+              className="img-fluid"
+              alt="Measurement Icon"
+              style={{ maxWidth: "40px", maxHeight: "40px" }}
+            />
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  ) : (
+    // Desktop Layout
+    <>
+      <div className="col-2">
+        <p className="key-specs-text">KEY SPECS.</p>
+      </div>
+      <div className="col-1">
+        <div className="vertical-border"></div>
+      </div>
+      <div className="col">
+        <div className="row justify-content-start g-3">
+          <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
+            <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
+              <img
+                src={keyspecies}
+                className="img-fluid"
+                alt="Oil Icon"
+                style={{ maxWidth: "60px", maxHeight: "60px" }}
+              />
+            </div>
+          </div>
+          <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
+            <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
+              <img
+                src={keyspecies2}
+                className="img-fluid"
+                alt="Gate Icon"
+                style={{ maxWidth: "60px", maxHeight: "60px" }}
+              />
+            </div>
+          </div>
+          <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
+            <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
+              <img
+                src={keyspecies3}
+                className="img-fluid"
+                alt="Mechanism Icon"
+                style={{ maxWidth: "60px", maxHeight: "60px" }}
+              />
+            </div>
+          </div>
+          <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
+            <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
+              <img
+                src={keyspecies4}
+                className="img-fluid"
+                alt="Measurement Icon"
+                style={{ maxWidth: "60px", maxHeight: "60px" }}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  )}
 </div>
 {/*end specs */}
 
@@ -201,56 +307,96 @@ const Axel3des = () => {
   </div>
 {/* end application  */}
 
-<Container fluid className="py-4">
-              {/* Title */}
-              <Row className="justify-content-center">
-                <Col xs={12} className="text-center mb-4">
-                  <h4 className="fw-semibold">Dimension and Layout</h4>
-                </Col>
-              </Row>
 
-              {/* Main Content */}
-              <Row className="align-items-center">
-                {/* Left Column (Text Content) */}
-                <Col
-                  xs={12}
-                  md={6}
-                  className="text-center text-md-start mb-4 mb-md-0"
-                >
-                  <div
-                    className="p-4 shadow-sm"
-                    style={{ backgroundColor: "#f9f9f9" }}
-                  >
-                   <p style={{maxWidth: "300px"}}>
-                   The total width of the system is 1888 mm (74.33 inches), 
+            <Container fluid className="py-4">
+  {/* Title */}
+  <Row className="justify-content-center">
+    <Col xs={12} className="text-center mb-4">
+      <h4 className="fw-semibold">Dimension and Layout</h4>
+    </Col>
+  </Row>
+
+  {/* Main Content */}
+  <Row className="align-items-center">
+    {isMobile ? (
+      <>
+        {/* Image First */}
+        <div className="text-center mb-3">
+          <img
+            src={Axerb200dimension}
+            alt="Boom Barrier Diagram"
+            className="img-fluid"
+          />
+        </div>
+        {/* Text Content */}
+        <div className="text-center">
+          <div
+            className="p-4 shadow-sm"
+            style={{
+              backgroundColor: "#f9f9f9",
+              maxWidth: "300px",
+              margin: "0 auto",
+            }}
+          >
+            <p>
+            The total width of the system is 1888 mm (74.33 inches), 
 with each gate panel offering an adjustable passage width of 600–900 mm (24–36 inches). 
 The height of the gate is 1020 mm (40.15 inches),
  and the depth of the top housing is 392 mm (15.43 inches). 
  The layout includes clear details for installation,
   with optional configurations for wider passages and an emphasis on precision measurements for effective deployment.
-        </p>
-                  </div>
-                </Col>
+            </p>
+          </div>
+        </div>
+      </>
+    ) : (
+      <>
+        {/* Left Column (Text Content) */}
+        <Col
+          xs={12}
+          md={6}
+          className="text-center text-md-start mb-4 mb-md-0"
+        >
+          <div
+            className="p-4 shadow-sm"
+            style={{
+              backgroundColor: "#f9f9f9",
+              maxWidth: "300px",
+            }}
+          >
+            <p>
+            The total width of the system is 1888 mm (74.33 inches), 
+with each gate panel offering an adjustable passage width of 600–900 mm (24–36 inches). 
+The height of the gate is 1020 mm (40.15 inches),
+ and the depth of the top housing is 392 mm (15.43 inches). 
+ The layout includes clear details for installation,
+  with optional configurations for wider passages and an emphasis on precision measurements for effective deployment.
+            </p>
+          </div>
+        </Col>
 
-                {/* Right Column (Image) */}
-                <Col xs={12} md={6} className="text-center">
-                  <img
-                    src={Axerb200dimension}
-                    alt="Boom Barrier Diagram"
-                    className="img-fluid"
-                  />
-                </Col>
-              </Row>
-            </Container>
+        {/* Right Column (Image) */}
+        <Col xs={12} md={6} className="text-center">
+          <img
+            src={Axerb200dimension}
+            alt="Boom Barrier Diagram"
+            className="img-fluid"
+          />
+        </Col>
+      </>
+    )}
+  </Row>
+</Container>
 
 {/* start Integration option */}
 <div className="Application">
               <h4 className="card-title mb-4 fw-semibold">Integration options</h4>
-              <div className="row ">
+              <div className={`row ${isMobile ? "justify-content-center" : ""}`}>
                 <div className="Integrationcardimg">
                   <img
                     src="/image/Product_images/Integrationoptions_img/Axle_killer_integration.png"
-                    className="img-fluid main-image" style={{width:"70%", marginLeft:"80px"}}
+                    className={`img-fluid main-image ${isMobile ? "mobile-image" : ""}`}
+                    style={isMobile ? { width: "80%", margin: "0 auto" } : { width: "70%", marginLeft: "80px" }}
                     alt="Measurement Icon"
                   />
                 </div>

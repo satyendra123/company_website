@@ -1,0 +1,26 @@
+.carousel-inner img {
+    max-height: 700px; /* Adjust based on your preference */
+    object-fit: cover; /* Ensures the image covers the carousel area */
+    transition: transform 0.5s ease-in-out; /* Faster slide transition */
+  }
+  .carousel-indicatorss{
+    margin-top: 40px;
+    border: 2px solid red;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-inner img {
+      max-height: 400px; /* Adjust height for smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .carousel-inner img {
+      max-height: 300px; /* Adjust height for very small screens */
+    }
+  }
+  
+  .carousel-item {
+    transition: transform -0.2s ease-in-out !important; /* Faster slide speed */
+  }
+  

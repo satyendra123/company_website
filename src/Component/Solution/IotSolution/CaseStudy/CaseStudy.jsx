@@ -8,8 +8,8 @@ const CaseStudies = () => {
   return (
     <SolutionCaseStudy 
       caseStudyHeaderText="CASE STUDIES"
-      caseStudySubHeaderText1="Architecture Diagram Of"
-      caseStudySubHeaderText2="On-Street PMS"
+      // caseStudySubHeaderText1="Architecture Diagram Of"
+      // caseStudySubHeaderText2="On-Street PMS"
       caseStudyLeftImg={Reactangle}
       caseStudyLeftImgAlt="case study"
       caseStudyLeftImgTitle="Lorem Ipsum"
@@ -22,6 +22,7 @@ const CaseStudies = () => {
       caseStudyRightBottomImgAlt="case study"
       caseStudyRightBottomImgTitle='Lorem Ipsum'
       caseStudyRightBottomImgDescription="Houston Systems is a leading provider in access automation."
+      knowmore="/iotsolution/knowmore"
     />
   );
 };

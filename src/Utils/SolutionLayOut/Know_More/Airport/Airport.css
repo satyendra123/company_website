@@ -1,0 +1,200 @@
+.International-container {
+    display: flex;
+    gap: 4rem;
+    flex-direction: row;
+    justify-content: flex-start; /* Align both columns to the left */
+  }
+  .goa-heading{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  font-size: 64px;
+  font-weight: 275;
+  line-height: 96px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  
+  }
+  .goa-heading-container {
+    margin: 100px;
+    display: flex; /* Use flexbox to align items in a row */
+    align-items: center; /* Align items vertically to the center */
+    gap: 10px; /* Space between the image and the heading */
+  }
+  
+  .goa-line-img {
+    max-width: 100px; /* Adjust the width of the image as needed */
+    height: auto; /* Maintain aspect ratio */
+  margin-left:300px;
+  
+  
+  }
+  
+  .goa-heading {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  font-size: 64px;
+  font-weight: 275;
+  line-height: 96px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  
+  }
+  
+  .content-container {
+    display: flex;
+    gap: 0rem;
+    flex-direction: row;
+    align-items: flex-start; /* Align both columns to the top */
+    width: 100%; /* Ensure this container takes up the full available width */
+  }
+  
+  .goa-left-content, .goa-right-content {
+    text-align: left; /* Ensure the text is aligned to the left */
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+    width: 50%; /* Adjust both columns to take up equal width */
+  }
+  
+  .goa-image-container {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .goa-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  
+  .goa-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+   /* Responsive adjustments for tablets and below (max-width: 1024px) */
+   @media (max-width: 1024px) {
+    .International-container {
+      flex-direction: column; /* Stack columns vertically on smaller screens */
+      gap: 2rem; /* Smaller gap for tablet and mobile */
+    }
+  
+    .goa-heading-container {
+      margin: 20px 0;
+      flex-direction: column; /* Stack the image and heading vertically */
+      align-items: center;
+    }
+  
+    .goa-line-img {
+      margin-left: 0; /* Remove the left margin on smaller screens */
+      max-width: 80px; /* Adjust image size */
+    }
+  
+    .content-container {
+      flex-direction: column; /* Stack content vertically */
+    }
+  
+    .goa-left-content, .goa-right-content {
+      width: 100%; /* Make columns take full width on smaller screens */
+    }
+  
+    .goa-title {
+      font-size: 28px; /* Adjust title font size for smaller screens */
+      line-height: 40px;
+    }
+  
+    .goa-description {
+      font-size: 14px; /* Adjust description font size for smaller screens */
+      line-height: 20px;
+    }
+  
+    .goa-heading {
+      font-size: 48px; /* Adjust heading font size for tablets */
+      line-height: 72px;
+    }
+  }
+  
+  /* Responsive adjustments for very small screens (max-width: 768px, tablets in portrait mode and smaller phones) */
+  @media (max-width: 768px) {
+    .goa-heading {
+      font-size: 40px; /* Smaller heading font size */
+      line-height: 60px;
+    }
+  
+    .goa-title {
+      font-size: 24px; /* Smaller title font size */
+      line-height: 32px;
+    }
+  
+    .goa-description {
+      font-size: 12px; /* Smaller description font size */
+      line-height: 16px;
+    }
+  
+    .goa-line-img {
+      max-width: 60px; /* Adjust image size */
+    }
+  }
+  
+  /* Responsive adjustments for phones in portrait mode (max-width: 480px) */
+  @media (max-width: 480px) {
+    .goa-heading {
+      font-size: 32px; /* Smaller heading font size */
+      line-height: 48px;
+    }
+  
+    .goa-title {
+      font-size: 22px; /* Smaller title font size */
+      line-height: 28px;
+    }
+  
+    .goa-description {
+      font-size: 10px; /* Smaller description font size */
+      line-height: 14px;
+    }
+  
+    .goa-line-img {
+      max-width: 50px; /* Further reduce image size */
+    }
+  
+    .goa-heading-container {
+      margin: 10px 0; /* Reduce margin on mobile */
+      align-items: center; /* Center content */
+    }
+  }
+  
+  /* Additional fine-tuning for extremely small screens (max-width: 375px, very small devices) */
+  @media (max-width: 375px) {
+    .goa-heading {
+      font-size: 28px; /* Even smaller heading font size */
+      line-height: 40px;
+    }
+  
+    .goa-title {
+      font-size: 20px; /* Even smaller title font size */
+      line-height: 26px;
+    }
+  
+    .goa-description {
+      font-size: 9px; /* Even smaller description font size */
+      line-height: 12px;
+    }
+  
+    .goa-line-img {
+      max-width: 40px; /* Further reduce image size */
+    }
+  }
+  

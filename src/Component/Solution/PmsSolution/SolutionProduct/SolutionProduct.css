@@ -1,0 +1,35 @@
+.product-card {
+    background-color: white;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+    width:300px;
+    transition: none;
+    border-radius: 20px;
+}
+
+.icon-image-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.icon-image-container img {
+  width: 50%;
+  height:auto;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+}

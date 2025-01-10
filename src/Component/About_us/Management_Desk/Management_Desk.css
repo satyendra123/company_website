@@ -1,0 +1,81 @@
+.Management-desk-container {
+  margin-top:100px;
+  position: relative;
+  display: flex;
+  
+}
+
+.management-desk-image1 {
+  position: relative;
+  bottom:100px;
+  left:150px;
+}
+
+.management-desk-image2 {
+
+  
+}
+
+.management-desk-image3 {
+  position: relative;
+  top:200px;
+  left:-100px;
+}
+
+.management-desk-image4 {
+  position: relative;
+  top:40px;
+  right:600px;
+  
+}
+
+@media (max-width: 768px) {
+  .management-desk-container {
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .management-desk-image1 {
+    position: relative;
+    bottom: 30px;
+    left: 30px;
+    margin-bottom: 20px; /* Add spacing for better layout */
+  }
+
+  .management-desk-image2 {
+    /* Add styles if needed for consistency */
+    margin-bottom: 20px;
+  }
+
+  .management-desk-image3 {
+    position: relative;
+    top: 70px;
+    left: -50px;
+    margin-bottom: 20px;
+  }
+
+  .management-desk-image4 {
+    position: relative;
+    top: 10px;
+    right: 180px;
+    margin-bottom: 20px;
+  }
+
+  .management-desk-content {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-bottom: 20px;
+    text-align: center; /* Align content centrally for better readability */
+  }
+
+  .management-desk-content-data {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: 1; /* Adjust z-index if overlapping occurs */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}

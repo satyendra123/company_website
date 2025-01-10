@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import './PgsEsolution.css';
 import zonedisplay from './../../PGSSOLUTIONIMG/zonedisplay.png';
 import floordisplay from './../../PGSSOLUTIONIMG/floordisplay.png';
-import maindisplay from './../../PGSSOLUTIONIMG/maindisplay.png';
+import maindisplay from './../../PGSSOLUTIONIMG/Main Display 1.png';
 import barriertwo from './../../PGSSOLUTIONIMG/barrier2.png';
 import identification from './../../PGSSOLUTIONIMG/identification.png';
 import tariff from './../../PGSSOLUTIONIMG/tariff.png';
@@ -38,13 +38,13 @@ const Display = () => {
         <div className="d-flex">
           <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex align-items-center`}>
             <div>
-              <h3 className="ml-4">Zone Display</h3>
+              <h3 className="">Zone Display</h3>
               <p>
                 The LED display in Parking Guidance System shows real-time parking space availability, helping users to find open spots quickly.
               </p>
               <div className="d-flex flex-column gap-3">
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={identification} alt="Identification" className="img-fluid" />
                   </div>
                   <p className="ml-3">
@@ -53,7 +53,7 @@ const Display = () => {
                 </div>
 
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={tariff} alt="Tariff" className="img-fluid" />
                   </div>
                   <p className="ml-3">
@@ -63,29 +63,30 @@ const Display = () => {
               </div>
             </div>
           </div>
-          <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-end align-items-center`}>
-            <img src={zonedisplay} alt="Validator" className="img-fluid" style={{ width: isMobileScreen ? '80%' : '50%' }} />
-          </div>
+          <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-center align-items-center`}>
+  <img src={zonedisplay} alt="Validator" className="img-fluid" style={{ width: isMobileScreen ? '80%' : '50%' }} />
+</div>
+
         </div>
 
         {/* Slide 2 */}
         <div className="d-flex">
           <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex align-items-center`}>
             <div>
-              <h3 className="ml-4">Floor Display</h3>
+              <h3 className="">Floor Display</h3>
               <p>
                 The LED display in Parking Guidance System shows real-time parking space availability, helping users to find open spots quickly.
               </p>
               <div className="d-flex flex-column gap-3">
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={identification} alt="Identification" className="img-fluid" />
                   </div>
                   <p className="ml-3">Works seamlessly with parking sensors and controllers</p>
                 </div>
 
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={tariff} alt="Tariff" className="img-fluid" />
                   </div>
                   <p className="ml-3">Displays instant updates based on sensor data</p>
@@ -93,29 +94,29 @@ const Display = () => {
               </div>
             </div>
           </div>
-          <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-end align-items-center`}>
-            <img src={floordisplay} alt="Validator" className="img-fluid" style={{ width: isMobileScreen ? '80%' : '50%' }} />
-          </div>
+          <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-center align-items-center`}>
+  <img src={floordisplay} alt="Validator" className="img-fluid" style={{ width: isMobileScreen ? '80%' : '50%' }} />
+</div>
         </div>
 
         {/* Slide 3 */}
         <div className="d-flex">
           <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex align-items-center`}>
             <div>
-              <h3 className="ml-4">Main Display</h3>
+              <h3 className="">Main Display</h3>
               <p>
                 The LED display in Parking Guidance System shows real-time parking space availability, helping users to find open spots quickly.
               </p>
               <div className="d-flex flex-column gap-3">
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={identification} alt="Identification" className="img-fluid" />
                   </div>
                   <p className="ml-3">Works seamlessly with parking sensors and controllers</p>
                 </div>
 
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={tariff} alt="Tariff" className="img-fluid" />
                   </div>
                   <p className="ml-3">Displays instant updates based on sensor data</p>
@@ -123,9 +124,9 @@ const Display = () => {
               </div>
             </div>
           </div>
-          <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-end align-items-center`}>
-            <img src={maindisplay} alt="Validator" className="img-fluid" style={{ width: isMobileScreen ? '80%' : '50%' }} />
-          </div>
+          <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-center align-items-center`}>
+         <img src={maindisplay} alt="Validator" className="img-fluid" style={{ width: isMobileScreen ? '80%' : '50%' }} />
+         </div>
         </div>
       </Slider>
     </Container>

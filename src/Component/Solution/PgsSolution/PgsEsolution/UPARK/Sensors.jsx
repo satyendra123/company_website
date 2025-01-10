@@ -88,12 +88,12 @@ const Sensors = () => {
           <div className="d-flex" key={index}>
             <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex align-items-center`}>
               <div>
-                <h3 className="ml-4">{slide.title}</h3>
+                <h3>{slide.title}</h3>
                 <p>{slide.description}</p>
                 <div className="d-flex flex-column gap-3">
                   {slide.features.map((feature, i) => (
                     <div className="d-flex align-items-center" key={i}>
-                      <div className="image-circle">
+                      <div>
                         <img src={feature.icon} alt="feature-icon" className="img-fluid" />
                       </div>
                       <p className="ml-3">{feature.text}</p>
@@ -103,9 +103,9 @@ const Sensors = () => {
               </div>
             </div>
             <div
-              className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-end align-items-center`}
+              className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex justify-content-center align-items-center`}
             >
-              <img src={slide.image} alt={slide.title} className="img-fluid" style={{ width: '50%' }} />
+              <img src={slide.image} alt={slide.title} className="img-fluid center-image" />
             </div>
           </div>
         ))}

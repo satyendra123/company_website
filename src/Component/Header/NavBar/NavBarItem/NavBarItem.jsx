@@ -15,6 +15,7 @@ const NavBar = () => {
   const [activeNavItem, setActiveNavItem] = useState(0);
   const [productDropdownOpen, setProductDropdownOpen] = useState(false);
   const [solutionDropdownOpen, setSolutionDropdownOpen] = useState(false);
+  const [IotServicesDropdownOpen, setIotServicesDropdownOpen] = useState(false);
   const navigate = useNavigate();
 
   const handleMouseEnter = (index) => {
@@ -32,8 +33,12 @@ const NavBar = () => {
 
   const toggleProductDropdown = () =>
     setProductDropdownOpen((prevState) => !prevState);
+
   const toggleSolutionDropdown = () =>
     setSolutionDropdownOpen((prevState) => !prevState);
+
+  const toggleIotServicesDropdown = () =>
+    setIotServicesDropdownOpen((prevState) => !prevState);
 
   return (
     <Nav className="navbar-nav mx-auto border-top">
@@ -245,7 +250,7 @@ const NavBar = () => {
             <DropdownItem
               onClick={() => handleClick(2, "/solution/iot-solution")}
             >
-              IOT Solution
+            Visitor Management System
             </DropdownItem>
             <DropdownItem
               onClick={() =>
@@ -264,25 +269,115 @@ const NavBar = () => {
             >
               Mass Transit Fare Collection Solution
             </DropdownItem>
+            <DropdownItem
+              onClick={() =>
+                handleClick(
+                  2,
+                  "/solution/Traffic-Management-System"
+                )
+              }
+            >
+              Traffic Management System
+            </DropdownItem>
+            <DropdownItem
+              onClick={() =>
+                handleClick(
+                  2,
+                  "/solution/q-management-system"
+                )
+              }
+            >
+              Queue Managemant System
+            </DropdownItem>
           </DropdownMenu>
         </Dropdown>
       </NavItem>
+
       <NavItem>
-        <NavLink
-          to="/services"
-          className={`nav-item nav-link ${activeNavItem === 3 ? "active" : ""}`}
-          onMouseEnter={() => handleMouseEnter(3)}
-          onMouseLeave={handleMouseLeave}
-          onClick={() => handleClick(3, "/services")}
+        <Dropdown
+          nav
+          isOpen={IotServicesDropdownOpen}
+          toggle={toggleIotServicesDropdown}
         >
-          SERVICES
-          <div
-            className="nav-line"
-            style={{
-              width: activeNavItem === 3 || hoveredNavItem === 3 ? "100%" : "0",
-            }}
-          />
-        </NavLink>
+          <NavLink
+            to="/iot-services"
+            className={`nav-item nav-link ${
+              activeNavItem === 3 ? "active" : ""
+            }`}
+            onMouseEnter={() => handleMouseEnter(2)}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleClick(3, "/services")}
+          >
+            <DropdownToggle nav caret className="no-caret">
+              IT SERVICES
+              <div
+                className="nav-line"
+                style={{
+                  width:
+                    activeNavItem === 3 || hoveredNavItem === 3 ? "100%" : "0",
+                }}
+              />
+            </DropdownToggle>
+          </NavLink>
+          <DropdownMenu>
+            <DropdownItem
+              onClick={() =>
+                handleClick(3, "/services/Softwaredevelopment")
+              }
+            >
+              Software Development
+            </DropdownItem>
+            <DropdownItem
+              onClick={() =>
+                handleClick(3, "/services/cloudservices")
+              }
+            >
+              Cloud Services
+            </DropdownItem>
+            <DropdownItem
+              onClick={() => handleClick(3, "/services/automation")}
+            >
+            Automation
+            </DropdownItem>
+            <DropdownItem
+              onClick={() =>
+                handleClick(3, "/services/Securitysolution")
+              }
+            >
+              Security Solution
+            </DropdownItem>
+            <DropdownItem
+              onClick={() =>
+                handleClick(
+                  3,
+                  "/services/development"
+                )
+              }
+            >
+              Development
+            </DropdownItem>
+            <DropdownItem
+              onClick={() =>
+                handleClick(
+                  3,
+                  "/services/consultingservices"
+                )
+              }
+            >
+              Consulting and services
+            </DropdownItem>
+            <DropdownItem
+              onClick={() =>
+                handleClick(
+                  3,
+                  "/services/AIvision"
+                )
+              }
+            >
+            AI Vision
+            </DropdownItem>
+          </DropdownMenu>
+        </Dropdown>
       </NavItem>
     </Nav>
   );

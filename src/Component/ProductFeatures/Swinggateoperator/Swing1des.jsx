@@ -1,14 +1,26 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import fly from "./swinggateoperatorIMG/fly.png";
-import React, { useRef, useEffect } from "react";
+import React, { useState,useRef, useEffect } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import carporate from "./swinggateoperatorIMG/corporate.png";
 import warehouse from "./swinggateoperatorIMG/warehouse.png";
 import Residential from "./swinggateoperatorIMG/Residential.png";
 import govt from "./swinggateoperatorIMG/govt.png";
-import Swingdimensions from "./swinggateoperatorIMG/Swingdimensions.jpg";
+import flydimensions from "./swinggateoperatorIMG/Swinggatedimension/flydimension.jpg";
 import qr from "./swinggateoperatorIMG/qr.png";
+
+
+
+
+
+import gallry1 from "./swinggateoperatorIMG/media/g1.png";
+import gallry2 from "./swinggateoperatorIMG/media/g2.png";
+import gallry3 from "./swinggateoperatorIMG/media/g3.png";
+import gallry4 from "./swinggateoperatorIMG/media/g4.png";
+
+
+
 
 import keyspecies1 from './swinggateoperatorIMG/key_species/Keyspecies_1.png'
 import keyspecies2 from './swinggateoperatorIMG/key_species/Keyspecies_2.png'
@@ -39,22 +51,34 @@ const testimonials = [
     name: "/image/Product_images/Accessories_img/Accessories 16.png",
   },
 ];
+
 const mediaimg = [
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: gallry1,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3994.png",
+    img: gallry2,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: gallry3,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: gallry4,
   },
 ];
 
 const Swing1des = () => {
+
+    const [isMobile, setIsMobile] = useState(false);           
+        useEffect(() => {
+          const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+          };
+          window.addEventListener("resize", handleResize);
+          handleResize();
+          return () => window.removeEventListener("resize", handleResize);
+        }, []);
+
   useEffect(() => {
     handleSlideChange();
   }, []);
@@ -102,58 +126,143 @@ const Swing1des = () => {
               </div>
             </div>
 
-{/*start specs */}
-<div className="row align-items-center">
-  <div className="col-2">
-    <p className="key-specs-text">KEY SPECS.</p>
-  </div>
-  <div className="col-1">
-    <div className="vertical-border"></div>
-  </div>
-  <div className="col">
-    <div className="row justify-content-start g-3">
-      <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
-        <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
-          <img
-            src={keyspecies1}
-            className="img-fluid"
-            alt="Oil Icon"
-            style={{ maxWidth: "60px", maxHeight: "60px" }} // Adjust the max size of the image
-          />
+{/* start key specs  */}
+            <div className="row align-items-center">
+  {isMobile ? (
+    // Mobile Layout
+    <div className="row mb-3">
+      <h3 className="text-center font-bold" style={{ fontWeight: 550 }}>KEY SPECS</h3>
+      <div className="col-2">
+        <div
+          className="d-flex flex-column align-items-center"
+          style={{ width: "100%", height: "80px" }}
+        >
+          <div
+            className="cardimg d-flex justify-content-center align-items-center"
+            style={{ height: "100%" }}
+          >
+            <img
+              src={keyspecies1}
+              className="img-fluid"
+              alt="Oil Icon"
+              style={{ maxWidth: "40px", maxHeight: "40px" }}
+            />
+          </div>
         </div>
       </div>
-      <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
-        <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
-          <img
-            src={keyspecies2}
-            className="img-fluid"
-            alt="Gate Icon"
-            style={{ maxWidth: "60px", maxHeight: "60px" }}
-          />
+      <div className="col-1"></div> {/* Gap */}
+      <div className="col-2">
+        <div
+          className="d-flex flex-column align-items-center"
+          style={{ width: "100%", height: "80px" }}
+        >
+          <div
+            className="cardimg d-flex justify-content-center align-items-center"
+            style={{ height: "100%" }}
+          >
+            <img
+              src={keyspecies2}
+              className="img-fluid"
+              alt="Gate Icon"
+              style={{ maxWidth: "40px", maxHeight: "40px" }}
+            />
+          </div>
         </div>
       </div>
-      <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
-        <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
-          <img
-            src={keyspecies3}
-            className="img-fluid"
-            alt="Mechanism Icon"
-            style={{ maxWidth: "60px", maxHeight: "60px" }}
-          />
+      <div className="col-1"></div> {/* Gap */}
+      <div className="col-2">
+        <div
+          className="d-flex flex-column align-items-center"
+          style={{ width: "100%", height: "80px" }}
+        >
+          <div
+            className="cardimg d-flex justify-content-center align-items-center"
+            style={{ height: "100%" }}
+          >
+            <img
+              src={keyspecies3}
+              className="img-fluid"
+              alt="Mechanism Icon"
+              style={{ maxWidth: "40px", maxHeight: "40px" }}
+            />
+          </div>
         </div>
       </div>
-      <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
-        <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
-          <img
-            src={keyspecies4}
-            className="img-fluid"
-            alt="Measurement Icon"
-            style={{ maxWidth: "60px", maxHeight: "60px" }}
-          />
+      <div className="col-1"></div> {/* Gap */}
+      <div className="col-2">
+        <div
+          className="d-flex flex-column align-items-center"
+          style={{ width: "100%", height: "80px" }}
+        >
+          <div
+            className="cardimg d-flex justify-content-center align-items-center"
+            style={{ height: "100%" }}
+          >
+            <img
+              src={keyspecies4}
+              className="img-fluid"
+              alt="Measurement Icon"
+              style={{ maxWidth: "40px", maxHeight: "40px" }}
+            />
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  ) : (
+    // Desktop Layout
+    <>
+      <div className="col-2">
+        <p className="key-specs-text">KEY SPECS.</p>
+      </div>
+      <div className="col-1">
+        <div className="vertical-border"></div>
+      </div>
+      <div className="col">
+        <div className="row justify-content-start g-3">
+          <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
+            <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
+              <img
+                src={keyspecies1}
+                className="img-fluid"
+                alt="Oil Icon"
+                style={{ maxWidth: "60px", maxHeight: "60px" }}
+              />
+            </div>
+          </div>
+          <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
+            <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
+              <img
+                src={keyspecies2}
+                className="img-fluid"
+                alt="Gate Icon"
+                style={{ maxWidth: "60px", maxHeight: "60px" }}
+              />
+            </div>
+          </div>
+          <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
+            <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
+              <img
+                src={keyspecies3}
+                className="img-fluid"
+                alt="Mechanism Icon"
+                style={{ maxWidth: "60px", maxHeight: "60px" }}
+              />
+            </div>
+          </div>
+          <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
+            <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
+              <img
+                src={keyspecies4}
+                className="img-fluid"
+                alt="Measurement Icon"
+                style={{ maxWidth: "60px", maxHeight: "60px" }}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  )}
 </div>
 
 
@@ -192,6 +301,7 @@ const Swing1des = () => {
                         src={govt}
                         className="img-fluid"
                         alt="Gate Icon"
+                        
                       />
                     </div>
                   </div>
@@ -200,6 +310,7 @@ const Swing1des = () => {
                   <div className="row justify-content-around">
                     <p className="Appconte">
                     Swing gate operators are suitable for residential villas, commercial complexes, and industrial premises, offering a blend of security and aesthetic appeal.
+
                     </p>
                   </div>
                 </div>
@@ -239,7 +350,7 @@ const Swing1des = () => {
         maxWidth: "100%",
         height: "auto",
       }}
-      src={Swingdimensions}
+      src={flydimensions}
       alt="swing dimensions Diagram"
       className="img-fluid"
     />
@@ -251,11 +362,12 @@ const Swing1des = () => {
 {/* start Integration option */}
 <div className="Application">
               <h4 className="card-title mb-4 fw-semibold">Integration options</h4>
-              <div className="row ">
+              <div className={`row ${isMobile ? "justify-content-center" : ""}`}>
                 <div className="Integrationcardimg">
                   <img
                     src="/image/Product_images/Integrationoptions_img/SwingGateintegration.png"
-                    className="img-fluid main-image" style={{width:"70%", marginLeft:"80px"}}
+                    className={`img-fluid main-image ${isMobile ? "mobile-image" : ""}`}
+                    style={isMobile ? { width: "80%", margin: "0 auto" } : { width: "70%", marginLeft: "80px" }}
                     alt="Measurement Icon"
                   />
                 </div>
@@ -476,28 +588,30 @@ const Swing1des = () => {
             </Container>
           </div>
           <div className="contact-form-footer">
-            <div className="row">
-              <div className="col-md-2 col-12 contact-form-qr-code-col">
-                <img
-                  src={qr}
-                  alt="QR Code"
-                  className="contact-form-img-fluid contact-form-qr-code"
-                />
-              </div>
-              <div className="col-md-10 col-12 contact-form-text-col">
-                <div className="contact-form-footer-text">
-                  <div className="row">
-                  <div className="col-12 qrcode mt-2">
-                            <p className="text-center">
-                              Discover our extensive range of innovative products
-                            </p>
-                            <p className="text-center" style={{ marginTop: '-35px' }}>
-                              simply scan to explore more
-                            </p>
-                          </div>
-                  </div>
-                </div>
-              </div>
+  <div className="row align-items-center">
+    {/* QR Code Column */}
+    <div className="col-md-2 col-12 text-center mb-3 mb-md-0 contact-form-qr-code-col">
+      <img
+        src={qr}
+        alt="QR Code"
+        className="img-fluid contact-form-qr-code"
+        style={{ maxWidth: '150px' }}
+      />
+    </div>
+
+    {/* Text Column */}
+    <div className="col-md-10 col-12 text-center contact-form-text-col">
+      <div className="contact-form-footer-text">
+        <div className="qrcode">
+          <p className="mb-1">
+            Discover our extensive range of innovative products
+          </p>
+          <p className="mb-0" style={{ marginTop: isMobile ? '-10px':'-30px'}}>
+            simply scan to explore more
+          </p>
+        </div>
+      </div>
+    </div>
             </div>
           </div>
         </div>

@@ -26,7 +26,11 @@
   /* padding-top: 0.5rem; */
   /* padding-bottom: 0.5rem; */
 }
-
+.boom-barrier-home-page-product-section:hover {
+  background-color: #e9ecef; /* Light color on hover */
+  transform: scale(1.02); /* Optional: Slight zoom on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); }
+  
 .boom-header {
   margin-bottom: 0.5rem;
 }

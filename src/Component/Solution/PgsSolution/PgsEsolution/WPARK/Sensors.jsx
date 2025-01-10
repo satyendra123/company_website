@@ -39,20 +39,20 @@ const Sensors = () => {
         <div className="d-flex">
           <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex align-items-center`}>
             <div>
-              <h3 className="ml-4">Wireless Ground Sensor</h3>
+              <h3 className="">Wireless Ground Sensor</h3>
               <p>
                 Ultrasonic sensor, mounted above each parking space, integrates with the indicator light to provide real-time parking space status
               </p>
               <div className="d-flex flex-column gap-3">
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={identification} alt="Identification" className="img-fluid" />
                   </div>
                   <p className="ml-3">Precisely detects vehicle presence and occupancy in parking spaces.</p>
                 </div>
 
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={tariff} alt="Tariff" className="img-fluid" />
                   </div>
                   <p className="ml-3">Provides instant status updates to parking systems.</p>
@@ -69,20 +69,20 @@ const Sensors = () => {
         <div className="d-flex">
           <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex align-items-center`}>
             <div>
-              <h3 className="ml-4">Wireless Surface Sensor</h3>
+              <h3 className="">Wireless Surface Sensor</h3>
               <p>
                 Ultrasonic sensor, mounted above each parking space, integrates with the indicator light to provide real-time parking space status
               </p>
               <div className="d-flex flex-column gap-3">
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={identification} alt="Identification" className="img-fluid" />
                   </div>
                   <p className="ml-3">Precisely detects vehicle presence and occupancy in parking spaces.</p>
                 </div>
 
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={tariff} alt="Tariff" className="img-fluid" />
                   </div>
                   <p className="ml-3">Provides instant status updates to parking systems.</p>
@@ -99,20 +99,20 @@ const Sensors = () => {
         <div className="d-flex">
           <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex align-items-center`}>
             <div>
-              <h3 className="ml-4">Outdoor LED Indicator</h3>
+              <h3 className="">Outdoor LED Indicator</h3>
               <p>
                 Ultrasonic sensor, mounted above each parking space, integrates with the indicator light to provide real-time parking space status
               </p>
               <div className="d-flex flex-column gap-3">
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={identification} alt="Identification" className="img-fluid" />
                   </div>
                   <p className="ml-3">Precisely detects vehicle presence and occupancy in parking spaces.</p>
                 </div>
 
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={tariff} alt="Tariff" className="img-fluid" />
                   </div>
                   <p className="ml-3">Provides instant status updates to parking systems.</p>
@@ -129,20 +129,20 @@ const Sensors = () => {
         <div className="d-flex">
           <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex align-items-center`}>
             <div>
-              <h3 className="ml-4">Wireless Stack Sensor</h3>
+              <h3 className="">Wireless Stack Sensor</h3>
               <p>
                 Ultrasonic sensor, mounted above each parking space, integrates with the indicator light to provide real-time parking space status
               </p>
               <div className="d-flex flex-column gap-3">
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={identification} alt="Identification" className="img-fluid" />
                   </div>
                   <p className="ml-3">Precisely detects vehicle presence and occupancy in parking spaces.</p>
                 </div>
 
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={tariff} alt="Tariff" className="img-fluid" />
                   </div>
                   <p className="ml-3">Provides instant status updates to parking systems.</p>
@@ -159,20 +159,20 @@ const Sensors = () => {
         <div className="d-flex">
           <div className={`col-12 ${!isMobileScreen ? 'col-md-6' : ''} d-flex align-items-center`}>
             <div>
-              <h3 className="ml-4">Stack Wireless LED Indicator</h3>
+              <h3 className="">Stack Wireless LED Indicator</h3>
               <p>
                 Ultrasonic sensor, mounted above each parking space, integrates with the indicator light to provide real-time parking space status
               </p>
               <div className="d-flex flex-column gap-3">
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={identification} alt="Identification" className="img-fluid" />
                   </div>
                   <p className="ml-3">Precisely detects vehicle presence and occupancy in parking spaces.</p>
                 </div>
 
                 <div className="d-flex align-items-center">
-                  <div className="image-circle">
+                  <div className="">
                     <img src={tariff} alt="Tariff" className="img-fluid" />
                   </div>
                   <p className="ml-3">Provides instant status updates to parking systems.</p>

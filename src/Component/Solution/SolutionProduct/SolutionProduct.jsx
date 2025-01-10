@@ -12,7 +12,7 @@ import './SolutionProduct.css'
 const SolutionProduct = () => {
   return (
     <div>
-      <h3 className="text-center m-5">Product</h3>
+      <h3 className="text-center m-5">Prod</h3>
       <div className="d-flex justify-content-center align-items-center gap-5 product-container">
 
       <div className="product-card">

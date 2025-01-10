@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import road2des from "./TYREIMG/TYRE K1100.png";
@@ -53,6 +53,18 @@ const mediaimg = [
   },
 ];
 const Dfmd2des = () => {
+
+  const [isMobile, setIsMobile] = useState(false);
+              
+          useEffect(() => {
+            const handleResize = () => {
+              setIsMobile(window.innerWidth <= 768);
+            };
+            window.addEventListener("resize", handleResize);
+            handleResize();
+            return () => window.removeEventListener("resize", handleResize);
+          }, []);
+
   const swiperRef = useRef(null);
 
   const handleSlideChange = () => {
@@ -104,58 +116,144 @@ const Dfmd2des = () => {
 
 {/*start specs */}
 <div className="row align-items-center">
-  <div className="col-2">
-    <p className="key-specs-text">KEY SPECS.</p>
-  </div>
-  <div className="col-1">
-    <div className="vertical-border"></div>
-  </div>
-  <div className="col">
-    <div className="row justify-content-start g-3">
-      <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
-        <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
-          <img
-            src={keyspecies}
-            className="img-fluid"
-            alt="Oil Icon"
-            style={{ maxWidth: "60px", maxHeight: "60px" }}
-          />
+  {isMobile ? (
+    // Mobile Layout
+    <div className="row mb-3">
+      <h3 className="text-center font-bold" style={{ fontWeight: 550 }}>KEY SPECS</h3>
+      <div className="col-2">
+        <div
+          className="d-flex flex-column align-items-center"
+          style={{ width: "100%", height: "80px" }}
+        >
+          <div
+            className="cardimg d-flex justify-content-center align-items-center"
+            style={{ height: "100%" }}
+          >
+            <img
+              src={keyspecies}
+              className="img-fluid"
+              alt="Oil Icon"
+              style={{ maxWidth: "40px", maxHeight: "40px" }}
+            />
+          </div>
         </div>
       </div>
-      <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
-        <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
-          <img
-            src={keyspecies2}
-            className="img-fluid"
-            alt="Gate Icon"
-            style={{ maxWidth: "60px", maxHeight: "60px" }}
-          />
+      <div className="col-1"></div> {/* Gap */}
+      <div className="col-2">
+        <div
+          className="d-flex flex-column align-items-center"
+          style={{ width: "100%", height: "80px" }}
+        >
+          <div
+            className="cardimg d-flex justify-content-center align-items-center"
+            style={{ height: "100%" }}
+          >
+            <img
+              src={keyspecies2}
+              className="img-fluid"
+              alt="Gate Icon"
+              style={{ maxWidth: "40px", maxHeight: "40px" }}
+            />
+          </div>
         </div>
       </div>
-      <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
-        <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
-          <img
-            src={keyspecies3}
-            className="img-fluid"
-            alt="Mechanism Icon"
-            style={{ maxWidth: "60px", maxHeight: "60px" }}
-          />
+      <div className="col-1"></div> {/* Gap */}
+      <div className="col-2">
+        <div
+          className="d-flex flex-column align-items-center"
+          style={{ width: "100%", height: "80px" }}
+        >
+          <div
+            className="cardimg d-flex justify-content-center align-items-center"
+            style={{ height: "100%" }}
+          >
+            <img
+              src={keyspecies3}
+              className="img-fluid"
+              alt="Mechanism Icon"
+              style={{ maxWidth: "40px", maxHeight: "40px" }}
+            />
+          </div>
         </div>
       </div>
-      <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
-        <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
-          <img
-            src={keyspecies4}
-            className="img-fluid"
-            alt="Measurement Icon"
-            style={{ maxWidth: "60px", maxHeight: "60px" }}
-          />
+      <div className="col-1"></div> {/* Gap */}
+      <div className="col-2">
+        <div
+          className="d-flex flex-column align-items-center"
+          style={{ width: "100%", height: "80px" }}
+        >
+          <div
+            className="cardimg d-flex justify-content-center align-items-center"
+            style={{ height: "100%" }}
+          >
+            <img
+              src={keyspecies4}
+              className="img-fluid"
+              alt="Measurement Icon"
+              style={{ maxWidth: "40px", maxHeight: "40px" }}
+            />
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  ) : (
+    // Desktop Layout
+    <>
+      <div className="col-2">
+        <p className="key-specs-text">KEY SPECS.</p>
+      </div>
+      <div className="col-1">
+        <div className="vertical-border"></div>
+      </div>
+      <div className="col">
+        <div className="row justify-content-start g-3">
+          <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
+            <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
+              <img
+                src={keyspecies}
+                className="img-fluid"
+                alt="Oil Icon"
+                style={{ maxWidth: "60px", maxHeight: "60px" }}
+              />
+            </div>
+          </div>
+          <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
+            <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
+              <img
+                src={keyspecies2}
+                className="img-fluid"
+                alt="Gate Icon"
+                style={{ maxWidth: "60px", maxHeight: "60px" }}
+              />
+            </div>
+          </div>
+          <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
+            <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
+              <img
+                src={keyspecies3}
+                className="img-fluid"
+                alt="Mechanism Icon"
+                style={{ maxWidth: "60px", maxHeight: "60px" }}
+              />
+            </div>
+          </div>
+          <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
+            <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
+              <img
+                src={keyspecies4}
+                className="img-fluid"
+                alt="Measurement Icon"
+                style={{ maxWidth: "60px", maxHeight: "60px" }}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  )}
 </div>
 {/*end specs */}
+
 
 {/* start application  */}
 
@@ -212,11 +310,12 @@ const Dfmd2des = () => {
    {/* start Integration option */}
    <div className="Application">
               <h4 className="card-title mb-4 fw-semibold">Integration options</h4>
-              <div className="row ">
+              <div className={`row ${isMobile ? "justify-content-center" : ""}`}>
                 <div className="Integrationcardimg">
                   <img
                     src="/image/Product_images/Integrationoptions_img/Roadbreaker_integration.png"
-                    className="img-fluid main-image" style={{width:"70%", marginLeft:"80px"}}
+                    className={`img-fluid main-image ${isMobile ? "mobile-image" : ""}`}
+                    style={isMobile ? { width: "80%", margin: "0 auto" } : { width: "70%", marginLeft: "80px" }}
                     alt="Measurement Icon"
                   />
                 </div>

@@ -483,7 +483,7 @@ const BoomBarrier = () => {
             </div>
             <div className="media-wrapper">
               <div className="Application mb-4">
-                <h1 className="card-title mb-4">Media / Gallery</h1>
+                <h1 className="card-title mb-4">Project Gallery</h1>
               </div>
               <div className="row">
                 <div className="col">

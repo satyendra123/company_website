@@ -132,7 +132,46 @@
     font-size: 16px;
     padding-left: 5px;
   }
+  .testimonialogo{
+       margin-left:32%;
+       margin-top: 10%;
+  }
+  .starlogo{
+  
+    width: 70%;
+   
+  }
 }
+
+@media (max-width: 576px) {
+  .testimonialogo{
+       text-align:center;
+       margin-top: 10%;
+  }
+  .starlogo{
+    width: 70%;
+  }
+
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .testimonialogo {
+    display: flex;
+    justify-content: center; /* Align horizontally */
+    align-items: center; /* Align vertically */
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    border-radius: 50%; /* Optional: Circular appearance for profile images */
+    overflow: hidden; /* Ensures the image stays within rounded borders */
+    background-position: center;
+    background-size: cover; /* Ensures the image fits nicely */
+  }
+}
+
+
 
 .testimonial-headers {
   text-align: center;

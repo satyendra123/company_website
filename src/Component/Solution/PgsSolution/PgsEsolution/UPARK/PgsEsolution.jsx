@@ -6,22 +6,7 @@ import Display from "./Display";
 import SoftwarePackage from "./SoftwarePackages";
 
 const PgsEsolution = () => {
-  const [activeComponent, setActiveComponent] = useState("Sensor");
-  const [isMobileScreen, setIsMobileScreen] = useState(window.innerWidth < 768);
-
-  // Update the screen size state on resize
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobileScreen(window.innerWidth < 768);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    // Cleanup the event listener on component unmount
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const [activeComponent, setActiveComponent] = useState("Sensors");
 
   const renderComponent = () => {
     switch (activeComponent) {
@@ -40,32 +25,45 @@ const PgsEsolution = () => {
 
   return (
     <>
-      <div className="button-wrapper">
-        <div className={`button-container clickable ${isMobileScreen ? "top-button" : ""}`} onClick={() => setActiveComponent("Sensors")}>
-          <p className="mt-2">Sensor</p>
-        </div>
-        <div
-          className={`button-container clickable ${isMobileScreen ? "top-button" : ""}`}
-          onClick={() => setActiveComponent("Controller")}
-        >
-          <p className="mt-2">Controller</p>
-        </div>
-        <div
-          className={`button-container clickable ${isMobileScreen ? "bottom-button" : ""}`}
-          onClick={() => setActiveComponent("Display")}
-        >
-          <p className="mt-2">Display</p>
-        </div>
-        <div
-          className={`button-container clickable ${isMobileScreen ? "bottom-button" : ""}`}
-          onClick={() => setActiveComponent("SoftwarePackage")}
-        >
-          <p className="mt-2">Software</p>
+      <div className="container mt-4">
+        <div className="row gy-3">
+          <div className="col-6 col-md-3">
+            <div
+              className={`button-container clickable ${activeComponent === "Sensors" ? "active-button" : ""}`}
+              onClick={() => setActiveComponent("Sensors")}
+            >
+              <p className="mt-2 text-center">Sensors & LED Indicators</p>
+            </div>
+          </div>
+          <div className="col-6 col-md-3">
+            <div
+              className={`button-container clickable ${activeComponent === "Controller" ? "active-button" : ""}`}
+              onClick={() => setActiveComponent("Controller")}
+            >
+              <p className="mt-2 text-center">Controller</p>
+            </div>
+          </div>
+          <div className="col-6 col-md-3">
+            <div
+              className={`button-container clickable ${activeComponent === "Display" ? "active-button" : ""}`}
+              onClick={() => setActiveComponent("Display")}
+            >
+              <p className="mt-2 text-center">Display</p>
+            </div>
+          </div>
+          <div className="col-6 col-md-3">
+            <div
+              className={`button-container clickable ${activeComponent === "SoftwarePackage" ? "active-button" : ""}`}
+              onClick={() => setActiveComponent("SoftwarePackage")}
+            >
+              <p className="mt-2 text-center">Software</p>
+            </div>
+          </div>
         </div>
       </div>
 
       {/* Content Rendered Here */}
-      <div className="content-container">{renderComponent()}</div>
+      <div className="container mt-4 content-container">{renderComponent()}</div>
     </>
   );
 };

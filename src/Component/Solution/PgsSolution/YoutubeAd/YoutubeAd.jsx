@@ -5,9 +5,9 @@ import SolutionYoutubeAd from '../../../../Utils/SolutionLayOut/SolutionYoutubeA
 const YoutubeAd = () => {
   const headerText = "Parking Guidance system";
   const descriptions = [
-    "Houston Systems Pvt. Ltd. is your comprehensive source for cutting-edge, technology-driven parking guidance solutions. We specialize in delivering tailored systems optimized for each unique parking environment. Leveraging advanced tech, we design, implement, and maintain solutions that ensure a seamless and efficient parking experience.",
+    "Parking Guidance system is designed to assist users to find their parking space easily within the indoor and outdoor parking facility. This is user friendly system not only help you to find your car in parking also but also guide you through the driveways for entering and exiting from the parking facility.",
   ];
-  const videoUrl = "https://www.youtube.com/embed/5jL0aM7lrHY?autoplay=1&mute=1&controls=1&loop=1&playlist=5jL0aM7lrHY";
+  const videoUrl = "https://1&mute=1&controls=1&loop=1&playlist=5jL0aM7lrHY";
 
   return (
     <div>

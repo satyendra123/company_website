@@ -36,16 +36,16 @@ const Tyre = () => {
             className={`subfeature ${activeDescription ? "col-md-5" : "col-12"}`}
           >
             <div onClick={() => handleTileClick("Tyre1")}>
-              <Tyre1 />
+              {/* <Tyre1 /> */}
             </div>
             <div onClick={() => handleTileClick("Tyre2")}>
               <Tyre2 />
             </div>
             <div onClick={() => handleTileClick("Tyre3")}>
-              <Tyre3 />
+              {/* <Tyre3 /> */}
             </div>
             <div onClick={() => handleTileClick("Tyre4")}>
-              <Tyre4 />
+              {/* <Tyre4 /> */}
             </div>
           </div>
         )}
@@ -64,10 +64,10 @@ const Tyre = () => {
               </div>
             )}
             <div className="description-content">
-              {activeDescription === "Tyre1" && <Tyre1des />}
+              {/* {activeDescription === "Tyre1" && <Tyre1des />} */}
               {activeDescription === "Tyre2" && <Tyre2des />}
-              {activeDescription === "Tyre3" && <Tyre3des />}
-              {activeDescription === "Tyre4" && <Tyre4des />}
+              {/* {activeDescription === "Tyre3" && <Tyre3des />} */}
+              {/* {activeDescription === "Tyre4" && <Tyre4des />} */}
             </div>
           </div>
         )}

@@ -3,9 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import boomBarrierImg from "./ProductsubfeauresIMG/vegadiagram.png";
 import Tarnedo_vega from "./ProductsubfeauresIMG/Tarnedo_vega.png";
-import React, { useRef, useEffect } from "react";
+import React, { useState,useRef, useEffect } from "react";
 import { Container, Row, Col, Form, Button,Card } from "react-bootstrap";
-import BOOM_BARIER_2 from "./ProductsubfeauresIMG/BOOM-BARIER.gif";
+import BOOM_BARIER_2 from "./ProductsubfeauresIMG/Vegagif.gif";
 import Parkinglots from "./ProductsubfeauresIMG/Parkinglots.png";
 import Residential from "./ProductsubfeauresIMG/Residential.png";
 import Commercial from "./ProductsubfeauresIMG/Commercial.png";
@@ -67,6 +67,17 @@ const mediaimg = [
 
 
 const Vegadiscription = () => {
+
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   useEffect(() => {
     handleSlideChange();
   }, []);
@@ -114,158 +125,324 @@ const Vegadiscription = () => {
               </div>
             </div>
 
-{/*start specs */}
+{/* Start specs */}
 <div className="row align-items-center">
-  <div className="col-2">
-    <p className="key-specs-text">KEY SPECS.</p>
-  </div>
-  <div className="col-1">
-    <div className="vertical-border"></div>
-  </div>
-  <div className="col">
-    <div className="row justify-content-start g-3">
-      <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
-        <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
-          <img
-            src={keyspecies}
-            className="img-fluid"
-            alt="Oil Icon"
-            style={{ maxWidth: "60px", maxHeight: "60px" }}
-          />
+  {isMobile ? (
+    // Mobile Layout
+
+    <div className="row mb-3">
+      <h3 className="text-center font-bold" style={{ fontWeight: 550 }}>KEY SPECS</h3>
+      <div className="col-2">
+        <div
+          className=" d-flex flex-column align-items-center"
+          style={{ width: "100%", height: "80px" }}
+        >
+          <div
+            className="cardimg d-flex justify-content-center align-items-center"
+            style={{ height: "100%" }}
+          >
+            <img
+              src={keyspecies}
+              className="img-fluid"
+              alt="Oil Icon"
+              style={{ maxWidth: "40px", maxHeight: "40px" }}
+            />
+          </div>
         </div>
       </div>
-      <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
-        <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
-          <img
-            src={keyspecies2}
-            className="img-fluid"
-            alt="Gate Icon"
-            style={{ maxWidth: "60px", maxHeight: "60px" }}
-          />
+      <div className="col-1"></div> {/* Gap */}
+      <div className="col-2">
+        <div
+          className="d-flex flex-column align-items-center"
+          style={{ width: "100%", height: "80px" }}
+        >
+          <div
+            className="cardimg d-flex justify-content-center align-items-center"
+            style={{ height: "100%" }}
+          >
+            <img
+              src={keyspecies2}
+              className="img-fluid"
+              alt="Gate Icon"
+              style={{ maxWidth: "40px", maxHeight: "40px" }}
+            />
+          </div>
         </div>
       </div>
-      <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
-        <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
-          <img
-            src={keyspecies3}
-            className="img-fluid"
-            alt="Mechanism Icon"
-            style={{ maxWidth: "60px", maxHeight: "60px" }}
-          />
+      <div className="col-1"></div> {/* Gap */}
+      <div className="col-2">
+        <div
+          className="d-flex flex-column align-items-center"
+          style={{ width: "100%", height: "80px" }}
+        >
+          <div
+            className="cardimg d-flex justify-content-center align-items-center"
+            style={{ height: "100%" }}
+          >
+            <img
+              src={keyspecies3}
+              className="img-fluid"
+              alt="Mechanism Icon"
+              style={{ maxWidth: "40px", maxHeight: "40px" }}
+            />
+          </div>
         </div>
       </div>
-      <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
-        <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
-          <img
-            src={keyspecies4}
-            className="img-fluid"
-            alt="Measurement Icon"
-            style={{ maxWidth: "60px", maxHeight: "60px" }}
-          />
+      <div className="col-1"></div> {/* Gap */}
+      <div className="col-2">
+        <div
+          className="d-flex flex-column align-items-center"
+          style={{ width: "100%", height: "80px" }}
+        >
+          <div
+            className="cardimg d-flex justify-content-center align-items-center"
+            style={{ height: "100%" }}
+          >
+            <img
+              src={keyspecies4}
+              className="img-fluid"
+              alt="Measurement Icon"
+              style={{ maxWidth: "40px", maxHeight: "40px" }}
+            />
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  ) : (
+    // Desktop Layout
+    <>
+      <div className="col-12 col-md-2">
+        <p className="key-specs-text text-center text-md-start">KEY SPECS.</p>
+      </div>
+      <div className="col-12 col-md-1">
+        <div className="vertical-border"></div>
+      </div>
+      <div className="col-12 col-md">
+        <div className="row justify-content-start g-3">
+          {/* Desktop layout (Grid for images) */}
+          <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
+            <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
+              <img
+                src={keyspecies}
+                className="img-fluid"
+                alt="Oil Icon"
+                style={{ maxWidth: "60px", maxHeight: "60px" }}
+              />
+            </div>
+          </div>
+          <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
+            <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
+              <img
+                src={keyspecies2}
+                className="img-fluid"
+                alt="Gate Icon"
+                style={{ maxWidth: "60px", maxHeight: "60px" }}
+              />
+            </div>
+          </div>
+          <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
+            <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
+              <img
+                src={keyspecies3}
+                className="img-fluid"
+                alt="Mechanism Icon"
+                style={{ maxWidth: "60px", maxHeight: "60px" }}
+              />
+            </div>
+          </div>
+          <div className="col-auto cardkey" style={{ width: "100px", height: "80px", marginLeft: "20px" }}>
+            <div className="cardimg d-flex justify-content-center align-items-center" style={{ height: "80%" }}>
+              <img
+                src={keyspecies4}
+                className="img-fluid"
+                alt="Measurement Icon"
+                style={{ maxWidth: "60px", maxHeight: "60px" }}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  )}
 </div>
-{/*end specs */}
-
-{/* start application  */}
+{/* End specs */}
+{/* start application */}
 <div className="Application mb-4">
-              <h4 className="card-title mb-4 fw-semibold">Application Area</h4>
-              <div className="row ">
-                <div className="col-md-6 col-12">
-                  <div className="row residentimg justify-content-around">
-                    <div className="col-auto cardApp">
-                      <img
-                        src={Parkinglots}
-                        className="img-fluid"
-                        alt="Oil Icon"
-                      />
-                    </div>
-                    <div className="col-auto cardApp">
-                      <img
-                        src={Residential}
-                        className="img-fluid"
-                        alt="Gate Icon"
-                      />
-                    </div>
-                  </div>
-                  <div className="row mt-3 residentimg justify-content-around">
-                    <div className="col-auto cardApp">
-                      <img
-                        src={Commercial}
-                        className="img-fluid"
-                        alt="Oil Icon"
-                      />
-                    </div>
-                    <div className="col-auto cardApp">
-                      <img
-                        src={Toll}
-                        className="img-fluid"
-                        alt="Gate Icon"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 col-12 d-flex align-items-center">
-                  <div className="row justify-content-around">
-                    <p className="Appconte">
-                    Boom barriers are widely used for controlling vehicle access in parking lots, toll plazas, residential complexes, and industrial areas. Their automated operation ensures smooth traffic management while maintaining security.
-                    </p>
-                  </div>
-                </div>
+  <h4 className="card-title mb-4 fw-semibold">Application Area</h4>
+
+  {isMobile ? (
+    <div className="mobile-layout">
+      {/* Mobile-specific layout */}
+      <div className="row justify-content-center align-items-center">
+        <div className="col-12 mb-3">
+          <img
+            src={Parkinglots}
+            className="img-fluid"
+            alt="Parking Icon"
+          />
+        </div>
+        <div className="col-12 mb-3">
+          <img
+            src={Residential}
+            className="img-fluid"
+            alt="Residential Icon"
+          />
+        </div>
+      </div>
+      <div className="row justify-content-center align-items-center">
+        <div className="col-12 mb-3">
+          <img
+            src={Commercial}
+            className="img-fluid"
+            alt="Commercial Icon"
+          />
+        </div>
+        <div className="col-12 mb-3">
+          <img
+            src={Toll}
+            className="img-fluid"
+            alt="Toll Icon"
+          />
+        </div>
+      </div>
+
+      <div className="description mt-3">
+        <p>
+          Boom barriers are widely used for controlling vehicle access in parking lots, toll plazas, residential complexes, and industrial areas. Their automated operation ensures smooth traffic management while maintaining security.
+        </p>
+      </div>
+    </div>
+  ) : (
+    <div className="row">
+      <div className="col-md-6 col-12">
+        <div className="row residentimg justify-content-around">
+          <div className="col-auto cardApp">
+            <img
+              src={Parkinglots}
+              className="img-fluid"
+              alt="Parking Icon"
+            />
+          </div>
+          <div className="col-auto cardApp">
+            <img
+              src={Residential}
+              className="img-fluid"
+              alt="Residential Icon"
+            />
+          </div>
+        </div>
+        <div className="row mt-3 residentimg justify-content-around">
+          <div className="col-auto cardApp">
+            <img
+              src={Commercial}
+              className="img-fluid"
+              alt="Commercial Icon"
+            />
+          </div>
+          <div className="col-auto cardApp">
+            <img
+              src={Toll}
+              className="img-fluid"
+              alt="Toll Icon"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="col-md-6 col-12 d-flex align-items-center">
+        <div className="row justify-content-around">
+          <p className="Appconte">
+            Boom barriers are widely used for controlling vehicle access in parking lots, toll plazas, residential complexes, and industrial areas. Their automated operation ensures smooth traffic management while maintaining security.
+          </p>
+        </div>
+      </div>
+    </div>
+  )}
+</div>
+{/* end application */}
+
+
+{/* Start of dimension */}
+<Container>
+      {/* Main Content */}
+      <Row className="align-items-center">
+        <h4 className="text-center fw-bold">Dimensions and Layouts</h4>
+        {isMobile ? (
+          <>
+            {/* Image First */}
+            <div className="text-center mb-3">
+              <img
+                src={vegadimension}
+                alt="Boom Barrier Diagram"
+                className="img-fluid"
+              />
+            </div>
+            {/* Text Content */}
+            <div  className="text-center">
+              <div
+                className="p-4 shadow-sm"
+                style={{
+                  backgroundColor: "#f9f9f9",
+                  maxWidth: "300px",
+                  margin: "0 auto",
+                }}
+              >
+                <p className="text-justify">
+                  Houston's boom barriers offer versatile solutions with
+                  telescopic, articulated, fence, and folding arms to suit
+                  various site layouts and access needs, ensuring efficient and
+                  reliable performance in any environment.
+                </p>
               </div>
-  </div>
-{/* end application  */}
+            </div>
+          </>
+        ) : (
+          // Desktop View (Side-by-Side)
+          <>
+            {/* Left Column (Text Content) */}
+            <Col
+              xs={12}
+              md={6}
+              className="text-center text-md-start mb-4 mb-md-0"
+            >
+              <div
+                className="p-4 shadow-sm"
+                style={{
+                  backgroundColor: "#f9f9f9",
+                  maxWidth: "300px",
+                }}
+              >
+                <p className="text-justify">
+                  Houston's boom barriers offer versatile solutions with
+                  telescopic, articulated, fence, and folding arms to suit
+                  various site layouts and access needs, ensuring efficient and
+                  reliable performance in any environment.
+                </p>
+              </div>
+            </Col>
 
-{/*start of dimension */}
-            <Container fluid className="py-4">
-              {/* Title */}
-              <Row className="justify-content-center">
-                <Col xs={12} className="text-center mb-4">
-                  <h4 className="fw-semibold text-capitalize">Dimensions And Layouts</h4>
-                </Col>
-              </Row>
-
-              {/* Main Content */}
-              <Row className="align-items-center">
-                {/* Left Column (Text Content) */}
-                <Col
-                  xs={12}
-                  md={6}
-                  className="text-center text-md-start mb-4 mb-md-0"
-                >
-                  <div
-                    className="p-4 shadow-sm"
-                    style={{ backgroundColor: "#f9f9f9",maxWidth:"300px" }}
-                  >
-                    <p className="text-justify">
-                    Houston's boom barriers offer versatile solutions with telescopic, articulated, fence, and folding arms to suit various site layouts and access needs, ensuring efficient and reliable performance in any environment.
-                    </p>
-                  </div>
-                </Col>
-
-                {/* Right Column (Image) */}
-                 <Col xs={12} md={6} className="text-center">
-                  <img
-                    src={vegadimension}
-                    alt="Boom Barrier Diagram"
-                    className="img-fluid"
-                  />
-                </Col>
-                
-              </Row>
-            </Container>
-{/*end of dimension */}
+            {/* Right Column (Image) */}
+            <Col xs={12} md={6} className="text-center">
+              <img
+                src={vegadimension}
+                alt="Boom Barrier Diagram"
+                className="img-fluid"
+              />
+            </Col>
+          </>
+        )}
+      </Row>
+    </Container>
+{/* End of dimension */}
 
 {/* start Integration option */}
-            <div className="Application">
+            <div className="Application mt-3">
               <h4 className="card-title mb-4 fw-semibold">Integration options</h4>
-              <div className="row ">
+              <div className={`row ${isMobile ? "justify-content-center" : ""}`}>
                 <div className="Integrationcardimg">
                   <img
                     src="/image/Product_images/Integrationoptions_img/boom_barrier_integration.png"
-                    className="img-fluid main-image" style={{width:"70%", marginLeft:"80px"}}
+                    className={`img-fluid main-image ${isMobile ? "mobile-image" : ""}`}
+                    style={isMobile ? { width: "80%", margin: "0 auto" } : { width: "70%", marginLeft: "80px" }}
                     alt="Measurement Icon"
                   />
                 </div>
@@ -336,42 +513,10 @@ const Vegadiscription = () => {
               <div className="accessories-component-wrapper"></div>
             </div>
 {/* end of accessories error */}
-
-            {/* Solar-powered Boom Barrier Section */}
-            <div className="row  mb-4 mr-0">
-              <div className="col-12 col-md-4 pl-3 mt- pr-0 d-flex flex-column">
-                {/* <div className="cardtexticon">
-                  <img
-                    className="cardtexticonimg"
-                    src="/image/Product_images/Group 1000002006.png"
-                    alt="icon 3"
-                  />
-                </div> */}
-              </div>
-              {/* <div className="col-12 col-md-4 pr-0 d-flex align-items-center">
-                <img
-                  src="/image/Product_images/Rectangle 4036.png"
-                  alt="Solar-powered boom barrier"
-                  className="img-fluid Solar-powered "
-                />
-              </div> */}
-              {/* <div className="col-12 col-md-4 d-flex align-items-center">
-                <p className="soltexrt">
-                  <span style={{ color: "green" }}>
-                    Introducing our solar-powered boom barrier gate
-                  </span>
-                  <br />
-                  equipped with an external solar panel and a 24V reserve power
-                  supply.
-                  <br />
-                  Say goodbye to traditional 220V
-                </p>
-              </div> */}
-            </div>
             <div className="media-wrapper">
               <div className="Application mb-4">
                 <h4 style={{ textAlign: "center" }} className="card-title mb-4 text-capitalize fw-semibold">
-                  Media / Gallery
+                  Project Gallery
                 </h4>
               </div>
               <div className="row">
@@ -487,30 +632,32 @@ const Vegadiscription = () => {
             </Container>
           </div>
           <div className="contact-form-footer">
-            <div className="row">
-              <div className="col-md-2 col-12 contact-form-qr-code-col">
-                <img
-                  src={qr}
-                  alt="QR Code"
-                  className="contact-form-img-fluid contact-form-qr-code"
-                />
-              </div>
-              <div className="col-md-10 col-12 contact-form-text-col">
-                <div className="contact-form-footer-text">
-                  <div className="row">
-                  <div className="col-12 qrcode mt-2">
-                            <p className="text-center">
-                              Discover our extensive range of innovative products
-                            </p>
-                            <p className="text-center" style={{ marginTop: '-35px' }}>
-                              simply scan to explore more
-                            </p>
-                          </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+  <div className="row align-items-center">
+    {/* QR Code Column */}
+    <div className="col-md-2 col-12 text-center mb-3 mb-md-0 contact-form-qr-code-col">
+      <img
+        src={qr}
+        alt="QR Code"
+        className="img-fluid contact-form-qr-code"
+        style={{ maxWidth: '150px' }}
+      />
+    </div>
+
+    {/* Text Column */}
+    <div className="col-md-10 col-12 text-center contact-form-text-col">
+      <div className="contact-form-footer-text">
+        <div className="qrcode">
+          <p className="mb-1">
+            Discover our extensive range of innovative products
+          </p>
+          <p className="mb-0" style={{ marginTop: isMobile ? '-10px':'-30px'}}>
+            simply scan to explore more
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
         </div>
       </div>
     </div>

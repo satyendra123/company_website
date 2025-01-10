@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import "../productcss/Productfeatures.css";
 import Road1 from "./Road1";
 import Road1des from "./Road1des";
-import Road2 from "./Road2";
-import Road2des from "./Road2des";
-import Road3 from "./Road3";
-import Road3des from "./Road3des";
-import Road4 from "./Road4";
-import Road4des from "./Road4des";
+// import Road2 from "./Road2";
+// import Road2des from "./Road2des";
+// import Road3 from "./Road3";
+// import Road3des from "./Road3des";
+// import Road4 from "./Road4";
+// import Road4des from "./Road4des";
 
 const Road = () => {
   const [activeDescription, setActiveDescription] = useState(null);
@@ -39,13 +39,13 @@ const Road = () => {
               <Road1 />
             </div>
             <div onClick={() => handleTileClick("Road2")}>
-              <Road2 />
+              {/* <Road2 /> */}
             </div>
             <div onClick={() => handleTileClick("Road3")}>
-              <Road3 />
+              {/* <Road3 /> */}
             </div>
             <div onClick={() => handleTileClick("Road4")}>
-              <Road4 />
+              {/* <Road4 /> */}
             </div>
           </div>
         )}
@@ -65,9 +65,9 @@ const Road = () => {
             )}
             <div className="description-content">
               {activeDescription === "Road1" && <Road1des />}
-              {activeDescription === "Road2" && <Road2des />}
-              {activeDescription === "Road3" && <Road3des />}
-              {activeDescription === "Road4" && <Road4des />}
+              {/* {activeDescription === "Road2" && <Road2des />} */}
+              {/* {activeDescription === "Road3" && <Road3des />} */}
+              {/* {activeDescription === "Road4" && <Road4des />} */}
             </div>
           </div>
         )}

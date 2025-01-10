@@ -9,6 +9,14 @@ import Toll from "./AXELIMG/Toll.png";
 import Factory from "./AXELIMG/Factory.png";
 import qr from "./AXELIMG/qr.png";
 
+import Axel1 from "./AXELIMG/midea/b1 1.png";
+import Axel2 from "./AXELIMG/midea/b2 1.png";
+import Axel3 from "./AXELIMG/midea/b3 2.png";
+import Axel4 from "./AXELIMG/midea/b4 1.png";
+
+
+
+
 import RockerB380dimention from "./AXELIMG/Axlebreakerdimension/RockerB380.jpg";
 
 import keyspecies from "./AXELIMG/key_species_1/key_species_1.png";
@@ -38,16 +46,16 @@ const testimonials = [
 ];
 const mediaimg = [
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: Axel1,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3994.png",
+    img: Axel2,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: Axel3,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: Axel4,
   },
 ];
 

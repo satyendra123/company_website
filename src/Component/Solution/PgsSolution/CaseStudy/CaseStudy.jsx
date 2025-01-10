@@ -3,7 +3,7 @@ import Reactangle from "./CaseStudyImages/rectangle.png";
 import Rec from "./CaseStudyImages/rec.png";
 import Rec1 from "./CaseStudyImages/rec1.png";
 import SolutionCaseStudy from '../../../../Utils/SolutionLayOut/SolutionCaseStudy/SolutionCaseStudy'; 
-
+import KnowMore from "./Know_More"
 const CaseStudies = () => {
   return (
     <SolutionCaseStudy 
@@ -12,16 +12,17 @@ const CaseStudies = () => {
       caseStudySubHeaderText2=""
       caseStudyLeftImg={Reactangle}
       caseStudyLeftImgAlt="case study"
-      caseStudyLeftImgTitle="Lorem Ipsum"
-      caseStudyLeftImgDescription="Houston Systems is a leading provider in access automation, parking, and security solutions for residential and industrial clients."
+      caseStudyLeftImgTitle="Government Institution"
+      caseStudyLeftImgDescription="Government sectors require robust security and efficient parking solutions to manage high visitor traffic, ensure perimeter safety, streamline vehicle access, and enhance overall operational efficiency and control."
       caseStudyRightTopImg={Rec}
       caseStudyRightTopImgAlt="case study"
-      caseStudyRightTopImgTitle='Lorem Ipsum'
-      caseStudyRightTopImgDescription="Houston Systems is a leading provider in access automation."
+      caseStudyRightTopImgTitle='Supreme Court of India'
+      caseStudyRightTopImgDescription="The Supreme Court of India is the apex judicial authority in the country, handling sensitive legal matters."
       caseStudyRightBottomImg={Rec1}
       caseStudyRightBottomImgAlt="case study"
-      caseStudyRightBottomImgTitle='Lorem Ipsum'
-      caseStudyRightBottomImgDescription="Houston Systems is a leading provider in access automation."
+      caseStudyRightBottomImgTitle='Delhi High Court,New Delhi'
+      caseStudyRightBottomImgDescription="The Delhi High Court is a prominent judicial institution, managing high volumes of visitors and staff daily."
+      knowmore="/pgssolution/knowmore"
     />
   );
 };

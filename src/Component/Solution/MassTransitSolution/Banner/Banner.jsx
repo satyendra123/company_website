@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../../../../Utils/Banner/Banner";
-import BannerImg1 from '../SolutionImages/autofare 2.png';
+import BannerImg1 from '../SolutionImages/AFC Banner 1.png';
 import BannerImg2 from '../SolutionImages/stadium management.png';
 
 const SolutionBanner = () => {

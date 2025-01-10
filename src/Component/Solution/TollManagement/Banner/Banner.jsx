@@ -1,8 +1,8 @@
 import React from "react";
 import Banner from "../../../../Utils/Banner/Banner";
-import BannerImg1 from '../SolutionImages/toll management.jpg';
-import BannerImg2 from '../SolutionImages/toll management banner 2.jpg';
-import BannerImg3 from '../SolutionImages/toll managet 3.jpg';
+// import BannerImg1 from '../SolutionImages/toll management.jpg';
+import BannerImg2 from '../SolutionImages/TMS.png';
+// import BannerImg3 from '../SolutionImages/toll managet 3.jpg';
 
 const SolutionBanner = () => {
   const bannerData = [

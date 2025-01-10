@@ -1,8 +1,8 @@
 import React from "react";
 import "./Banner.css";
+import pgs_homepage from "../../Container/images/Pedestrian Banner2.png";
 import Banner_1 from "../../Container/images/banner_1.png";
-import pgs_homepage from "../../Container/images/padestrian banner 1.png";
-import Loop_Sensor1 from "../../Container/images/allinone_.png";
+import Loop_Sensor1 from "../../Container/images/boom barreir2.png";
 import Loop_Sensor from "../../Container/images/Parking_banner.png";
 import Homepage_Pms from "../../Container/images/Homepage_Pms.png"; // Ensure the path and file format are correct
 
@@ -25,7 +25,7 @@ const Banner = () => {
         <div className="carousel-inner" role="listbox">
           <div className="carousel-item active">
             <img
-              src={Banner_1}
+              src= {pgs_homepage}
               className="img-fluid d-block w-100"
               alt="Banner 1"
             />
@@ -33,7 +33,7 @@ const Banner = () => {
 
           <div className="carousel-item">
             <img
-              src={pgs_homepage}
+              src={Banner_1}
               className="img-fluid d-block w-100"
               alt="Padestrian Banner"
             />

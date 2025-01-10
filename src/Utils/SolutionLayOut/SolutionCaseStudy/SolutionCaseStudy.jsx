@@ -1,5 +1,6 @@
 import React from "react";
 import "./SolutionCaseStudy.css";
+import KnowMore from "../../../Component/Solution/PgsSolution/CaseStudy/Know_More";
 
 const SolutionCaseStudy = ({
   caseStudyHeaderText,
@@ -17,6 +18,7 @@ const SolutionCaseStudy = ({
   caseStudyRightBottomImgAlt,
   caseStudyRightBottomImgTitle,
   caseStudyRightBottomImgDescription,
+  knowmore,
 }) => {
   return (
     <div className="container">
@@ -69,7 +71,7 @@ const SolutionCaseStudy = ({
                     <p className="solution-case-study-para">
                       {caseStudyRightTopImgDescription}
                     </p>
-                    <a href="#" className="btn btn-primary">
+                    <a href={knowmore} className="btn btn-primary">
                       Know more
                     </a>
                   </div>
@@ -95,7 +97,7 @@ const SolutionCaseStudy = ({
                     <p className="solution-case-study-para">
                       {caseStudyRightBottomImgDescription}
                     </p>
-                    <a href="#" className="btn btn-primary">
+                    <a href={knowmore} className="btn btn-primary">
                       Know more
                     </a>
                   </div>

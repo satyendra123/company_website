@@ -16,11 +16,10 @@ function SolutionType() {
             </Card.Body>
           </Card>
         </Col>
-
         <Col md={7}>
           <Row className="gx-4 mb-4">
             <Col md={12}>
-              <Card className="border shadow" style={{ height: '150px' }}>
+              <Card className="border shadow" style={{height: '150px'}}>
                 <Card.Body>
                   <Card.Title className="fw-bold text-center p-3">M-Park</Card.Title>
                   <Card.Text className="m-auto pl-5 pr-5">

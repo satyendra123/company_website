@@ -1,12 +1,23 @@
-import React from "react";
-import turnerc200 from "./UVSSIMG/undergrounduvss.png";
+import React, { useState, useEffect } from "react";
+import turnerc200 from "./UVSSIMG/UVSS4 3.png";
 import "./Uvssc100.css";
 import { Container, Row, Col, Card, Image } from "react-bootstrap";
 import icon1 from "./UVSSIMG/Uvssicons/2ywarranty.png";
 import icon2 from "./UVSSIMG/Uvssicons/67iprating.png";
 import icon3 from "./UVSSIMG/Uvssicons/20scanningspeed.png";
 
-const Uvssc200 = ({ isMobileView }) => {
+const Uvssc200 = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreenWidth = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    checkScreenWidth();
+    window.addEventListener("resize", checkScreenWidth);
+    return () => window.removeEventListener("resize", checkScreenWidth);
+  }, []);
+
   return (
     <Container className="py-4">
       <Card className="shadow-lg p-4 border-0 bg-white rounded-4">
@@ -14,49 +25,82 @@ const Uvssc200 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">SS3350F UNDERGROUND UVSS</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Modular, Adaptable Precision</h6>
+              <h6 className="fw-semibold" style={{ color: "#084D87", fontSize: "1.5rem" }}>
+                Modular, Adaptable Precision
+              </h6>
             </Col>
           </Row>
 
-          <Row className="align-items-center">
-            <Col md={6}>
-              <p className="text-justify">
-              Recording clear video of entire undersides. Its modular design fits various vehicles and allows flexible camera placement for precise captures.
+          {isMobile ? (
+            <>
+              <div className="d-flex flex-column align-items-center mb-3">
+                <div className="text-justify mb-3">
+                  <p>
+                    Recording clear video of entire undersides. Its modular design fits various vehicles and allows flexible camera placement for precise captures.
+                  </p>
+                </div>
+              </div>
 
-              </p>
-            </Col>
-            <Col md={1}>
-            </Col>
-            {/* Image */}
-            <Col md={3} className="text-center">
-              <Image
-                src={turnerc200}
-                alt="flaptiler80"
-                style={{ height: '150px', width: "100%" }}
-              />
-            </Col>
+              <Row className="mb-3">
+                <Col xs={9} className="mb-3">
+                  <Image
+                    src={turnerc200}
+                    alt="SS3350F Underground UVSS"
+                    style={{ maxWidth: "100%", height: "auto", marginTop: "20px" }}
+                  />
+                </Col>
 
-            <Col md={2} className="d-flex flex-column align-items-center">
-  <div className="d-flex flex-column align-items-center">
-    <Image src={icon1} alt="Warranty" className="mb-1" />
-    <span className="text-center" style={{ fontSize: "8.5px" }}>Year Warranty</span>
-  </div>
-  <div className="d-flex flex-column align-items-center">
-    <Image src={icon2} alt="Icon 2" className="mb-1" />
-    <span className="text-center" style={{ fontSize: "8.5px" }}>Ip Rating</span>
-  </div>
-  <div className="d-flex flex-column align-items-center">
-    <Image src={icon3} alt="Icon 3" className="mb-1" />
-    <span className="text-center" style={{ fontSize: "8.5px" }}>
-    Scanning Speed
-</span>
-  </div>
-</Col>
-          </Row>
+                <Col xs={3} className="mb-2">
+                  <div className="d-flex align-items-center mb-1">
+                    <Image src={icon1} alt="Warranty" className="mb-1" />
+                    <span className="text-center" style={{ fontSize: "8.5px" }}>2y warranty</span>
+                  </div>
+                  <div className="d-flex align-items-center mb-1">
+                    <Image src={icon2} alt="IP Rating" className="mb-1" />
+                    <span className="text-center" style={{ fontSize: "8.5px" }}>IP Rating</span>
+                  </div>
+                  <div className="d-flex align-items-center mb-1">
+                    <Image src={icon3} alt="Scanning Speed" className="mb-1" />
+                    <span className="text-center" style={{ fontSize: "8.5px" }}>Scanning Speed</span>
+                  </div>
+                </Col>
+              </Row>
+            </>
+          ) : (
+            <Row className="align-items-center">
+              <Col md={6}>
+                <p className="text-justify">
+                  Recording clear video of entire undersides. Its modular design fits various vehicles and allows flexible camera placement for precise captures.
+                </p>
+              </Col>
+              <Col md={1}></Col>
+              <Col md={3} className="text-center">
+                <Image
+                  src={turnerc200}
+                  alt="SS3350F Underground UVSS"
+                  style={{ height: '150px', width: "100%" }}
+                />
+              </Col>
+              <Col md={2} className="d-flex flex-column align-items-center">
+                <div className="d-flex flex-column align-items-center">
+                  <Image src={icon1} alt="Warranty" className="mb-1" />
+                  <span className="text-center" style={{ fontSize: "8.5px" }}>2y warranty</span>
+                </div>
+                <div className="d-flex flex-column align-items-center">
+                  <Image src={icon2} alt="IP Rating" className="mb-1" />
+                  <span className="text-center" style={{ fontSize: "8.5px" }}>IP Rating</span>
+                </div>
+                <div className="d-flex flex-column align-items-center">
+                  <Image src={icon3} alt="Scanning Speed" className="mb-1" />
+                  <span className="text-center" style={{ fontSize: "8.5px" }}>Scanning Speed</span>
+                </div>
+              </Col>
+            </Row>
+          )}
         </Card.Body>
       </Card>
     </Container>
   );
 };
 
-export default Uvssc200
+export default Uvssc200;

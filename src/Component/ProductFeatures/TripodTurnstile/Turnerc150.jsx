@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Turner150 from "./Tripodimg/turnerc150.png";
 import "./Turnerc100.css";
 import { Container, Row, Col, Card, Image } from "react-bootstrap";
@@ -7,6 +7,17 @@ import icon2 from "./Tripodimg/Tripodoneicons/10ywarranty.png";
 import icon3 from "./Tripodimg/Tripodoneicons/Automatic.png";
 
 const Turnerc150 = ({ isMobileView }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreenWidth = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    checkScreenWidth();
+    window.addEventListener("resize", checkScreenWidth);
+    return () => window.removeEventListener("resize", checkScreenWidth);
+  }, []);
+
   return (
     <Container className="py-4">
       <Card className="shadow-lg p-4 border-0 bg-white rounded-4">
@@ -14,52 +25,119 @@ const Turnerc150 = ({ isMobileView }) => {
           <Row className="text-center">
             <Col>
               <h4 className="fw-bold">TURNER C150</h4>
-              <h6 className="fw-semibold" style={{ color: "#084D87",fontSize: "1.5rem" }}>Innovative Design Meets Advanced Accessibility
+              <h6
+                className="fw-semibold"
+                style={{ color: "#084D87", fontSize: "1.5rem" }}
+              >
+                Innovative Design Meets Advanced Accessibility
               </h6>
             </Col>
           </Row>
 
-          <Row className="align-items-center">
-            <Col md={6}>
-            <p className="text-justify">
-            Designed for spaces that demand style and functionality, the Turner c150 stands out with its wide passage width, contemporary aesthetics, and state-of-the-art sensor technology. Perfect for accommodating a diverse range of users while maintaining optimal security.
+          {isMobile ? (
+            <>
+              <div className="d-flex flex-column align-items-center mb-3">
+                <div className="text-justify mb-3">
+                  <p>
+                    Designed for spaces that demand style and functionality, the
+                    Turner C150 stands out with its wide passage width,
+                    contemporary aesthetics, and state-of-the-art sensor
+                    technology. Perfect for accommodating a diverse range of
+                    users while maintaining optimal security.
+                  </p>
+                </div>
+              </div>
 
-              </p>
-            </Col>
-            <Col md={1}>
-            </Col>
-            {/* Image */}
-            <Col md={3} className="text-center">
-              <Image
-                src={Turner150}
-                alt="flaptiler80"
-                style={{ height: '150px', width: "100%" }}
-              />
-            </Col>
+              <Row className="mb-3">
+                {/* Image in first Col */}
+                <Col xs={9} className="mb-3">
+                  <Image
+                    src={Turner150}
+                    alt="Turner C150"
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto",
+                      marginTop: "20px",
+                    }}
+                  />
+                </Col>
 
-            <Col md={2} className="d-flex flex-column align-items-center">
-  <div className="d-flex flex-column align-items-center">
-    <Image src={icon1} alt="Warranty" className="mb-1" />
-    <span className="text-center" style={{ fontSize: "8.5px" }}>Year warranty</span>
-  </div>
-  <div className="d-flex flex-column align-items-center">
-    <Image src={icon2} alt="Icon 2" className="mb-1" />
-    <span className="text-center" style={{ fontSize: "8.5px" }}>MCBF</span>
-  </div>
-  <div className="d-flex flex-column align-items-center">
-    <Image src={icon3} alt="Icon 3" className="mb-1" />
-    <span className="text-center" style={{ fontSize: "8.5px" }}>
-    Automatic Version
-</span>
-  </div>
-</Col>
-          </Row>
+                {/* Icons in second Col */}
+                <Col xs={3} className="mb-2">
+                  <div className="d-flex align-items-center mb-1">
+                    <Image src={icon1} alt="Warranty" className="mb-1" />
+                    <span className="text-center" style={{ fontSize: "8.5px" }}>
+                      Year warranty
+                    </span>
+                  </div>
+                  <div className="d-flex align-items-center mb-1">
+                    <Image src={icon2} alt="MCBF" className="mb-1" />
+                    <span className="text-center" style={{ fontSize: "8.5px" }}>
+                      MCBF
+                    </span>
+                  </div>
+                  <div className="d-flex align-items-center mb-1">
+                    <Image
+                      src={icon3}
+                      alt="Automatic Version"
+                      className="mb-1"
+                    />
+                    <span className="text-center" style={{ fontSize: "8.5px" }}>
+                      Automatic Version
+                    </span>
+                  </div>
+                </Col>
+              </Row>
+            </>
+          ) : (
+            <Row className="align-items-center">
+              <Col md={6}>
+                <p className="text-justify">
+                  Designed for spaces that demand style and functionality, the
+                  Turner C150 stands out with its wide passage width,
+                  contemporary aesthetics, and state-of-the-art sensor
+                  technology. Perfect for accommodating a diverse range of users
+                  while maintaining optimal security.
+                </p>
+              </Col>
+              <Col md={1}></Col>
+
+              {/* Image */}
+              <Col md={3} className="text-center">
+                <Image
+                  src={Turner150}
+                  alt="Turner C150"
+                  style={{ height: "150px", width: "100%" }}
+                />
+              </Col>
+
+              {/* Icons */}
+              <Col md={2} className="d-flex flex-column align-items-center">
+                <div className="d-flex flex-column align-items-center">
+                  <Image src={icon1} alt="Warranty" className="mb-1" />
+                  <span className="text-center" style={{ fontSize: "8.5px" }}>
+                    Year warranty
+                  </span>
+                </div>
+                <div className="d-flex flex-column align-items-center">
+                  <Image src={icon2} alt="MCBF" className="mb-1" />
+                  <span className="text-center" style={{ fontSize: "8.5px" }}>
+                    MCBF
+                  </span>
+                </div>
+                <div className="d-flex flex-column align-items-center">
+                  <Image src={icon3} alt="Automatic Version" className="mb-1" />
+                  <span className="text-center" style={{ fontSize: "8.5px" }}>
+                    Automatic Version
+                  </span>
+                </div>
+              </Col>
+            </Row>
+          )}
         </Card.Body>
       </Card>
     </Container>
   );
 };
 
-export default Turnerc150
-
-
+export default Turnerc150;

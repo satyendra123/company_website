@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../../../../Utils/Banner/Banner";
-import BannerImg1 from '../SolutionImages/iot.png';
+import BannerImg1 from '../SolutionImages/vms_bannner.png';
 
 const SolutionBanner = () => {
   const bannerData = [

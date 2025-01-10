@@ -1,0 +1,11 @@
+/* Move the accordion chevron to the right */
+.header-with-icon-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-with-icon-right .accordion-button::after {
+    order: 2; /* Moves the chevron to the right */
+  }
+  

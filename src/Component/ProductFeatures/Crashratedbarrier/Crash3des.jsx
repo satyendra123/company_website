@@ -9,6 +9,16 @@ import Toll from "./CRASHIMG/Toll.png";
 import Factory from "./CRASHIMG/Factory.png";
 import qr from "./CRASHIMG/qr.png";
 
+import crash1 from "./CRASHIMG/midea/B1.png";
+import crash2 from "./CRASHIMG/midea/B2.png";
+import crash3 from "./CRASHIMG/midea/b4.png";
+import crash4 from "./CRASHIMG/midea/crash rated.png";
+
+
+
+
+
+
 import Axerb200dimention from "./CRASHIMG/Crashrateddimension/Axerb200.jpg";
 
 import keyspecies from "./CRASHIMG/key_species_1/key_species_1.png";
@@ -38,16 +48,16 @@ const testimonials = [
 ];
 const mediaimg = [
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: crash1,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3994.png",
+    img: crash2,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: crash3,
   },
   {
-    img: "/image/Product_images/media_img/Rectangle 3995.png",
+    img: crash4,
   },
 ];
 

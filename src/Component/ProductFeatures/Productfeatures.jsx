@@ -34,7 +34,7 @@ const Productfeatures = () => {
   };
 
   return (
-    <div className="product-feature-container mt-4 p-2">
+    <div className="product-feature-container mt-2 p-2">
       <div className="row">
         {/* Subfeatures Section */}
         {(!isMobileView || activeDescription === null) && (
